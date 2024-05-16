@@ -1,0 +1,13 @@
+<fetch>
+  <entity name="ait_contactincomeandexpense">
+    <attribute name="ait_category" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_contactincomeandexpenseid" />
+    <attribute name="ait_description" />
+    <attribute name="ait_includeinrollup" />
+    <attribute name="ait_incomeorexpensetype" />
+    <attribute name="ait_monthlyamount" />
+    <attribute name="ait_name" />
+    <attribute name="ait_source" />
+  </entity>
+</fetch>

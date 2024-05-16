@@ -1,0 +1,17 @@
+<fetch>
+  <entity name="ait_bloodquantum">
+    <attribute name="ait_bloodquantumdecimal" />
+    <attribute name="ait_bloodquantumfraction" />
+    <attribute name="ait_bloodquantumid" />
+    <attribute name="ait_bloodquantumincludedintribe" />
+    <attribute name="ait_confederatedtribefilter" />
+    <attribute name="ait_description" />
+    <attribute name="ait_memberprofile" />
+    <attribute name="ait_name" />
+    <attribute name="ait_systemgenerated" />
+    <attribute name="ait_tribe" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="statecode" />
+  </entity>
+</fetch>

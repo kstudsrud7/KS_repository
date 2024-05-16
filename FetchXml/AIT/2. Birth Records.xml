@@ -1,0 +1,25 @@
+<fetch>
+  <entity name="ait_birthrecord">
+    <attribute name="ait_amendedbirthcertificateonfile" />
+    <attribute name="ait_amendedbirthcertificatereason" />
+    <attribute name="ait_amendedcity" />
+    <attribute name="ait_amendedcountryregion" />
+    <attribute name="ait_amendedcounty" />
+    <attribute name="ait_amendedstateprovince" />
+    <attribute name="ait_birthcertificateonfile" />
+    <attribute name="ait_birthrecordid" />
+    <attribute name="ait_city" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_country" />
+    <attribute name="ait_county" />
+    <attribute name="ait_dateofbirth" />
+    <attribute name="ait_dateofbirthinternal" />
+    <attribute name="ait_dateofbirthmmdd" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_state" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="statecode" />
+  </entity>
+</fetch>

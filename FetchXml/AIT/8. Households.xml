@@ -1,0 +1,13 @@
+<fetch>
+  <entity name="ait_household">
+    <attribute name="ait_description" />
+    <attribute name="ait_headofhousehold" />
+    <attribute name="ait_householdid" />
+    <attribute name="ait_householdidnumber" />
+    <attribute name="ait_name" />
+    <attribute name="ait_totalearnedincome" />
+    <attribute name="ait_totalexpenses" />
+    <attribute name="ait_totalincome" />
+    <attribute name="ait_totalunearnedincome" />
+  </entity>
+</fetch>

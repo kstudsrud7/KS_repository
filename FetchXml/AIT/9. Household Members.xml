@@ -1,0 +1,11 @@
+<fetch>
+  <entity name="ait_householdmember">
+    <attribute name="ait_name" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_dependent" />
+    <attribute name="ait_household" />
+    <attribute name="ait_householdmemberid" />
+    <attribute name="ait_includeincomeandexpensesinhousehold" />
+    <attribute name="ait_relationshiptype" />
+  </entity>
+</fetch>

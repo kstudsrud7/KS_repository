@@ -1,0 +1,41 @@
+<fetch>
+  <entity name="ait_memberprofile">
+    <attribute name="ait_bandid" />
+    <attribute name="ait_biologicalfatherconfidential" />
+    <attribute name="ait_biologicalfatherprofile" />
+    <attribute name="ait_biologicalmotherconfidential" />
+    <attribute name="ait_biologicalmotherprofile" />
+    <attribute name="ait_birthdate" />
+    <attribute name="ait_bqcalculationlocked" />
+    <attribute name="ait_bqthresholdmet" />
+    <attribute name="ait_cardlastissuedby" />
+    <attribute name="ait_cardlastissueddate" />
+    <attribute name="ait_cardlastissuedexpiration" />
+    <attribute name="ait_cardproxynumber" />
+    <attribute name="ait_cardsissued" />
+    <attribute name="ait_clan" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_description" />
+    <attribute name="ait_enrollmentdate" />
+    <attribute name="ait_federalvoter" />
+    <attribute name="ait_memberid" />
+    <attribute name="ait_memberprofileid" />
+    <attribute name="ait_membershipcardtype" />
+    <attribute name="ait_membershipstatus" />
+    <attribute name="ait_memberstatuseffectivedate" />
+    <attribute name="ait_mostrecentchangerequest" />
+    <attribute name="ait_name" />
+    <attribute name="ait_otherrelinquishedreason" />
+    <attribute name="ait_otherrevokedreason" />
+    <attribute name="ait_relinquisheddate" />
+    <attribute name="ait_relinquishedreason" />
+    <attribute name="ait_revokeddate" />
+    <attribute name="ait_revokedreason" />
+    <attribute name="ait_totalbqdecimal" />
+    <attribute name="ait_totalbqfraction" />
+    <attribute name="ait_tribalbqdecimal" />
+    <attribute name="ait_tribalbqfraction" />
+    <attribute name="ait_tribalid" />
+    <attribute name="ait_tribe" />
+  </entity>
+</fetch>

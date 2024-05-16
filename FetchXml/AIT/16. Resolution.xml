@@ -1,0 +1,10 @@
+<fetch>
+  <entity name="ait_resolution">
+    <attribute name="ait_name" />
+    <attribute name="ait_resolution" />
+    <attribute name="ait_resolutiondate" />
+    <attribute name="ait_resolutionid" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+  </entity>
+</fetch>

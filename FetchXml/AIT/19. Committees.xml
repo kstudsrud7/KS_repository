@@ -1,0 +1,16 @@
+<fetch>
+  <entity name="ait_committee">
+    <attribute name="ait_charter" />
+    <attribute name="ait_committeeid" />
+    <attribute name="ait_description" />
+    <attribute name="ait_enddate" />
+    <attribute name="ait_meetingdatedescription" />
+    <attribute name="ait_meetinglocation" />
+    <attribute name="ait_name" />
+    <attribute name="ait_startdate" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+  </entity>
+</fetch>

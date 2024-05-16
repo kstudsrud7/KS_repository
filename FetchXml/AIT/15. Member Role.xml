@@ -1,0 +1,13 @@
+<fetch>
+  <entity name="ait_memberroll">
+    <attribute name="ait_memberprofile" />
+    <attribute name="ait_memberrollid" />
+    <attribute name="ait_name" />
+    <attribute name="ait_roll" />
+    <attribute name="ait_rollnumber" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+  </entity>
+</fetch>

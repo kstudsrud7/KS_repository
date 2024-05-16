@@ -1,0 +1,9 @@
+<fetch>
+  <entity name="ait_changerequest">
+    <attribute name="ait_changerequestsource" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_crtype" />
+    <attribute name="ait_name" />
+    <attribute name="createdon" />
+  </entity>
+</fetch>

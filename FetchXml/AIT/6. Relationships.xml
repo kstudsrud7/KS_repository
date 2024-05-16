@@ -1,0 +1,20 @@
+<fetch>
+  <entity name="ait_relationship">
+    <attribute name="ait_birthdate" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_courtappointedconservator" />
+    <attribute name="ait_custodydescriptioninfo" />
+    <attribute name="ait_description" />
+    <attribute name="ait_enddate" />
+    <attribute name="ait_legalnoncustodyrights" />
+    <attribute name="ait_legalstatus" />
+    <attribute name="ait_legalvisitation" />
+    <attribute name="ait_maritalstatus" />
+    <attribute name="ait_name" />
+    <attribute name="ait_relationshipid" />
+    <attribute name="ait_relationshipreason" />
+    <attribute name="ait_relationshipto" />
+    <attribute name="ait_relationshiptype" />
+    <attribute name="ait_startdate" />
+  </entity>
+</fetch>

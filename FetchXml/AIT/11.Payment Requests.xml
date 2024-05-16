@@ -1,0 +1,35 @@
+<fetch>
+  <entity name="ait_payment">
+    <attribute name="ait_approvaldate" />
+    <attribute name="ait_case" />
+    <attribute name="ait_caseplan" />
+    <attribute name="ait_checknumber" />
+    <attribute name="ait_comment" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_denialdate" />
+    <attribute name="ait_denialreason" />
+    <attribute name="ait_glaccount" />
+    <attribute name="ait_howpaid" />
+    <attribute name="ait_howpaidotherdescription" />
+    <attribute name="ait_individual" />
+    <attribute name="ait_name" />
+    <attribute name="ait_payeeclientprofile" />
+    <attribute name="ait_payeecompany" />
+    <attribute name="ait_payeetype" />
+    <attribute name="ait_payment_id" />
+    <attribute name="ait_paymentamount" />
+    <attribute name="ait_paymentdate" />
+    <attribute name="ait_paymentevent" />
+    <attribute name="ait_paymentid" />
+    <attribute name="ait_paymentrequestid" />
+    <attribute name="ait_paymentrequesttype" />
+    <attribute name="ait_paymentstatus" />
+    <attribute name="ait_program" />
+    <attribute name="ait_reference" />
+    <attribute name="ait_referral" />
+    <attribute name="ait_requestedpaymentamount" />
+    <attribute name="ait_servicerequest" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+  </entity>
+</fetch>

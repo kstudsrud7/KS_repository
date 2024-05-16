@@ -1,0 +1,3 @@
+pac paportal download --path [PATH - ID [Website-GUID] -mv 2
+
+Example: PS C:\pac-portals\KSDEVPORTAL> pac paportal download --path c:\pac-portals\KSDEVPORTAL\ -id 6422daa3-3011-ef11-9f89-6045bd0a8527  -mv 2

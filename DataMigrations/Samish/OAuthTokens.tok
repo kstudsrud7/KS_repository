@@ -1,0 +1,76 @@
+/*
+This is an OAuth token file for the SharePoint connection manager in SSIS Integration Toolkit for Microsoft SharePoint
+in helping establish connection to Microsoft SharePoint using an OAuth token. A proper password is required in order to read the file.
+*/
+
+{
+  "_about": {
+    "created_at": "2023-07-19T14:19:07.6565202Z",
+    "updated_at": "2023-07-19T14:19:07.6565202Z",
+    "use_in_app_authentication_on_import": false
+  },
+  "access_token": "GCPAg2JcETDafckkYOB5Kdp8s8Wt+0h0IuL/SzsF9yP07jEUtBhsxef8RlegJ/lFFf9lA/wHfcZslnsC6mvaMW1WT/rmSd8b59m/HgDEznXGE4iNgmOPesb4BDDdm01tnIlHOEQOz5lJvC6K48ydsZ5tzy7iWMFShmeeGBVgqHsO98hZkzvwe+f/1xttJ3DtRz7efziu4Ew13BJACQyKQth5F+Z2uz6dZ1QmdMyYeHEHMSVsfYohPRYSqaKbACXj7cMqhghkE6wWXZW0zJ8VHMlvJMJxMlKOct9C+GfhlE3HPSP9jm9hPu/4evjv/GxOeSpiuYVSRAIUmRuZhj3fEzXdJhSkrGUAzCJvXtDlEyC7//KVTQPkAGjAbXycc9GeF/PohFKve75IqIKehcI/Q0vNX/qKJY0LTuqw6c0hwaS24yIdDa7rvdD8xJ9jIbpcyVY29jG2HUUBVrGF63FmPXnOGtuo2nIqO+BPslxR0tFCkgQi0ITNRRsNb9weDLmK3rhl6+zRvYKQgkwyRDFpKefsAIcWBokT+SAKtcCgHx9aqqTJ81V7Jhg35P4tWrzx9VIuZRNI8mnkvzgXHqGc1HbO8s0sshtWWPAqJSqugE5sLkmHQ/ofXcakSolIp40MwdLxrl49AzkQDNfRC0aJa+du3H5rxP7Cz7Nih3wzN6vPCNdG2RE9zfl22Uk8I7itZI3xoDxDkuH1ZwShr99jY284tR0PWrcJXTgWYvD8bS6MXWxdhCSu8OTQDP4l6aoGpi5xFDOz2G8OlWr1cYthEuZywlj6TFNIbxHsjY5T3gTDjcDC9fDBk7qGZhSsxOIze0ROaCt7xJJd/iOy4rT6MLC45+Nl6r2JRgQgbd2gLgwWyvRRx7Q6c8b17/YHbMBOQ2eU4fsRwvUYRDNBhwxCkIm9lPCOvv6Kz5me93/Mzj8XR1ryG+JmxrtVlys4DLH4hg+41DFxDubEyof5E7N549k/iP9seGZTiAZh97eaq9gp1VjNG2wUzT2VnZL/mxqjTv8BFY9n6Nt4Tj63fuLQZ4F/oxTCHDuNbd9vYTrNXmA2R6TMhxgNf7WKC3KVzE9fjNgMcMzC70wy+e4GSg1MwzFEdXhuelyz8uc4oXvENhvdsJr4DtAsvZv+fTRmMjgmPtt4LpTT2yErNEBXc/AqHsvGBoyREJs7eWrScgF0ajwfPkKi5SduIvGvxrE1pU2t8tZhpqn8yG/Lf1I6grVsigICkRIyV3N5/ArjY4P5iCAq2cqPvN+hGYodsRW4cueKLIEdu1KQZXzVLduWZYexBMuneuYxybNnRSnypKX3HJCGkfjuutbq9CEfQ7pnbeG0hq6h+xeVHVz0Gm1EoQSvyldfIthxvkkG7nxsInvTBPZJsIM2WqqjeHm0W/Ek+29Ib8cNn3gDtUnIK9SLbPR1E1sRp1W7NamDSy2t6CyCw5XKa49YuEbEVp2KWV6NPhRGD63Kng/0zFcgssgWJuTbW3aZt4jyjURPHkVvRTbrGCyNPdEN7xr/8TJrK8QvECJyrV/L2B72p+9F+BYSaBWRjk9Hc29RY5fA4XqSjSjF+Xoi9jKT0vh+fpYOp4PftSbCnk+0YNBwC97cLFm4Q4MiNncbA2uNitjzrjU0kQHvZv/Trv/R8SzzgYxV2NqbrE3owZq//cgyNSC9q2s/dvLz3WExaetboMLQtrgaz2IwQTQpVvelc3KizKY6rt/FbNtKCq6EClN8HY7Ohh32vghwedQrEK/TRR66KtVDvzbzlYVRkUGhZPA29uDrV0PXNO+Aw/YRLnq3ko+BnlA1KDprPVWCavwjcccUmSmioQ3Aq7RhfFjwXwNH76tITVhLl6dKbeYN1oouhbvy5qt/cJHhKNxsqSmXYq4S0UrbxSLxhB1VkVol8ONYTkJWHd4wCmtyu/j15T3YkU8jjTu+Er76ewHhEiz2mfVkbSp8rLtdWcJaJa0n8rjGfJj7jSFOWpsRBxO3xAt3PSACRK35yloZaBT1gu+DmAL5jPuClKMIsp2YW2oj7an6DawNS7Gwkkaqn4T2hO4lgWRXvY2l/n8Z1FlTTgEmkqxUz22LVeb3Nec1znIqhKHk2f1nrXJ+8it9CaZMUY3HMHrVCgpklT7OHEI2NDtTOVfcBZeX4DYwp/uurMMdc1/1ccXuCtU0R2gqO7pTmufWANcJ8rGtTJW1QRcPwMQYgAbc8Odi4jpw69TxQRgNPmps/eT0jpUh6UrV0XH+T/z4TcU8ZDYxjhETdTSl7znu2jF0ZQ6Y1OJm0lE0TzFXyZ9ViQqCKptO8zzZJ1RCWDdbU6v1LaU1elbdsB9ccuVP5dQ0mC8iu9eQH387baz9eBhA7xUqJvf9A/dt8SS4KCSySNzeVak6+lXCTXliGP5u72BoJ5oPze52EE8rgDNSO2rJuxN4EFpFV0XAXYMed7p/SCAAT/YGeCiooqR1z9ZplWID3Efn4PgXc2P671LIBGDeFFUPVIRzSOHBJ8v2UWpfPiQm+IHjvXF27XXBdqDvjXwa2sfRH7Xynk6+9OUNyAFvH6U7oZni9NJDusKwnnol2PG1QCcV1XUACQvTusZoI3z2wgAmrGJHRkRB8JeaGEndmxCK6J5im+vuBtqDlxTBXABVawL5XV39uhg5tXw8QpqemRf4JMxgZawUnpmRBerah65tNx6b/LelZlzo9HOCORoxTqhxZVHf6ZQtML1rWBAirY9Zm9yGJrW7qRaDWXemZXoKPlfxdM1CX6A7YLY4ZXxnCeRQFOCV/jM+j/PKyqc32THY/6x2mXpAF7YkaQqePMi+6ZMrhAlZuLrl989G6o/HrbfFS4EstNj/ewZQtQQjpKaWCZClKqA1pf+HceI+7AKWZM0nDyQk6L3hpmqcrEv0dKAxbNDkosF/xcxS+GeDEUcn+NWczeNDPRmnYdCt6Am/YMAAhcEMyyMS0naAikEHgiDZTvmp1WSgTJYH9Fk0okoXQ7JYBC80vjAwFVXsO2zLOdzAZqzUSU8jgx+CH7X9sLhXwEJv5M5gWx2CU30IJXBAEAY4PobjMLP/KTsymsZ0MdNP0NMT2BkvB5iZj43zU7fR8Q2zJWK4YiAYu9a+csqjGQ4TrLopb5sKYil0wU/0W22/MQXqEhr8m9+nZ7rYMXb8/1c3MBWxf61welI78okys7Tuo9vLuTQWdIqs3AmTnU4vAIs5N8UXt4UcPRKA8cNTWLfhW9wyt7bLPE8fZ97/1SVlXaEmDKP242RlYakP2DBCOMYq0MAK+m2Ru62S1d6Xd4diJ8xK/2wY2Uc8iMC2ip7QnfHK3Sdk+MBuIwqoPj5+ngWs+s7K9CMIv77r+U9T93HO/oMSq8Ito60VyYKXW53jRc6hyT+hTlZ+nwSy757Oo/pMY6ZwhQk27Xr8XZ9EKB5ONZpkokTHB2rY/IFRhS/A/rUTnUOAo9FDIXzAqEIK2wCI1G4IhEvB0ZBWEJ1dOLB9W8WaiacBJnzy3hSZL7rpKJAe/Ly+Y1toDddFvmHgZn+ldQ+fQgJIWphp7E2EBco/Cs2jJtXPFsDRn/CViu1hO4s7v3LrTo4IDnhtxwE/b06txPjr0v6xdFHrIBymFk3G9Q==",
+  "client_assertion": {
+    "additional_claims": []
+  },
+  "client_id": "51c5c872-5762-4199-8d86-05636d8616f1",
+  "client_secret": "pU4UmCAbLEDlIDESafzlGvPMzisNsPscvhw7gE3kAURIjWKnRt5DfM9tOc/pl7Uz",
+  "expiry": "2023-07-19T15:38:24.6525206Z",
+  "generate_access_token": false,
+  "manual_token_expiry_time_unit": "Hours",
+  "refresh_token": "2S72dEv//LYtiqkm069tshmrU+IiXVGGi2dKiDkIcfnQMzSVlfEXYjy4wA6Ht3626Lv5ZUMckEoPAxIgVr5lVVuQE8z/flwLnN8oSomfThq0CkPe4CDhKoDymjAT69nK3I8yqYIcwnhbLV68Zduz0EcskJNMxdMpH+HhLBi2hGnHCuKzz0Hykr+Ssjen0PDxxn9nV5qT5oSiWVpxgSxZhLks2PfkCzl10CstFB8+vTTlV5cP9PNDstnt11p+Yxu6YVuOA2c5QAIL6ObtaSxHjTjabylbWixvtBdNGxuIEGOF+ARwj6KsI/xTnL6524PaX4xZr8vPiMV1f9incB0JVvtQAHjx/2edESAAo2gD9KcIEcr9M7VBXmgCIP2jBcZOulRTf2wGQDQ2doI+mydwqKShM4ReRxybBtQXBUrGZsiVEhr5WBZsnZ/neEcOklDJIy5VJfWg+DlLylFmPYbFtzM+bbNad60NeNp0RCm4ntPQJqTcsOXFyBlv3XcCkegSl4hjxO6jVdPFRb+HzosXT33ef1ncWRKR+Y2HCeYaMpfbOKoj6zBeu35j+o8HQrAuuxs4LIqN3aN4zL25DARTxvgZ9p7fsTCf8Gh+rOyabWWml68zTv4PfUQ8KNPQeLnx72Y8gzVJ4mvht00BuNn6byVqkpELW1IENoaqBo7FWyEpmMEEQvpHas4YdNGv0lNWVX6R7Ouz1VcSFCY7tN91KXRGofaB2tp+fwDiDj7oC9KWr5vxlMDRpp4XPu5u+59Aw7u44+Z8axgfUl6mvgNZ+oZRZ7fYdiBKr9isupkA0zUqtv9Fub7aMFVZU4o5VW1dhLWOERbpt6FKAJSi51n/+c2KOaZ9nX2kjd1+dJNRQ0repLR72Y688T5IoWXZc5WXSrvG9PxvpfWz82cMlH2MYIAusosGR+GFIkSaF8BsGBgNArwDjx5orqmaXITseki0ktMtUqZbxlo7Luw/qnAjMPmEiVTRxkRpMMD3ZFyCO0UtH6AToCcxggOK5+PonxQ97u7DroOr5ElJ+Q1RyExBEJcRDgD+6PzlhnDCZI4m2+Ug3tyZYdJEhVjK2Dls4pJoQQ13sAetrdce/aYkisgz2wwa1YUWhv4eb8QiqUl9nllyBTXzZiw6Ghani+nKQIMJt2FIefOLLKxRv+iLkSeiMIwHguI4HPR1VYvldQGcMd6hZ2NYDrn/PrDcQzpdfKuhAgZN3TdyzPFBCB8r361t8w==",
+  "refresh_tokens_strategy": {
+    "additional_parameters": [
+      {
+        "name": "scope",
+        "value": "offline_access https://ydspnsn.sharepoint.com/AllSites.FullControl https://ydspnsn.sharepoint.com/TermStore.ReadWrite.All"
+      }
+    ],
+    "base_url": "https://login.microsoftonline.com/83f9c001-816b-4690-9fd6-58b4ce9d1390/oauth2/v2.0/token",
+    "grant_type": "refresh_token",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ]
+  },
+  "request_tokens_strategy": {
+    "additional_parameters": [
+      {
+        "name": "scope",
+        "value": "offline_access https://ydspnsn.sharepoint.com/AllSites.FullControl https://ydspnsn.sharepoint.com/TermStore.ReadWrite.All"
+      }
+    ],
+    "base_url": "https://login.microsoftonline.com/83f9c001-816b-4690-9fd6-58b4ce9d1390/oauth2/v2.0/token",
+    "grant_type": "authorization_code",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/x-www-form-urlencoded"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ]
+  },
+  "sign_in_strategy": {
+    "additional_parameters": [
+      {
+        "name": "scope",
+        "value": "offline_access https://ydspnsn.sharepoint.com/AllSites.FullControl https://ydspnsn.sharepoint.com/TermStore.ReadWrite.All"
+      },
+      {
+        "name": "response_type",
+        "value": "code"
+      }
+    ],
+    "base_url": "https://login.microsoftonline.com/83f9c001-816b-4690-9fd6-58b4ce9d1390/oauth2/v2.0/authorize"
+  },
+  "tenant": ""
+}

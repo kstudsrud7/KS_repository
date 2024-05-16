@@ -1,0 +1,22 @@
+<fetch>
+  <entity name="ait_deathrecord">
+    <attribute name="ait_causeofdeath" />
+    <attribute name="ait_cemetary" />
+    <attribute name="ait_cemetaryplot" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_dateofdeath" />
+    <attribute name="ait_dateofdeathinternal" />
+    <attribute name="ait_deathcertificateonfile" />
+    <attribute name="ait_deathcity" />
+    <attribute name="ait_deathcountry" />
+    <attribute name="ait_deathrecordid" />
+    <attribute name="ait_deathstate" />
+    <attribute name="ait_name" />
+    <attribute name="ait_placeofdeath" />
+    <attribute name="ait_privatenotes" />
+    <attribute name="ait_websitelink" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="statecode" />
+  </entity>
+</fetch>

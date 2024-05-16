@@ -1,0 +1,30 @@
+<fetch>
+  <entity name="ait_physicaladdress">
+    <attribute name="ait_address" />
+    <attribute name="ait_addresstype" />
+    <attribute name="ait_city" />
+    <attribute name="ait_company" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_countryregion" />
+    <attribute name="ait_county" />
+    <attribute name="ait_current" />
+    <attribute name="ait_directions" />
+    <attribute name="ait_geographicarea" />
+    <attribute name="ait_latitude" />
+    <attribute name="ait_longitude" />
+    <attribute name="ait_mailing" />
+    <attribute name="ait_name" />
+    <attribute name="ait_physicaladdressid" />
+    <attribute name="ait_returned" />
+    <attribute name="ait_school" />
+    <attribute name="ait_specialmailinginstructions" />
+    <attribute name="ait_stateprovince" />
+    <attribute name="ait_street1" />
+    <attribute name="ait_street2" />
+    <attribute name="ait_street3" />
+    <attribute name="ait_usedfrom" />
+    <attribute name="ait_usedto" />
+    <attribute name="ait_zipcode" />
+    <attribute name="ait_zipcodeextension" />
+  </entity>
+</fetch>
