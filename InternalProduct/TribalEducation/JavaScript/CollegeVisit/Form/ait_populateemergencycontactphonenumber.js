@@ -1,43 +1,42 @@
-// The following logic is using Microsoft Dynamics CRM Client API Reference for model-driven apps
-// The function retrieves the emergency contact's phone number
-// The following comments are the steps to conduct in the JavaScript
+//Co-Pilot Prompt...
+//On a dynamics 365 form I want to retrived the attribute value of 'ait_emergencycontactname' look field.
+// with that value I want to run a retrieve record to query the 'ait_studentcontact' entity
+// Here is the following odata expression to help retreive it: https://tribaleducationbase.crm.dynamics.com/api/data/v9.2/ait_studentcontacts?$expand=ait_Contact($select=ait_primaryphone)&$filter=(ait_studentcontactid eq 'ait_emergencycontactname value') and (ait_Contact/contactid ne null)
+// after retriving it, I want to capture the ait_primaryphone value and update the current record field 'ait_emergencycontactphonenumber
+//Add console logs after each of the prompts for bug tracking
 
-// On form load, retrieve the value from the attribute field 'ait_emergencycontactname'
-// Store 'ait_emergencycontactname' value as a variable 'emergencyContactId'
-// Then conduct a Xrm.WebApi.retrieveRecord from the entity 'ait_studentcontact' and filter by the emergencyContactId, $select=ait_contact
-// Store the 'ait_contact' value as a variable 'contactId'
-// Then conduct a Xrm.WebApi.retrieveRecord from the entity 'contact' and filter by the contactId, $select=ait_primaryphone
-// With the value from 'ait_primaryphone', update the attribute 'ait_emergencycontactphonenumber' on the form with the value from 'ait_primaryphone'
 
-// This function will be triggered when D365 Form loads
 function populateEmergencyContactPhoneNumber() {
-    // Retrieve the value from attribute field 'ait_emergencycontactname'
-    var emergencyContactId = Xrm.Page.getAttribute("ait_emergencycontactname").getValue()[0].id.replace('{', '').replace('}', '');
-    console.log("Emergency Contact ID:", emergencyContactId);
-
-    // Conduct a Xrm.WebApi.retrieveRecord from the entity 'ait_StudentContact' and filter by the emergencyContactId
-    var studentContact = Xrm.WebApi.retrieveRecord("ait_studentcontact", emergencyContactId, "?$select=ait_name&$expand=ait_contact_value($select=ait_primaryphone)").then(
-        function success(result) {
-            console.log("Retrieved Values: " + result.name + " " + result.ait_contact + " " + result.ait_primaryphone);
-    
-        });
-}
-
-
-// This function will be triggered when D365 Form loads
-function populateEmergencyContactPhoneNumber() {
-    // Retrieve the value from attribute field 'ait_emergencycontactname'
-    var emergencyContactId = Xrm.Page.getAttribute("ait_emergencycontactname").getValue()[0].id.replace('{', '').replace('}', '');
-    console.log("Emergency Contact ID:", emergencyContactId);
-
-    // Conduct a Xrm.WebApi.retrieveRecord from the entity 'ait_StudentContact' and filter by the emergencyContactId
-    Xrm.WebApi.retrieveRecord("ait_studentcontact", emergencyContactId, "?$select=ait_name&$expand=ait_contact($select=contactid,fullname)").then(
-        function success(result) {
-            console.log("Retrieved Values: " + result.ait_name + ", Contact ID: " + result.ait_contact.contactid + ", Contact Name: " + result.ait_contact.fullname);
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
-    );
+    var emergencyContactName = Xrm.Page.getAttribute("ait_emergencycontactname").getValue();
+    console.log("Emergency Contact Name: ", emergencyContactName)
+    if (emergencyContactName) {
+        var contactId = emergencyContactName[0].id.replace("{", "").replace("}", "");
+        console.log("Contact ID: ",contactId);
+        var entityName = "ait_studentcontact";
+        console.log("Entity: ",entityName);
+        var entityId = contactId;
+        console.log("EntityID: ",entityId);
+        var expandQuery = "?$expand=ait_Contact($select=ait_primaryphone)";
+        console.log("EQ: ",expandQuery);
+        Xrm.WebApi.retrieveRecord(entityName, entityId, expandQuery).then(
+            function success(result) {
+                console.log("Retrive Record: ", result);
+                if (result && result.ait_Contact) {
+                    var primaryPhone = result.ait_Contact.ait_primaryphone; // Lookup to contact, and grabs attribute
+                    if (primaryPhone) {
+                        Xrm.Page.getAttribute("ait_emergencycontactphonenumber").setValue(primaryPhone);
+                    } else {
+                        // Handle if primary phone is not available
+                    }
+                } else {
+                    // Handle if no record found
+                }
+            },
+            function error(error) {
+                // Handle error
+            }
+        );
+    } else {
+        // Handle if emergency contact name is not selected
+    }
 }
