@@ -1,0 +1,144 @@
+{
+	"created_on": "2024-05-20T13:51:55.309Z",
+	"version": 1,
+	"name": "Accoutnt_RetrieveMultiple",
+	"type": "collection",
+	"items": [
+		{
+			"name": "New Request",
+			"type": "request",
+			"items": [],
+			"properties": {
+				"endpoint": "webapi",
+				"requestType": "retrievemultiple",
+				"configuration": {
+					"version": "v9.2",
+					"async": true,
+					"tokenHeader": false,
+					"impersonate": false,
+					"impersonateType": "mscrmcallerid",
+					"impersonateId": "",
+					"formattedValues": true,
+					"retrieveCount": false,
+					"topCount": "",
+					"primaryEntity": {
+						"logicalName": "account",
+						"schemaName": "Account",
+						"label": "Account",
+						"entitySetName": "accounts"
+					},
+					"primaryIdField": "accountid",
+					"fields": [
+						{
+							"logicalName": "accountid",
+							"schemaName": "AccountId",
+							"label": "(Account ID)",
+							"type": "Uniqueidentifier",
+							"oDataName": "accountid"
+						},
+						{
+							"logicalName": "name",
+							"schemaName": "Name",
+							"label": "Account Name",
+							"type": "String",
+							"oDataName": "name"
+						},
+						{
+							"logicalName": "accountnumber",
+							"schemaName": "AccountNumber",
+							"label": "Account Number",
+							"type": "String",
+							"oDataName": "accountnumber"
+						},
+						{
+							"logicalName": "address1_city",
+							"schemaName": "Address1_City",
+							"label": "Address 1: City",
+							"type": "String",
+							"oDataName": "address1_city"
+						},
+						{
+							"logicalName": "address1_county",
+							"schemaName": "Address1_County",
+							"label": "Address 1: County",
+							"type": "String",
+							"oDataName": "address1_county"
+						},
+						{
+							"logicalName": "address1_fax",
+							"schemaName": "Address1_Fax",
+							"label": "Address 1: Fax",
+							"type": "String",
+							"oDataName": "address1_fax"
+						},
+						{
+							"logicalName": "address1_longitude",
+							"schemaName": "Address1_Longitude",
+							"label": "Address 1: Longitude",
+							"type": "Double",
+							"oDataName": "address1_longitude"
+						},
+						{
+							"logicalName": "primarycontactid",
+							"schemaName": "PrimaryContactId",
+							"label": "Primary Contact",
+							"type": "Lookup",
+							"oDataName": "_primarycontactid_value"
+						}
+					],
+					"oneToMany": [
+						{
+							"schemaName": "Account_Tasks",
+							"fields": [
+								{
+									"logicalName": "actualend",
+									"schemaName": "ActualEnd",
+									"label": "Actual End",
+									"type": "DateTime",
+									"oDataName": "actualend"
+								},
+								{
+									"logicalName": "actualstart",
+									"schemaName": "ActualStart",
+									"label": "Actual Start",
+									"type": "DateTime",
+									"oDataName": "actualstart"
+								},
+								{
+									"logicalName": "statuscode",
+									"schemaName": "StatusCode",
+									"label": "Status Reason",
+									"type": "Status",
+									"oDataName": "statuscode"
+								},
+								{
+									"logicalName": "subcategory",
+									"schemaName": "Subcategory",
+									"label": "Sub-Category",
+									"type": "String",
+									"oDataName": "subcategory"
+								},
+								{
+									"logicalName": "subject",
+									"schemaName": "Subject",
+									"label": "Subject",
+									"type": "String",
+									"oDataName": "subject"
+								}
+							],
+							"navigationProperty": "Account_Tasks",
+							"navigationAttribute": "regardingobjectid",
+							"targetEntity": "task",
+							"targetEntityLabel": "Task",
+							"targetEntityPrimaryIdField": "activityid"
+						}
+					],
+					"manyToOne": [],
+					"manyToMany": [],
+					"filterCriteria": {},
+					"orderFields": []
+				}
+			}
+		}
+	]
+}
