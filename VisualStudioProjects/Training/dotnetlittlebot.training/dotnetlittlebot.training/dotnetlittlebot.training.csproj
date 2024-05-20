@@ -90,8 +90,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountCreate.cs" />
-    <Compile Include="firstd365plugin.cs" />
+    <Compile Include="Plugins\AccountCreate.cs" />
+    <Compile Include="Plugins\firstd365plugin.cs" />
+    <Compile Include="Plugins\Student_PostCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
