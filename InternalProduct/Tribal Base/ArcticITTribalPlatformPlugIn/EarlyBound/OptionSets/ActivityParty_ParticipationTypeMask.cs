@@ -1,0 +1,29 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: ArcticIT.EarlyBound.OptionSets.ActivityParty_ParticipationTypeMask
+// Assembly: ArcticIT.TribalPlatform.PlugIn, Version=1.0.16.12201, Culture=neutral, PublicKeyToken=b2b6f2647677fd07
+// MVID: 8AFF6454-F76B-4647-8402-3B791DBBC103
+// Assembly location: C:\Users\kstudsrud\Downloads\TPBasePlugins_2024_01_18_1\PluginAssemblies\ArcticITTribalPlatformPlugIn-019A1BCF-5834-4D97-909C-235CE08C6BBB\ArcticITTribalPlatformPlugIn.dll
+
+using System.CodeDom.Compiler;
+using System.Runtime.Serialization;
+
+#nullable disable
+namespace ArcticIT.EarlyBound.OptionSets
+{
+  [DataContract]
+  [GeneratedCode("CrmSvcUtil", "9.1.0.45")]
+  public enum ActivityParty_ParticipationTypeMask
+  {
+    [EnumMember] Sender = 1,
+    [EnumMember] ToRecipient = 2,
+    [EnumMember] CCRecipient = 3,
+    [EnumMember] BCCRecipient = 4,
+    [EnumMember] Requiredattendee = 5,
+    [EnumMember] Optionalattendee = 6,
+    [EnumMember] Organizer = 7,
+    [EnumMember] Regarding = 8,
+    [EnumMember] Owner = 9,
+    [EnumMember] Resource = 10, // 0x0000000A
+    [EnumMember] Customer = 11, // 0x0000000B
+  }
+}
