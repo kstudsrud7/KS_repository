@@ -1,0 +1,1 @@
+[Microsoft Ribbon WorkBench Documentation](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/customize-commands-ribbon)
