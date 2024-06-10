@@ -24,20 +24,30 @@ function checkApplicationDeadline() {
                             // Show error message in the Ribbon
                             Xrm.Page.ui.setFormNotification("The Application Deadline for this Program has Passed", "ERROR", "deadlineNotification");
                             Xrm.Page.ui.clearFormNotification("successNotification"); // Clear any existing success notification
+                        } else {
+                            // Clear any existing error notification if the deadline has not passed
+                            Xrm.Page.ui.clearFormNotification("deadlineNotification");
                         }
                     } else {
-                        console.log("Application deadline not found");
+                        // Clear any existing error notification if the application deadline is not found
+                        Xrm.Page.ui.clearFormNotification("deadlineNotification");
+                        console.log("Application deadline not found for the selected program.");
                     }
                 },
                 function error(error) {
+                    // Clear any existing error notification if there was an error retrieving the program record
+                    Xrm.Page.ui.clearFormNotification("deadlineNotification");
                     console.log("Error retrieving program record: " + error.message);
                 }
             );
         } else {
-            console.log("Program ID is null");
+            // Clear any existing error notification if the program ID is null
+            Xrm.Page.ui.clearFormNotification("deadlineNotification");
+            console.log("Program ID is null.");
         }
     } else {
-        console.log("No program selected");
+        // Clear any existing error notification if no program is selected
+        Xrm.Page.ui.clearFormNotification("deadlineNotification");
+        console.log("No program selected.");
     }
 }
-
