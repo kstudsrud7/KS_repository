@@ -21,10 +21,6 @@ function EnrollmentDeployedCheck() {
                 //Xrm.Page.getControl("ait_ethnicity").setDisabled(true);
                 //Xrm.Page.getControl("ait_tribalid").setDisabled(true);
                 //Xrm.Page.getControl("ait_tribe").setDisabled(true);
-                
-
-
-                
                 // Add console logs for debugging
                 console.log("Fields locked successfully.");
             }

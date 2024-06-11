@@ -74,6 +74,7 @@ function paymentRequestMasterFilters(executionContext) {
     // Retrieve Master Program ID
     Xrm.WebApi.retrieveRecord("ait_program", programidstringFormatted, "?$select=_ait_masterprogram_value").then(
         function success(result) {
+            console.log(result);
             var masterprogramid = result._ait_masterprogram_value;
             console.log("Master Program ID:", masterprogramid);
 
@@ -99,7 +100,7 @@ function paymentRequestMasterFilters(executionContext) {
                     "<attribute name='ait_masterprogram' />" +
                     "<filter type='and'>" +
                         "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + studentprofileid[0].id + "' />" +
-                        "<condition attribute='ait_masterprogram' operator='eq' value='" + masterprogramid[0].id + "' />" +
+                        "<condition attribute='ait_masterprogram' operator='eq' value='" + masterprogramid + "' />" +
                     "</filter>" +
                 "</entity>" +
               "</fetch>";
@@ -173,3 +174,62 @@ function checkApplicationDeadline() {
         console.log("No program selected.");
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////////
+// Function to Populate / Update the fields for Time In Program: Time to Complete Limit, Time to Complete (Months), Limit Type
+// These Fields are Populated from the lookup field 'Program' ait_program
+function updateTimeinProgramFields() {
+    try {
+        // Retrieve the selected Program Lookup Record
+        var programAttribute = Xrm.Page.getAttribute("ait_program");
+        if (programAttribute && programAttribute.getValue()) {
+            var programId = programAttribute.getValue()[0].id;
+
+            if (programId) {
+                Xrm.WebApi.retrieveRecord("ait_program", programId, "?$select=ait_timetocompletelimit,ait_timetocomplete,ait_limittype").then(
+                    function success(result) {
+                        // Retrieve Field Results from Program Lookup
+                        var timeToCompleteLimit = result.ait_timetocompletelimit; 
+                        console.log("Time to Complete Limit:", timeToCompleteLimit);
+                        var timeToComplete = result.ait_timetocomplete; 
+                        console.log("Time to Complete:", timeToComplete);
+                        var limitType = result.ait_limittype; 
+                        console.log("Limit Type:", limitType);
+
+                        // Set the Values on the fields from the values returned
+                        if (timeToCompleteLimit !== undefined) {
+                            Xrm.Page.getAttribute("ait_timetocompletelimit").setValue(timeToCompleteLimit);
+                            console.log("Time to Complete Limit field updated.");
+                        } else {
+                            console.log("Time to Complete Limit is undefined, field not updated.");
+                        }
+
+                        if (timeToComplete !== undefined) {
+                            Xrm.Page.getAttribute("ait_timetocomplete").setValue(timeToComplete);
+                            console.log("Time to Complete field updated.");
+                        } else {
+                            console.log("Time to Complete is undefined, field not updated.");
+                        }
+
+                        if (limitType !== undefined) {
+                            Xrm.Page.getAttribute("ait_limittype").setValue(limitType);
+                            console.log("Limit Type field updated.");
+                        } else {
+                            console.log("Limit Type is undefined, field not updated.");
+                        }
+                    },
+                    function error(error) {
+                        console.error("Error retrieving program record:", error.message);
+                    }
+                );
+            } else {
+                console.log("Program ID is undefined.");
+            }
+        } else {
+            console.log("Program attribute is null or has no value.");
+        }
+    } catch (e) {
+        console.error("An error occurred in updateTimeinProgramFields:", e);
+    }
+}
+
