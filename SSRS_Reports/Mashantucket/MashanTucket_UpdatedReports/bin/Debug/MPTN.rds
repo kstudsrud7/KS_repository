@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MPTN">
+  <ConnectionProperties>
+    <Extension>MSCRMFETCH</Extension>
+    <ConnectString>https://mptndev.crm9.dynamics.com/</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>19505e29-239e-4d89-9c7f-0eec8cc5a995</DataSourceID>
+</RptDataSource>
