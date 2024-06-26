@@ -1,0 +1,46 @@
+<fetch>
+  <entity name="ait_attendance">
+    <attribute name="ait_absentallday" />
+    <attribute name="ait_attendancedate" />
+    <attribute name="ait_attendanceid" />
+    <attribute name="ait_attendancetype" />
+    <attribute name="ait_authorizedpersondropoffc" />
+    <attribute name="ait_authorizedpersonpickupc" />
+    <attribute name="ait_class" />
+    <attribute name="ait_classroomdetail" />
+    <attribute name="ait_comment" />
+    <attribute name="ait_dropoff" />
+    <attribute name="ait_educationprofile" />
+    <attribute name="ait_hoursattended" />
+    <attribute name="ait_name" />
+    <attribute name="ait_pickedupby" />
+    <attribute name="ait_pickup" />
+    <attribute name="ait_scheduleddate" />
+    <attribute name="ait_school" />
+    <attribute name="ait_schoolyear" />
+    <attribute name="ait_studentclass" />
+    <attribute name="ait_studentprofile" />
+    <attribute name="ait_tutoring" />
+    <attribute name="ait_tutoringrequestid" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="createdonbehalfby" />
+    <attribute name="fcped_attendancereasoncode" />
+    <attribute name="fcped_fcpid" />
+    <attribute name="fcped_length" />
+    <attribute name="fcped_periods" />
+    <attribute name="fcped_secondaryreasoncode" />
+    <attribute name="importsequencenumber" />
+    <attribute name="modifiedby" />
+    <attribute name="modifiedon" />
+    <attribute name="modifiedonbehalfby" />
+    <attribute name="overriddencreatedon" />
+    <attribute name="ownerid" />
+    <attribute name="owningbusinessunit" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+    <attribute name="timezoneruleversionnumber" />
+    <attribute name="utcconversiontimezonecode" />
+    <attribute name="versionnumber" />
+  </entity>
+</fetch>

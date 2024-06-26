@@ -1,0 +1,44 @@
+<fetch>
+  <entity name="ait_studentclass">
+    <attribute name="ait_academicgrade" />
+    <attribute name="ait_academicterm" />
+    <attribute name="ait_academicyear" />
+    <attribute name="ait_classgradelevel" />
+    <attribute name="ait_classname" />
+    <attribute name="ait_classroomdetail" />
+    <attribute name="ait_classsubject" />
+    <attribute name="ait_credits" />
+    <attribute name="ait_creditsattempted" />
+    <attribute name="ait_creditsearned" />
+    <attribute name="ait_currentlyenrolled" />
+    <attribute name="ait_dualenrollment" />
+    <attribute name="ait_enddate" />
+    <attribute name="ait_gpa" />
+    <attribute name="ait_name" />
+    <attribute name="ait_school" />
+    <attribute name="ait_startdate" />
+    <attribute name="ait_student" />
+    <attribute name="ait_studentclassid" />
+    <attribute name="ait_studentgrade" />
+    <attribute name="ait_teacher" />
+    <attribute name="ait_term" />
+    <attribute name="ait_waitlist" />
+    <attribute name="ait_withdrawndropped" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="createdonbehalfby" />
+    <attribute name="fcped_notes" />
+    <attribute name="importsequencenumber" />
+    <attribute name="modifiedby" />
+    <attribute name="modifiedon" />
+    <attribute name="modifiedonbehalfby" />
+    <attribute name="overriddencreatedon" />
+    <attribute name="ownerid" />
+    <attribute name="owningbusinessunit" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+    <attribute name="timezoneruleversionnumber" />
+    <attribute name="utcconversiontimezonecode" />
+    <attribute name="versionnumber" />
+  </entity>
+</fetch>
