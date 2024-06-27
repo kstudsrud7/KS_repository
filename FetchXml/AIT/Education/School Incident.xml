@@ -1,0 +1,39 @@
+<fetch>
+  <entity name="ait_schoolincident">
+    <attribute name="ait_childtakento" />
+    <attribute name="ait_childtakentomedicalcenterphysician" />
+    <attribute name="ait_contactedparentorguardian" />
+    <attribute name="ait_description" />
+    <attribute name="ait_incidentdate" />
+    <attribute name="ait_incidentlocation" />
+    <attribute name="ait_incidenttype" />
+    <attribute name="ait_medicalattention" />
+    <attribute name="ait_name" />
+    <attribute name="ait_otherlocation" />
+    <attribute name="ait_parent" />
+    <attribute name="ait_parentguardian_studentcontact" />
+    <attribute name="ait_school" />
+    <attribute name="ait_schoolincidentid" />
+    <attribute name="ait_student" />
+    <attribute name="ait_teacher" />
+    <attribute name="createdby" />
+    <attribute name="createdon" />
+    <attribute name="createdonbehalfby" />
+    <attribute name="fcped_contacttype" />
+    <attribute name="fcped_followupdate" />
+    <attribute name="fcped_reason" />
+    <attribute name="fcped_secondaryreasoncode" />
+    <attribute name="importsequencenumber" />
+    <attribute name="modifiedby" />
+    <attribute name="modifiedon" />
+    <attribute name="modifiedonbehalfby" />
+    <attribute name="overriddencreatedon" />
+    <attribute name="ownerid" />
+    <attribute name="owningbusinessunit" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+    <attribute name="timezoneruleversionnumber" />
+    <attribute name="utcconversiontimezonecode" />
+    <attribute name="versionnumber" />
+  </entity>
+</fetch>
