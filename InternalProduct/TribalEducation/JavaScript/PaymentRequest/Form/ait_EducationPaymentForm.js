@@ -7,6 +7,10 @@ function VerifyProgramFinCap() {
     console.log("Program:", programid);
     var CurrentrequestedPaymentAmount = Xrm.Page.getAttribute("ait_requestedpaymentamount").getValue(); // Get Requested Payment Amount Value
     console.log("Requested Payment Amount:", CurrentrequestedPaymentAmount);
+    var studentProfileID = Xrm.Page.getAttribute("ait_requestorstudentprofile").getValue(); // Get lookup value of ait_studentprofile
+    console.log("Student Profile:", studentProfileID);
+    var formattedStudentProfileID = studentProfileID[0].id.replace('{', '').replace('}', ''); // Format studentProfileID to pass it to the retrieveRecord function
+    console.log("Formatted Student Profile ID:", formattedStudentProfileID);
 
     // Check if programid is not null
     if (programid != null) {
@@ -28,21 +32,22 @@ function VerifyProgramFinCap() {
 
                             // Fetch aggregate SUM of ait_requestedpaymentamount
                             var fetchXml = "<fetch>" +
-                                "<entity name='ait_payment'>" +
-                                "<attribute name='ait_requestedpaymentamount' />" +
-                                "<filter>" +
-                                "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
-                                "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
-                                "</filter>" +
-                                "<link-entity name='ait_program' from='ait_programid' to='ait_program' link-type='inner' alias='Program'>" +
-                                "<filter>" +
-                                "<condition attribute='ait_programid' operator='eq' value='" + programidstringFormatted + "' />" +
-                                "</filter>" +
-                                "</link-entity>" +
-                                "</entity>" +
-                                "</fetch>";
-                            console.log("Standard FetchXML:", fetchXml);
-
+                            "<entity name='ait_payment'>" +
+                            "<attribute name='ait_requestedpaymentamount' />" +
+                            "<filter>" +
+                            "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
+                            "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + formattedStudentProfileID + "' />" +
+                            "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
+                            "</filter>" +
+                            "<link-entity name='ait_program' from='ait_programid' to='ait_programid' link-type='inner' alias='Program'>" +
+                            "<filter>" +
+                            "<condition attribute='ait_programid' operator='eq' value='" + programidstringFormatted + "' />" +
+                            "</filter>" +
+                            "</link-entity>" +
+                            "</entity>" +
+                            "</fetch>";
+                        console.log("Standard FetchXML:", fetchXml);
+                        
                             // Execute FetchXML query
                             Xrm.WebApi.retrieveMultipleRecords("ait_payment", "?fetchXml=" + fetchXml).then(
                                 function success(result) {
@@ -123,6 +128,7 @@ function VerifyProgramFinCap() {
                                             "<filter>" +
                                             "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
                                             "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
+                                            "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + formattedStudentProfileID + "' />" +
                                             "</filter>" +
                                             "<link-entity name='ait_program' from='ait_programid' to='ait_program' link-type='inner' alias='Program'>" +
                                             "<filter>" +
@@ -132,7 +138,7 @@ function VerifyProgramFinCap() {
                                             "</entity>" +
                                             "</fetch>";
                                         console.log("Sub Program FetchXML:", fetchXml);
-
+        
                                         // Execute FetchXML query
                                         Xrm.WebApi.retrieveMultipleRecords("ait_payment", "?fetchXml=" + fetchXml).then(
                                             function success(result) {
