@@ -108,7 +108,7 @@ function paymentRequestMasterFilters(executionContext) {
             // Update The Subgrid Context
             gridContext.setFilterXml(fetchXml);
             // Refresh grid to show filtered records only.
-            gridContext.refresh();
+            formContext.getControl("paymentrequestsmaster").refresh();
         },
         function error(error) {
             console.log("Error retrieving Master Program ID:", error.message);

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "MHA_Progeny", "MHA_Progeny\MHA_Progeny.dtproj", "{0662DF57-49A0-4853-A543-F746DA9005EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0662DF57-49A0-4853-A543-F746DA9005EF}.Development|Default.ActiveCfg = Development
+		{0662DF57-49A0-4853-A543-F746DA9005EF}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7B6C575-31C5-4F4C-9582-B66A65BF855B}
+	EndGlobalSection
+EndGlobal
