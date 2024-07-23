@@ -77,59 +77,76 @@ function CheckClassroomCapacity() {
 }
 
 /***********************************************************/
-
 // Retrieve Student Class
 function showHideClassroomDetails(executionContext) {
     var formContext = executionContext.getFormContext();
     var classroomdetail = formContext.getAttribute("ait_classroomdetail").getValue();
 
+    console.log("Execution context:", executionContext);
+    console.log("Form context:", formContext);
+    console.log("Classroom detail attribute value:", classroomdetail);
+
     // Check if classroomid is not null
     if (classroomdetail != null) {
         // Format classroomid to pass it to the retrieveRecord function
         var classroomidstringFormatted = classroomdetail[0].id.replace('{', '').replace('}', '');
+        console.log("Formatted classroom ID:", classroomidstringFormatted);
 
         Xrm.WebApi.retrieveRecord("ait_classroomdetail", classroomidstringFormatted, "?$select=_ait_academicterm_value,_ait_schoolyear_value,_ait_school_value").then(
             function success(result) {
-                console.log(result);
+                console.log("Retrieve record result:", result);
 
-                var academicterm = result.ait_academicterm_value;
+                var academicterm = result._ait_academicterm_value;
                 var schoolyear = result._ait_schoolyear_value;
                 var school = result._ait_school_value;
+
+                console.log("Academic term value:", academicterm);
+                console.log("School year value:", schoolyear);
+                console.log("School value:", school);
 
                 // If related School on Classroom Detail is blank, show School on Student Class form, otherwise hide
                 if (!school) {
                     formContext.getControl("ait_school").setVisible(true);
+                    console.log("School control is visible");
                 } else {
                     formContext.getControl("ait_school").setVisible(false);
-                    formContext.getControl("ait_school").setValue(null);
+                    formContext.getAttribute("ait_school").setValue(null);
+                    console.log("School control is hidden and value cleared");
                 }
 
                 // If related Academic Year on Classroom Detail is blank, show Academic Year on Student Class form, otherwise hide
                 if (!schoolyear) {
                     formContext.getControl("ait_academicyear").setVisible(true);
+                    console.log("Academic year control is visible");
                 } else {
                     formContext.getControl("ait_academicyear").setVisible(false);
-                    formContext.getControl("ait_academicyear").setValue(null);
+                    formContext.getAttribute("ait_academicyear").setValue(null);
+                    console.log("Academic year control is hidden and value cleared");
                 }
 
                 // If related Academic Term on Classroom Detail is blank, show Academic Term on Student Class form, otherwise hide
                 if (!academicterm) {
                     formContext.getControl("ait_academicterm").setVisible(true);
+                    console.log("Academic term control is visible");
                 } else {
                     formContext.getControl("ait_academicterm").setVisible(false);
-                    formContext.getControl("ait_academicterm").setValue(null);
-
+                    formContext.getAttribute("ait_academicterm").setValue(null);
+                    console.log("Academic term control is hidden and value cleared");
                 }
             },
             function (error) {
-                console.log(error.message);
+                console.log("Retrieve record error:", error.message);
                 // Handle error conditions
             }
         );
     } else {
+        console.log("Classroom detail is null");
         // If classroomdetail is null, ensure all fields are visible as a fallback
         formContext.getControl("ait_school").setVisible(true);
         formContext.getControl("ait_academicyear").setVisible(true);
         formContext.getControl("ait_academicterm").setVisible(true);
+        console.log("All controls set to visible as fallback");
     }
 }
+
+/***********************************************************/
