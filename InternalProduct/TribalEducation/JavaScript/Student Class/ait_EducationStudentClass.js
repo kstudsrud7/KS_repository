@@ -110,7 +110,7 @@ function showHideClassroomDetails(executionContext) {
                     console.log("School control is visible");
                 } else {
                     formContext.getControl("ait_school").setVisible(false);
-                    formContext.getAttribute("ait_school").setValue(null);
+                    //formContext.getAttribute("ait_school").setValue(null);
                     console.log("School control is hidden and value cleared");
                 }
 
@@ -120,7 +120,7 @@ function showHideClassroomDetails(executionContext) {
                     console.log("Academic year control is visible");
                 } else {
                     formContext.getControl("ait_academicyear").setVisible(false);
-                    formContext.getAttribute("ait_academicyear").setValue(null);
+                    //formContext.getAttribute("ait_academicyear").setValue(null);
                     console.log("Academic year control is hidden and value cleared");
                 }
 
@@ -130,7 +130,7 @@ function showHideClassroomDetails(executionContext) {
                     console.log("Academic term control is visible");
                 } else {
                     formContext.getControl("ait_academicterm").setVisible(false);
-                    formContext.getAttribute("ait_academicterm").setValue(null);
+                    //formContext.getAttribute("ait_academicterm").setValue(null);
                     console.log("Academic term control is hidden and value cleared");
                 }
             },

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{BFABF77E-8DE0-41D8-B25D-1B188F539AAE}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{55FF329D-8EE8-4CA8-B3B0-3F38D162B26E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -436,7 +436,7 @@
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn+WUXGQa9UqbCc/JNxewUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADIa6iFTkl/Mwwvgtk0nGOHtbt1CbKXHwVJm6FohlhA2wAAAAAOgAAAAAIAACAAAAAcNnnXjelnt9QhEChbxt6J0MFTp59RFxQKB7q2MUSLrGAAAAADWONbCT/u7a0IcIBo/twfwd+1+fnDdUyhTDnFG0/M9iDziLFaaLfvUJjLlLYwl49whn3eGSm/AHkezhhHmZpNdvqWNq5ykWzkgp0F5rDhlBfE4MvzxUJpEY6VDt9cK+9AAAAA9rNjpeuwySq4GxUAKD+Z7tl22/SoTVQYznrn0Z42XQdzC26bLjQClDT8VyqQPQx6ATJJsNw4iIPxuaVJYyFpIw</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn+WUXGQa9UqbCc/JNxewUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZnOAmhRVOoDpMx1FALvPpXR1t0zvUurd21xZl7ryLawAAAAAOgAAAAAIAACAAAABeF+ghGJwXBZBr/WmKuR45PkFTl0fbCSAOWZeOS15wLmAAAAA9wOSOy3aZwtLxi2wGz+W3rh79BtTexdlExQw0k/pxv6VvTjKN0nLAEuNTdDgDNZvpYDUpqGgJmKZ9t1kerJciy2kYXCz4rHhWXlUwGu3Eug+WjEpQM/V+skHUQQuyIYlAAAAABbOtIJABDExlWxPjEI2Hzr5JxjMkwq4d3hh+4S1Brjcy175kd/tzvxNaiDnlSvunbvIW6hKVGcxaWyVhep001A</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -447,11 +447,11 @@
       DTS:ObjectName="D365 Target">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://sitest.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;OAuthType=ClientCredentials;ClientAppId=f9e094e8-87d5-4b7a-844a-1ea152260278;TokenPath=;CertificateThumbprint=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://sitest.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=f9e094e8-87d5-4b7a-844a-1ea152260278;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn+WUXGQa9UqbCc/JNxewUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+GKc1V1ILJFfko/GM0IlNSRzEVggXsOi9hAfQSduWggAAAAAOgAAAAAIAACAAAABIiCUCSlZqlMozQBgS2mqEyqMvfSii0ciEiSx2p2pFtWAAAADLECau5t759PMB6ZKUbq2s9ahOgNrTPJ0Q8f1WhNTEbbdAlZz2H0vAsWHOA4F0k6Hc4oEWwIsvnDONTveoEUeEzMZR50hH5pCZzpB899wHVBcwje5wAy2EyHIfMz6JWJRAAAAAlV73V01GGnJI3Gktg6U93lrP+9YWkFLqYfr8JYfA2pY9+FPUL9AD7DrMRUOtzO4UuKLtjXFW9Zqh1i4Kd4B5xA</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn+WUXGQa9UqbCc/JNxewUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACXcOvA1JDrp4yK6PlFhorujTCQnDnxaZFXddmBL3Lu8AAAAAAOgAAAAAIAACAAAAA61F+CPRJ7dZ6j/Xjer8GNlQwjYPC1U0DbCvAhnYsgK2AAAAAMkQ4qpYgDRl02DeN8cvkeaVnBqSl707DmpTEy5gfIg4zjbNYsCLgSHpTRzxLdBJnDxDKIk7W2d2Wflp+Y9ly+mzfXS7OT43OwQmiLfWRknva1QrOBvarFoN+Tx2F+WRxAAAAAB/ZuzCi2B8CG36La2Yo5Mlh0I5Uq4suyHNEo6r5lk+vKiUjYMRhQYxbMEtBVb8ZUg2ZX0PXV2d7/ZsIv+vYE8w</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3375,7 +3375,8 @@
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="KingswaySoft Inc.; http://www.kingswaysoft.com; support@kingswaysoft.com; Copyright (c) 2023 KingswaySoft Inc."
               description="Map string values to Dynamics 365 CE/CRM OptionSet/Picklist option values."
-              name="Dynamics CRM OptionSet Mapping">
+              name="Dynamics CRM OptionSet Mapping"
+              version="1">
               <properties>
                 <property
                   dataType="System.Int32"
@@ -10779,6 +10780,1008 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Department Codes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{17940951-7000-4335-b796-c7fdeb958216}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Department Codes"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Department Codes\Dynamics CRM Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="KingswaySoft Inc.; http://www.kingswaysoft.com; support@kingswaysoft.com; Copyright (c) 2023 KingswaySoft Inc."
+              description="Populate data into Microsoft Dynamics 365 CE/CRM."
+              name="Dynamics CRM Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Destination entity to write data."
+                  expressionType="Notify"
+                  name="DestinationEntity">sss_departmentcode</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how data is written to CDS/Dynamics CRM server."
+                  name="ActionType"
+                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.DestinationActionType">5</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the values of CDS/CRM lookup fields should be removed if the reference records cannot be found. "
+                  expressionType="Notify"
+                  name="RemoveUnresolvableReferences">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether duplicate detection should be enabled when creating or updating CDS/CRM records. Duplicate records are determined by the duplicate detection rules and settings defined in CDS or Microsoft Dynamics CRM server."
+                  expressionType="Notify"
+                  name="EnableSystemDuplicateDetection">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the matching criteria to be used when performing an update or upsert. "
+                  expressionType="Notify"
+                  name="RecordMatchingCriteria"
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.RecordMatchingCriteria">1</property>
+                <property
+                  dataType="System.String"
+                  description="Specify the key fields to be used to determine the matching records that exist in CDS/CRM for either Upsert/Update action or source duplicate optimization."
+                  expressionType="Notify"
+                  name="RecordMatchingKeyFields"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to ignore those NULL-valued fields."
+                  expressionType="Notify"
+                  name="IgnoreNullValuedFields">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to ignore those fields that have no value changes in the target system. "
+                  expressionType="Notify"
+                  name="IgnoreUnchangedFields">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specify whether to remove those invalid characters before writing to CDS/CRM."
+                  expressionType="Notify"
+                  name="RemoveInvalidCharacters">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specify the flag field(s) that are used to track the source of changes. The field(s) will not posted to CDS/CRM server unless there are changes to other fields if specified. &quot;Ignore Unchange Fields&quot; option is required in order for the specified flag field(s) to work. "
+                  expressionType="Notify"
+                  name="ChangeFlagFields"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies what action will be taken when multiple matches are found with Upsert action."
+                  expressionType="Notify"
+                  name="HandlingOfMultipleMatches"
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.HandlingOfMultipleMatches">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify whether to use optimizations when there are duplicate records form the source system."
+                  expressionType="Notify"
+                  name="OptimizationOnSourceDuplicates"
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.OptimizationOnSourceDuplicates">0</property>
+                <property
+                  dataType="System.String"
+                  description="Workflow or action to be executed."
+                  expressionType="Notify"
+                  name="WorkflowAction"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of records to be sent to CDS/Dynamics CRM server in each service call."
+                  expressionType="Notify"
+                  name="BatchSize">100</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the total number or concurrent threads to write to CDS/CRM server simultaneously. "
+                  expressionType="Notify"
+                  name="ConcurrentWritingThreadsInTotal">20</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether datetime values should be sent to CDS/CRM server in UTC format."
+                  expressionType="Notify"
+                  name="SendDateTimeInUtcFormat">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmDestinationComponent</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Department Codes\Dynamics CRM Destination.Connections[DynamicsCRM]"
+                  connectionManagerID="Package.ConnectionManagers[D365 Target]"
+                  connectionManagerRefId="Package.ConnectionManagers[D365 Target]"
+                  description="Dynamics CRM Connection Manager"
+                  name="DynamicsCRM" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[createdby]"
+                      cachedDataType="guid"
+                      cachedName="createdby"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[createdby]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdby]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[importsequencenumber]"
+                      cachedDataType="i4"
+                      cachedName="importsequencenumber"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[importsequencenumber]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[importsequencenumber]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[overriddencreatedon]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="overriddencreatedon"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[overriddencreatedon]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[overriddencreatedon]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[ownerid]"
+                      cachedDataType="guid"
+                      cachedName="ownerid"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[ownerid]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[ownerid]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[owneridtype]"
+                      cachedDataType="wstr"
+                      cachedLength="64"
+                      cachedName="owneridtype"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[owneridtype]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridtype]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[sss_departmentcodeid]"
+                      cachedDataType="guid"
+                      cachedName="sss_departmentcodeid"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[sss_departmentcodeid]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_departmentcodeid]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[sss_name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="sss_name"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[sss_name]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_name]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[statecode]"
+                      cachedDataType="i4"
+                      cachedName="statecode"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[statecode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statecode]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[statuscode]"
+                      cachedDataType="i4"
+                      cachedName="statuscode"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[statuscode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statuscode]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[timezoneruleversionnumber]"
+                      cachedDataType="i4"
+                      cachedName="timezoneruleversionnumber"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[timezoneruleversionnumber]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[timezoneruleversionnumber]" />
+                    <inputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].Columns[utcconversiontimezonecode]"
+                      cachedDataType="i4"
+                      cachedName="utcconversiontimezonecode"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[utcconversiontimezonecode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[utcconversiontimezonecode]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[createdby]"
+                      dataType="guid"
+                      name="createdby">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Lookup</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes">systemuser</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">false</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[importsequencenumber]"
+                      dataType="i4"
+                      name="importsequencenumber">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Integer</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">false</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[overriddencreatedon]"
+                      dataType="dbTimeStamp"
+                      name="overriddencreatedon">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">DateTime</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">false</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[ownerid]"
+                      dataType="guid"
+                      name="ownerid">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Owner</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes">systemuser;team</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[owneridtype]"
+                      dataType="wstr"
+                      length="64"
+                      name="owneridtype">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">EntityName</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[sss_departmentcodeid]"
+                      dataType="guid"
+                      name="sss_departmentcodeid">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Uniqueidentifier</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[sss_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="sss_name">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">String</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[statecode]"
+                      dataType="i4"
+                      name="statecode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">State</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[statuscode]"
+                      dataType="i4"
+                      name="statuscode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Status</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[timezoneruleversionnumber]"
+                      dataType="i4"
+                      name="timezoneruleversionnumber">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Integer</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input].ExternalColumns[utcconversiontimezonecode]"
+                      dataType="i4"
+                      name="utcconversiontimezonecode">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="FieldType">Integer</property>
+                        <property
+                          dataType="System.String"
+                          name="LookupTypes"></property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Createable">true</property>
+                        <property
+                          dataType="System.Boolean"
+                          name="Updateable">true</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Default Output]"
+                  exclusionGroup="1"
+                  name="Default Output"
+                  synchronousInputId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Default Output].Columns[SavedRecordId]"
+                      dataType="guid"
+                      lineageId="Package\Department Codes\Dynamics CRM Destination.Outputs[Default Output].Columns[SavedRecordId]"
+                      name="SavedRecordId" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Default Output].Columns[IsNew]"
+                      dataType="bool"
+                      lineageId="Package\Department Codes\Dynamics CRM Destination.Outputs[Default Output].Columns[IsNew]"
+                      name="IsNew" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Error Output"
+                  synchronousInputId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorMessage]"
+                      dataType="wstr"
+                      length="2048"
+                      lineageId="Package\Department Codes\Dynamics CRM Destination.Outputs[Error Output].Columns[ErrorMessage]"
+                      name="ErrorMessage" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Department Codes\Dynamics CRM Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="KingswaySoft Inc.; http://www.kingswaysoft.com; support@kingswaysoft.com; Copyright (c) 2023 KingswaySoft Inc."
+              description="Extract data from Microsoft Dynamics 365 CE/CRM."
+              name="Dynamics CRM Source"
+              usesDispositions="true"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of source data from Microsoft Dynamics CRM."
+                  expressionType="Notify"
+                  name="SourceType"
+                  typeConverter="KingswaySoft.IntegrationToolkit.DynamicsCrm.SourceType">0</property>
+                <property
+                  dataType="System.String"
+                  description="Dynamics CRM entity to retrieve data from."
+                  expressionType="Notify"
+                  name="SourceEntity">sss_departmentcode</property>
+                <property
+                  dataType="System.String"
+                  description="FetchXML statement."
+                  expressionType="Notify"
+                  name="FetchXML"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the batch size of the query."
+                  expressionType="Notify"
+                  name="BatchSize">2000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the maximum number of rows to be returned from the Dynamics 365/CRM server (Specify 0 to read all satisfying records)."
+                  expressionType="Notify"
+                  name="MaxRowsReturned">0</property>
+                <property
+                  dataType="System.Null"
+                  description="The caller to be used for CRM impersonation when reading from CRM server."
+                  expressionType="Notify"
+                  name="ImpersonateAs" />
+                <property
+                  dataType="System.Null"
+                  description="Specifies the output timezone for CRM datetime fields."
+                  expressionType="Notify"
+                  name="OutputTimezone"
+                  typeConverter="KingswaySoft.IntegrationToolkit.Common.DescriptiveEnumTypeConverter`1[[KingswaySoft.IntegrationToolkit.DynamicsCrm.SourceOutputTimezone" />
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">KingswaySoft.IntegrationToolkit.DynamicsCrm.CrmSourceComponent</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Department Codes\Dynamics CRM Source.Connections[DynamicsCRM]"
+                  connectionManagerID="Package.ConnectionManagers[D365 Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[D365 Source]"
+                  description="Dynamics CRM Connection Manager"
+                  name="DynamicsCRM" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output]"
+                  name="Primary Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdby]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdby]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdby]"
+                      name="createdby"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdbyname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdbyname]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdbyname]"
+                      name="createdbyname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdbyyominame]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdbyyominame]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdbyyominame]"
+                      name="createdbyyominame"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdon]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdon]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdon]"
+                      name="createdon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfby]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfby]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfby]"
+                      name="createdonbehalfby"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfbyname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfbyname]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfbyname]"
+                      name="createdonbehalfbyname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfbyyominame]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfbyyominame]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[createdonbehalfbyyominame]"
+                      name="createdonbehalfbyyominame"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[importsequencenumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[importsequencenumber]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[importsequencenumber]"
+                      name="importsequencenumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedby]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedby]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedby]"
+                      name="modifiedby"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedbyname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedbyname]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedbyname]"
+                      name="modifiedbyname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedbyyominame]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedbyyominame]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedbyyominame]"
+                      name="modifiedbyyominame"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedon]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedon]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedon]"
+                      name="modifiedon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfby]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfby]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfby]"
+                      name="modifiedonbehalfby"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfbyname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfbyname]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfbyname]"
+                      name="modifiedonbehalfbyname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfbyyominame]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfbyyominame]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[modifiedonbehalfbyyominame]"
+                      name="modifiedonbehalfbyyominame"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[overriddencreatedon]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[overriddencreatedon]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[overriddencreatedon]"
+                      name="overriddencreatedon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[ownerid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[ownerid]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[ownerid]"
+                      name="ownerid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridname]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridname]"
+                      name="owneridname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridtype]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridtype]"
+                      length="64"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridtype]"
+                      name="owneridtype"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridyominame]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridyominame]"
+                      length="200"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owneridyominame]"
+                      name="owneridyominame"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningbusinessunit]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningbusinessunit]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningbusinessunit]"
+                      name="owningbusinessunit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningbusinessunitname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningbusinessunitname]"
+                      length="160"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningbusinessunitname]"
+                      name="owningbusinessunitname"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningteam]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningteam]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owningteam]"
+                      name="owningteam"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owninguser]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owninguser]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[owninguser]"
+                      name="owninguser"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_departmentcodeid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[sss_departmentcodeid]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_departmentcodeid]"
+                      name="sss_departmentcodeid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[sss_name]"
+                      length="100"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[sss_name]"
+                      name="sss_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statecode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statecode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statecode]"
+                      name="statecode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statecodename]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statecodename]"
+                      length="255"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statecodename]"
+                      name="statecodename"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statuscode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statuscode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statuscode]"
+                      name="statuscode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statuscodename]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statuscodename]"
+                      length="255"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[statuscodename]"
+                      name="statuscodename"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[timezoneruleversionnumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[timezoneruleversionnumber]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[timezoneruleversionnumber]"
+                      name="timezoneruleversionnumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[utcconversiontimezonecode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[utcconversiontimezonecode]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[utcconversiontimezonecode]"
+                      name="utcconversiontimezonecode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[versionnumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[versionnumber]"
+                      lineageId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].Columns[versionnumber]"
+                      name="versionnumber"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdby]"
+                      dataType="guid"
+                      name="createdby" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdbyname]"
+                      dataType="wstr"
+                      length="200"
+                      name="createdbyname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdbyyominame]"
+                      dataType="wstr"
+                      length="200"
+                      name="createdbyyominame" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdon]"
+                      dataType="dbTimeStamp"
+                      name="createdon" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfby]"
+                      dataType="guid"
+                      name="createdonbehalfby" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfbyname]"
+                      dataType="wstr"
+                      length="200"
+                      name="createdonbehalfbyname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[createdonbehalfbyyominame]"
+                      dataType="wstr"
+                      length="200"
+                      name="createdonbehalfbyyominame" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[importsequencenumber]"
+                      dataType="i4"
+                      name="importsequencenumber" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedby]"
+                      dataType="guid"
+                      name="modifiedby" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedbyname]"
+                      dataType="wstr"
+                      length="200"
+                      name="modifiedbyname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedbyyominame]"
+                      dataType="wstr"
+                      length="200"
+                      name="modifiedbyyominame" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedon]"
+                      dataType="dbTimeStamp"
+                      name="modifiedon" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfby]"
+                      dataType="guid"
+                      name="modifiedonbehalfby" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfbyname]"
+                      dataType="wstr"
+                      length="200"
+                      name="modifiedonbehalfbyname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[modifiedonbehalfbyyominame]"
+                      dataType="wstr"
+                      length="200"
+                      name="modifiedonbehalfbyyominame" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[overriddencreatedon]"
+                      dataType="dbTimeStamp"
+                      name="overriddencreatedon" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[ownerid]"
+                      dataType="guid"
+                      name="ownerid" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridname]"
+                      dataType="wstr"
+                      length="200"
+                      name="owneridname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridtype]"
+                      dataType="wstr"
+                      length="64"
+                      name="owneridtype" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owneridyominame]"
+                      dataType="wstr"
+                      length="200"
+                      name="owneridyominame" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningbusinessunit]"
+                      dataType="guid"
+                      name="owningbusinessunit" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningbusinessunitname]"
+                      dataType="wstr"
+                      length="160"
+                      name="owningbusinessunitname" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owningteam]"
+                      dataType="guid"
+                      name="owningteam" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[owninguser]"
+                      dataType="guid"
+                      name="owninguser" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[sss_departmentcodeid]"
+                      dataType="guid"
+                      name="sss_departmentcodeid" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[sss_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="sss_name" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statecode]"
+                      dataType="i4"
+                      name="statecode" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statecodename]"
+                      dataType="wstr"
+                      length="255"
+                      name="statecodename" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statuscode]"
+                      dataType="i4"
+                      name="statuscode" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[statuscodename]"
+                      dataType="wstr"
+                      length="255"
+                      name="statuscodename" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[timezoneruleversionnumber]"
+                      dataType="i4"
+                      name="timezoneruleversionnumber" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[utcconversiontimezonecode]"
+                      dataType="i4"
+                      name="utcconversiontimezonecode" />
+                    <externalMetadataColumn
+                      refId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output].ExternalColumns[versionnumber]"
+                      dataType="i8"
+                      name="versionnumber" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Department Codes.Paths[Primary Output]"
+              endId="Package\Department Codes\Dynamics CRM Destination.Inputs[Input]"
+              name="Primary Output"
+              startId="Package\Department Codes\Dynamics CRM Source.Outputs[Primary Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -10789,6 +11792,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Account Upsert" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{EADBC783-38F0-4ADB-9967-99D60A34A073}"
+      DTS:From="Package\Department Codes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Conferences" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -10801,22 +11812,22 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="129.333333333334,42.6666666666667"
           Id="Package\Account Upsert"
-          TopLeft="242,136.692307692308" />
-        <NodeLayout
-          Size="128,42.6666666666667"
-          Id="Package\Contact Upsert"
-          TopLeft="285.076923076923,214.74358974359" />
+          TopLeft="242,169.534413573637" />
         <NodeLayout
           Size="121.333333333334,42.6666666666667"
           Id="Package\Conferences"
-          TopLeft="223.538461538462,45.8717948717949" />
+          TopLeft="223.538461538462,78.7139007531239" />
+        <NodeLayout
+          Size="128,42.6666666666667"
+          Id="Package\Contact Upsert"
+          TopLeft="285.076923076923,247.585695624919" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="284.205128205128,88.5384615384616">
+          TopLeft="284.205128205128,121.380567419791">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10840,6 +11851,44 @@
                     Point3="22.4615384615385,28.0769230769231" />
                   <mssgle:LineSegment
                     End="22.4615384615385,40.6538461538461" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Department Codes"
+          TopLeft="171.66346231146,0.620776763270037" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="256.330128978126,43.2874434299367">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.8749992270022,35.4264573231872"
+              Start="0,0"
+              End="27.8749992270022,27.9264573231872">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.7132286615936" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.7132286615936"
+                    Point2="0,17.7132286615936"
+                    Point3="4,17.7132286615936" />
+                  <mssgle:LineSegment
+                    End="23.8749992270022,17.7132286615936" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.8749992270022,17.7132286615936"
+                    Point2="27.8749992270022,17.7132286615936"
+                    Point3="27.8749992270022,21.7132286615936" />
+                  <mssgle:LineSegment
+                    End="27.8749992270022,27.9264573231872" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10980,6 +12029,56 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
+    design-time-name="Package\Conferences">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Conferences\Dynamics CRM Source"
+          TopLeft="292,151" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Conferences\Dynamics CRM Destination"
+          TopLeft="315.384615384615,259.230769230769" />
+        <EdgeLayout
+          Id="Package\Conferences.Paths[Primary Output]"
+          TopLeft="370,193.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.051282051282,65.5641025641026"
+              Start="0,0"
+              End="30.051282051282,58.0641025641026">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.7820512820513" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.7820512820513"
+                    Point2="0,32.7820512820513"
+                    Point3="4,32.7820512820513" />
+                  <mssgle:LineSegment
+                    End="26.051282051282,32.7820512820513" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.051282051282,32.7820512820513"
+                    Point2="30.051282051282,32.7820512820513"
+                    Point3="30.051282051282,36.7820512820513" />
+                  <mssgle:LineSegment
+                    End="30.051282051282,58.0641025641026" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\Contact Upsert">
     <LayoutInfo>
       <GraphLayout
@@ -11108,20 +12207,20 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Conferences">
+    design-time-name="Package\Department Codes">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\Conferences\Dynamics CRM Source"
-          TopLeft="292,151" />
-        <NodeLayout
           Size="169.333333333334,42.6666666666667"
-          Id="Package\Conferences\Dynamics CRM Destination"
+          Id="Package\Department Codes\Dynamics CRM Destination"
           TopLeft="315.384615384615,259.230769230769" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Department Codes\Dynamics CRM Source"
+          TopLeft="292,151" />
         <EdgeLayout
-          Id="Package\Conferences.Paths[Primary Output]"
+          Id="Package\Department Codes.Paths[Primary Output]"
           TopLeft="370,193.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
