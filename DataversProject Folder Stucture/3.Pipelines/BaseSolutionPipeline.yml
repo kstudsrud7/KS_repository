@@ -1,0 +1,101 @@
+trigger: none
+
+pool:
+  vmImage: windows-latest
+
+variables:
+  solutionName: 'StokeDev'
+  solutionVersion: '
+
+stages:
+  - stage: ExportSolutions
+    jobs:
+      - job: Export
+        steps:
+          - task: PowerPlatformToolInstaller@2
+            inputs:
+              DefaultVersion: true
+          - task: PowerPlatformWhoAmi@2
+            inputs:
+              authenticationType: 'PowerPlatformSPN'
+              PowerPlatformSPN: 'Stoke Dev Playground (Service Principal)'
+          - task: PowerPlatformExportSolution@2
+            inputs:
+              authenticationType: 'PowerPlatformSPN'
+              PowerPlatformSPN: 'Stoke Dev Playground (Service Principal)'
+              SolutionName: 'StokeDev'
+              SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\StokeDev.zip'
+              AsyncOperation: true
+              MaxAsyncWaitTime: '60'
+          - task: PowerPlatformExportSolution@2
+            inputs:
+              authenticationType: 'PowerPlatformSPN'
+              PowerPlatformSPN: 'Stoke Dev Playground (Service Principal)'
+              SolutionName: 'StokeDev'
+              SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\StokeDev_managed.zip'
+              AsyncOperation: true
+              MaxAsyncWaitTime: '60'
+              Managed: true
+          - task: PowerPlatformUnpackSolution@2
+            inputs:
+              SolutionInputFile: '$(Build.ArtifactStagingDirectory)\StokeDev.zip'
+              SolutionTargetFolder: '$(Build.SourcesDirectory)\Solutions\StokeDev.zip'
+          - task: PowerPlatformUnpackSolution@2
+            inputs:
+              SolutionInputFile: '$(Build.ArtifactStagingDirectory)\StokeDev_managed.zip'
+              SolutionTargetFolder: '$(Build.SourcesDirectory)\Solutions\StokeDev_managed.zip'
+              SolutionType: 'Managed'
+          - task: CmdLine@2
+            inputs:
+              script: |
+                echo commit all changes
+                git config user.email "kstudsrud@stokesoftwaresolutions.com"
+                git config user.name "kstudsrud"
+                git checkout -B main
+                git add --all
+                git commit -m "code commit"
+                git remote set-url origin "https://$(AZURE_DEVOPS_PAT)@dev.azure.com/kstudsrud0980/StokePlayground/_git/StokePlayground"
+                git push --set-upstream origin main
+
+  - stage: ImportSolutions
+    jobs:
+      - job: ImportToTest
+        steps:
+          # Install Power Platform Tools
+          - task: PowerPlatformToolInstaller@2
+            inputs:
+              DefaultVersion: true
+          - task: PowerPlatformPackSolution@2
+  inputs:
+    SolutionSourceFolder: '$(Build.SourcesDirectory)\Solutions\$(SolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
+    SolutionType: 'Managed''
+          
+          # Import into TEST Environment
+          - task: PowerPlatformImportSolution@2
+            inputs:
+              authenticationType: 'PowerPlatformSPN'
+              PowerPlatformSPN: 'Stoke Test Playground (Service Principal)'
+              SolutionInputFile: '$(Build.SourcesDirectory)/Solutions/StokeDev_managed.zip'
+              AsyncOperation: true
+              MaxAsyncWaitTime: '60'
+              PublishCustomizationChanges: true
+
+      - job: ImportToProd
+        steps:
+          # Install Power Platform Tools
+          - task: PowerPlatformToolInstaller@2
+            inputs:
+              DefaultVersion: true
+          # Import into PROD Environment
+          - task: PowerPlatformImportSolution@2
+            inputs:
+              authenticationType: 'PowerPlatformSPN'
+              PowerPlatformSPN: 'Stoke Prod Playground (Service Principal)'
+              SolutionInputFile: '$(Build.SourcesDirectory)/Solutions/StokeDev_managed.zip'
+              AsyncOperation: true
+              MaxAsyncWaitTime: '60'
+              PublishCustomizationChanges: true
+
+
+
