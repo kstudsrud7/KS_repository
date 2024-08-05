@@ -32,36 +32,34 @@ function VerifyProgramFinCap() {
 
                             // Fetch aggregate SUM of ait_requestedpaymentamount
                             var fetchXml = "<fetch>" +
-                            "<entity name='ait_payment'>" +
-                            "<attribute name='ait_requestedpaymentamount' />" +
-                            "<filter>" +
-                            "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
-                            "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + formattedStudentProfileID + "' />" +
-                            "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
-                            "</filter>" +
-                            "<link-entity name='ait_program' from='ait_programid' to='ait_programid' link-type='inner' alias='Program'>" +
-                            "<filter>" +
-                            "<condition attribute='ait_programid' operator='eq' value='" + programidstringFormatted + "' />" +
-                            "</filter>" +
-                            "</link-entity>" +
-                            "</entity>" +
-                            "</fetch>";
-                        console.log("Standard FetchXML:", fetchXml);
-                        
+                                "<entity name='ait_payment'>" +
+                                "<attribute name='ait_requestedpaymentamount' />" +
+                                "<filter>" +
+                                "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
+                                "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + formattedStudentProfileID + "' />" +
+                                "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
+                                "<condition attribute='ait_program' operator='eq' value='" + programidstringFormatted + "' />" +
+                                "</filter>" +
+                                "</entity>" +
+                                "</fetch>";
+                            console.log("Standard FetchXML:", fetchXml);
+
                             // Execute FetchXML query
-                            Xrm.WebApi.retrieveMultipleRecords("ait_payment", "?fetchXml=" + fetchXml).then(
+                            Xrm.WebApi.retrieveMultipleRecords("ait_payment", `?fetchXml=${encodeURIComponent(fetchXml)}`).then(
                                 function success(result) {
                                     var sumRequestedPaymentAmounts = 0;
 
                                     if (result.entities.length > 0) {
-                                        result.entities.forEach(function(entity) {
+                                        result.entities.forEach(function (entity) {
                                             // Retrieve the value of ait_requestedpaymentamount attribute from each entity
                                             var requestedPaymentAmount = entity["ait_requestedpaymentamount"];
 
                                             // Convert the retrieved value to a number and add it to the sum
-                                            sumRequestedPaymentAmounts += parseFloat(requestedPaymentAmount) + CurrentrequestedPaymentAmount;
+                                            sumRequestedPaymentAmounts += parseFloat(requestedPaymentAmount);
                                         });
 
+                                        // Add the current requested payment amount
+                                        sumRequestedPaymentAmounts += CurrentrequestedPaymentAmount;
                                         console.log("Sum of Requested Payment Amounts:", sumRequestedPaymentAmounts);
 
                                         // Check if the sumRequestedPaymentAmount exceeds programCapAmount
@@ -94,12 +92,12 @@ function VerifyProgramFinCap() {
                                         }
                                     }
                                 },
-                                function(error) {
+                                function (error) {
                                     console.log("Error retrieving payment records:", error.message);
                                 }
                             );
                         },
-                        function(error) {
+                        function (error) {
                             console.log("Error retrieving program cap amount:", error.message);
                         }
                     );
@@ -113,7 +111,7 @@ function VerifyProgramFinCap() {
                             // Check if masterprogramid is not null
                             if (masterprogramid != null) {
                                 // Format masterprogramid to pass it to the retrieveRecord function
-                                ;
+                                var masterprogramidFormatted = masterprogramid.replace('{', '').replace('}', '');
 
                                 // Retrieve Related Sub Program Cap Amount
                                 Xrm.WebApi.retrieveRecord("ait_program", programidstringFormatted, "?$select=ait_programcapamount").then(
@@ -129,33 +127,31 @@ function VerifyProgramFinCap() {
                                             "<condition attribute='ait_paymentid' operator='ne' value='" + paymentrequestid + "' />" +
                                             "<condition attribute='ait_paymentstatus' operator='ne' value='914600002' />" +
                                             "<condition attribute='ait_requestorstudentprofile' operator='eq' value='" + formattedStudentProfileID + "' />" +
+                                            "<condition attribute='ait_program' operator='eq' value='" + programidstringFormatted + "' />" +
                                             "</filter>" +
-                                            "<link-entity name='ait_program' from='ait_programid' to='ait_program' link-type='inner' alias='Program'>" +
-                                            "<filter>" +
-                                            "<condition attribute='ait_programid' operator='eq' value='" + programidstringFormatted + "' />" +
-                                            "</filter>" +
-                                            "</link-entity>" +
                                             "</entity>" +
                                             "</fetch>";
                                         console.log("Sub Program FetchXML:", fetchXml);
-        
+
                                         // Execute FetchXML query
-                                        Xrm.WebApi.retrieveMultipleRecords("ait_payment", "?fetchXml=" + fetchXml).then(
+                                        Xrm.WebApi.retrieveMultipleRecords("ait_payment", `?fetchXml=${encodeURIComponent(fetchXml)}`).then(
                                             function success(result) {
                                                 var sumRequestedPaymentAmounts = 0;
 
                                                 if (result.entities.length > 0) {
-                                                    result.entities.forEach(function(entity) {
+                                                    result.entities.forEach(function (entity) {
                                                         // Retrieve the value of ait_requestedpaymentamount attribute from each entity
                                                         var requestedPaymentAmount = entity["ait_requestedpaymentamount"];
 
                                                         // Convert the retrieved value to a number and add it to the sum
-                                                        sumRequestedPaymentAmounts += parseFloat(requestedPaymentAmount) + CurrentrequestedPaymentAmount;
+                                                        sumRequestedPaymentAmounts += parseFloat(requestedPaymentAmount);
                                                     });
 
+                                                    // Add the current requested payment amount
+                                                    sumRequestedPaymentAmounts += CurrentrequestedPaymentAmount;
                                                     console.log("Sum of Requested Payment Amounts:", sumRequestedPaymentAmounts);
 
-                                                    // Check if the sumRequestedPaymentAmount exceeds programCapAmount
+                                                    // Check if the sumRequestedPaymentAmount exceeds subprogramcapamount
                                                     if (sumRequestedPaymentAmounts > subprogramcapamount) {
                                                         // Show error notification
                                                         Xrm.Page.ui.setFormNotification('Requested Amount Exceeds Sub Program Cap Amount', 'ERROR');
@@ -185,24 +181,24 @@ function VerifyProgramFinCap() {
                                                     }
                                                 }
                                             },
-                                            function(error) {
+                                            function (error) {
                                                 console.log("Error retrieving payment records:", error.message);
                                             }
                                         );
                                     },
-                                    function(error) {
+                                    function (error) {
                                         console.log("Error retrieving Sub Program cap amount:", error.message);
                                     }
                                 );
                             }
                         },
-                        function(error) {
+                        function (error) {
                             console.log("Error retrieving Sub Program ID:", error.message);
                         }
                     );
                 }
             },
-            function(error) {
+            function (error) {
                 console.log("Error retrieving Financial Cap Type:", error.message);
             }
         );
@@ -210,6 +206,7 @@ function VerifyProgramFinCap() {
         console.log("Program is not selected.");
     }
 }
+
 ////////////////////////////////////////////////////////////////////////////////
 
 // Function to The Master Program Associated with the Program Lookup record
