@@ -72,6 +72,7 @@ stages:
               ConvertToManaged: true
               PublishCustomizationChanges: true
       - job: ImportToPROD
+        dependsOn: ImportToTest
         steps:
           - task: PowerPlatformToolInstaller@2
             inputs:
