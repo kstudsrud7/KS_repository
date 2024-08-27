@@ -1,2 +1,0 @@
-pac paportal upload --path "C:\portals\starter-portal" --deploymentProfile "profile-name" -modelversion 2
-
