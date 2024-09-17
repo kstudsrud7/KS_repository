@@ -44,7 +44,9 @@ BEGIN
         emailaddress NVARCHAR(100),
         vendorid_1099 NVARCHAR(100),
         clan NVARCHAR(100),
-        ssn NVARCHAR(100)
+        ssn NVARCHAR(100),
+        ssnlast4 NVARCHAR(4),  -- Added for ait_SSNLast4
+        address1 NVARCHAR(250)  -- Added for ait_Address1
     );
 
     -- Insert data from ContactBase into the temporary table
@@ -67,7 +69,9 @@ BEGIN
           [EMailAddress1] AS emailaddress,
           [ait_1099VendorID] AS vendorid_1099,
           [ait_Clan] AS clan,
-          [ait_SSN] AS ssn
+          [ait_SSN] AS ssn,
+          RIGHT([ait_SSN], 4) AS ssnlast4,  -- Extracting last 4 digits for ait_SSNLast4
+          [ait_Address1] AS address1 -- Assuming Address1_Line1 holds the address data
       FROM [SeminoleTribeofFlorida_MSCRM].[dbo].[ContactBase]
     WHERE [ModifiedOn] >= @LastRunDateTime;
 
@@ -85,11 +89,13 @@ BEGIN
         sb.ait_MemberStatus = tc.membershipstatus,
         sb.ait_Gender = tc.gender,
         sb.ait_DateofBirth = tc.birthdate,
-        --sb.ait_Reservation = tc.residency, Need to confirm if the lookups will have matching values (GUID's don't match)
+        --sb.ait_Reservation = tc.residency, -- Lookup confirmation needed for this field
         sb.ait_MaidenName = tc.maidenname,
         sb.ait_VendorID = tc.vendorid_1099,
         sb.ait_Clan = tc.clan,
-        sb.ait_SSN = tc.ssn
+        sb.ait_SSN = tc.ssn,  -- Updated for ait_SSN mapping
+        sb.ait_SSNLast4 = tc.ssnlast4,  -- Updated for ait_SSNLast4 mapping
+        sb.ait_Address1 = tc.address1  -- Updated for ait_Address1 mapping
     FROM [Education_MSCRM].[dbo].[ait_studentBase] sb
     INNER JOIN #TempContactBase tc ON sb.ait_MemberID COLLATE SQL_Latin1_General_CP1_CI_AS = tc.memberid COLLATE SQL_Latin1_General_CP1_CI_AS;
 
