@@ -1,0 +1,150 @@
+# Power Platform Build Pipeline
+# Author: Keaton Studsrud
+# Date: 9/18/2024
+# Last modified: 2022-07-28
+# Description
+# This pipeline builds a Power Platform solution, exports it out and associates to the build.
+# 
+# Usage
+# Define the 3 commented out variables when setting up a pipeline based on this YAML file.
+
+trigger:
+  none
+
+pool:
+  vmImage: windows-2019
+
+parameters:
+  - name: buildAsManagedSolution
+    displayName: Build as Managed Solution
+    type: boolean
+    default: false
+
+variables:
+  - name: version.Revision
+    value: $[counter(variables['version.MajorMinor'], 0)]
+  - name: versionNumber
+    value: '$(version.MajorMinor).$(version.Revision)'
+  - name: pacPath
+    value: ''
+  - name: version.MajorMinor
+    value: '5.0.0' # e.g. 1.0.0
+  - name: PowerPlatformEnvironmentName
+    value: 'TRIBALDEV' # e.g. Power Platform Development Environment (www.ithink365.co.uk)
+  - name: PowerPlatformSolutionName
+    value: 'TPBasePlugins' # e.g. MyApplication
+
+steps:
+- task: PowerPlatformToolInstaller@2
+  inputs:
+    DefaultVersion: true
+
+- task: NuGetToolInstaller@1
+  displayName: 'Use NuGet '
+- task: NuGetCommand@2
+  displayName: 'Install pac'
+  inputs:
+    command: custom
+    arguments: 'install Microsoft.PowerApps.CLI -OutputDirectory pac'
+
+- powershell: |
+   $pacNugetFolder = Get-ChildItem "pac" | Where-Object {$_.Name -match "Microsoft.PowerApps.CLI."}
+   
+   $pacPath = $pacNugetFolder.FullName + "\tools"
+   
+   echo "##vso[task.setvariable variable=pacPath]$pacPath"
+  displayName: 'Find pac Folder'
+  
+- task: PowerShell@2
+  displayName: Set the name of the build (i.e. the Build.BuildNumber)
+  inputs:
+    targetType: 'inline'
+    script: |
+      [string] $buildName = "$(versionNumber)_$(Build.SourceBranchName)"
+      Write-Host "Setting the buildNumber to '$(versionNumber)'."
+      Write-Host "##vso[build.updatebuildnumber]$(versionNumber)"
+      ##vso[build.updatebuildnumber]$(versionNumber)
+      Write-Host "Tagging build with '$($buildName)'."
+      Write-Host "##vso[build.addbuildtag]$buildName"
+      ##vso[release.addbuildtag]$buildName
+      Write-Host "##vso[build.addbuildtag]$(Build.SourceBranchName)"
+      ##vso[release.addbuildtag]$(Build.SourceBranchName)
+      
+- task: PowerPlatformPublishCustomizations@2
+  displayName: 'Publish Power Platform Customizations'
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(PowerPlatformEnvironmentName)'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+
+- task: PowerPlatformSetSolutionVersion@2
+  enabled: true
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(PowerPlatformEnvironmentName)'
+    SolutionName: '$(PowerPlatformSolutionName)'
+    SolutionVersionNumber: '$(versionNumber)'
+
+- task: PowerPlatformExportSolution@2
+  displayName: 'Export Power Platform Solution as Unmanaged Solution'
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(PowerPlatformEnvironmentName)'
+    SolutionName: '$(PowerPlatformSolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(PowerPlatformSolutionName)Solution_Unmanaged.zip'
+    Managed: false
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+    ExportAutoNumberingSettings: true
+
+- task: PowerPlatformExportSolution@2
+  displayName: 'Export Power Platform Solution as Managed Solution'
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(PowerPlatformEnvironmentName)'
+    SolutionName: '$(PowerPlatformSolutionName)'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(PowerPlatformSolutionName)Solution.zip'
+    Managed: true
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
+    ExportAutoNumberingSettings: true
+
+- powershell: |
+   $env:PATH = $env:PATH + ";" + "$(pacPath)"
+   
+   pac solution create-settings --solution-zip "$(Build.ArtifactStagingDirectory)\\$(PowerPlatformSolutionName)Solution.zip" --settings-file "$(Build.ArtifactStagingDirectory)//settings-test.json"
+  displayName: "Extract Solution Settings, Environment Variables and Connection References"
+ 
+- task: PowerPlatformUnpackSolution@2
+  inputs:
+    SolutionInputFile: '$(Build.ArtifactStagingDirectory)\$(PowerPlatformSolutionName)Solution.zip'
+    SolutionTargetFolder: '$(Build.ArtifactStagingDirectory)\Unpacked'
+    SolutionType: 'Managed'
+
+- task: DeleteFiles@1
+  enabled: true
+  displayName: 'Remove Environment Variable Values'
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)\Unpacked'
+    Contents: '**/environmentvariablevalues.json'
+
+- task: PowerPlatformPackSolution@2
+  displayName: 'Pack Solution without Environment Variable Values'
+  inputs:
+    SolutionSourceFolder: '$(Build.ArtifactStagingDirectory)\Unpacked'
+    SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(PowerPlatformSolutionName)Solution.zip'
+    SolutionType: 'Managed'
+
+- task: CopyFiles@2
+  displayName: 'Copy Solution Settings file'
+  inputs:
+    Contents: '**/*solution-settings.json'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    flattenFolders: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

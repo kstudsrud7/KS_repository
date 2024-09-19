@@ -1,0 +1,50 @@
+# Power Platform Build Pipeline
+# Author: Keaton Studsrud
+# Date: 9/18/2024
+# Last modified: 2022-07-28
+# Description
+# This pipeline builds a Power Platform solution, exports it out and associates to the build.
+# 
+# Usage
+# Define the 3 commented out variables when setting up a pipeline based on this YAML file.
+
+trigger:
+  none
+
+pool:
+  vmImage: windows-2019
+
+
+variables:
+  - name: version.Revision
+    value: $[counter(variables['version.MajorMinor'], 0)]
+  - name: versionNumber
+    value: '$(version.MajorMinor).$(version.Revision)'
+  - name: pacPath
+    value: ''
+  - name: PowerPlatformEnvironmentName
+    value: 'TRIBALDEV' # e.g. Power Platform Development Environment (www.ithink365.co.uk)
+  - name: PowerPlatformSolutionName
+    value: 'TPBase' # e.g. MyApplication
+
+steps:
+- task: PowerPlatformToolInstaller@2
+  inputs:
+    DefaultVersion: true
+
+
+- task: PowerPlatformExportData@2
+  displayName: 'Export Power Platform Data Schema and Data'
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    PowerPlatformSPN: '$(PowerPlatformEnvironmentName)'
+    Environment: '$(BuildTools.EnvironmentUrl)'
+    SchemaFile: '$(Build.SourcesDirectory)\Config\Schema\$(PowerPlatformSolutionName)_Schema.xml'
+    DataFile: '$(Build.ArtifactStagingDirectory)\$(PowerPlatformSolutionName)_Data.zip'
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
