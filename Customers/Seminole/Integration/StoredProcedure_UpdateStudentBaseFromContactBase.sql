@@ -63,7 +63,7 @@ BEGIN
           [EMailAddress1] AS email,
           [ait_MembershipStatus] AS membershipstatus,
           [GenderCode] AS gender,
-          [BirthDate] AS birthdate,
+          DATEADD(day,1, [BirthDate]) AS birthdate,
           [ait_Residency] AS residency,
           [ait_MaidenName] AS maidenname,
           [EMailAddress1] AS emailaddress,
@@ -87,7 +87,11 @@ BEGIN
         sb.ait_MobilePhone = tc.mobilephone,
         sb.ait_Email = tc.emailaddress,
         sb.ait_MemberStatus = tc.membershipstatus,
-        sb.ait_Gender = tc.gender,
+        sb.ait_Gender = CASE 
+                            WHEN tc.gender = '1' THEN 914600000
+                            WHEN tc.gender = '2' THEN 914600001
+                            ELSE NULL  -- Handle cases where gender is not 1 or 2
+                        END,
         sb.ait_DateofBirth = tc.birthdate,
         --sb.ait_Reservation = tc.residency, -- Lookup confirmation needed for this field
         sb.ait_MaidenName = tc.maidenname,
@@ -95,7 +99,9 @@ BEGIN
         sb.ait_Clan = tc.clan,
         sb.ait_SSN = tc.ssn,  -- Updated for ait_SSN mapping
         sb.ait_SSNLast4 = tc.ssnlast4,  -- Updated for ait_SSNLast4 mapping
-        sb.ait_Address1 = tc.address1  -- Updated for ait_Address1 mapping
+        sb.ait_Address1 = tc.address1,  -- Updated for ait_Address1 mapping
+        -- Concatenating first name, middle name, and last name, trimming spaces in between
+        sb.ait_name = LTRIM(RTRIM(CONCAT(tc.firstname, ' ', ISNULL(tc.middlename, ''), ' ', tc.lastname)))
     FROM [Education_MSCRM].[dbo].[ait_studentBase] sb
     INNER JOIN #TempContactBase tc ON sb.ait_MemberID COLLATE SQL_Latin1_General_CP1_CI_AS = tc.memberid COLLATE SQL_Latin1_General_CP1_CI_AS;
 
@@ -107,6 +113,7 @@ BEGIN
     SET LastRunDateTime = @CurrentRunDateTime
     WHERE JobName = 'UpdateStudentBaseFromContactBase';
 END;
+
 
 -- Execute the stored procedure
 EXEC UpdateStudentBaseFromContactBase;
