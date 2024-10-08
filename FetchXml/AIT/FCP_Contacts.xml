@@ -1,0 +1,15 @@
+<fetch>
+  <entity name="annotation">
+    <attribute name="notetext" />
+    <link-entity name="contact" from="contactid" to="objectid" alias="Contact">
+      <attribute name="address1_city" />
+      <attribute name="address1_line1" />
+      <attribute name="address1_postalcode" />
+      <attribute name="address1_stateorprovince" />
+      <attribute name="contactid" />
+      <attribute name="firstname" />
+      <attribute name="lastname" />
+      <attribute name="middlename" />
+    </link-entity>
+  </entity>
+</fetch>
