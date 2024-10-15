@@ -1,0 +1,6 @@
+I'm working on a Power Platform project using Dataverse and want to develop custom JavaScript that runs on a Dynamics 365 CRM Form.
+
+The javascript will utilize with Microsofts Xrm.WebApi (Client API reference). 
+
+Can you help me with the following:
+
