@@ -1,0 +1,24 @@
+<fetch>
+  <entity name="ait_electronicaddress">
+    <attribute name="ait_communicationtype" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_electronicaddressid" />
+    <attribute name="ait_phonenumberoremail" />
+    <attribute name="ait_addresstype" />
+    <attribute name="ait_current" />
+    <attribute name="ait_description" />
+    <attribute name="modifiedby" />
+    <attribute name="modifiedon" />
+    <link-entity name="contact" from="contactid" to="ait_contact" link-type="inner" alias="CNT">
+      <attribute name="firstname" />
+      <attribute name="lastname" />
+      <link-entity name="ait_studentprofile" from="ait_studentprofileid" to="ait_studentprofile" link-type="inner" alias="STUDENT">
+        <attribute name="ait_studentprofileid" />
+        <attribute name="ait_studenttype" />
+        <filter>
+          <condition attribute="ait_studenttype" operator="ne" value="748120002" />
+        </filter>
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>
