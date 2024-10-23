@@ -6,6 +6,10 @@
 
 -- Proceed to Next Steps
 
+
+Education = AS
+Mystic = AS
+
 CREATE TABLE [Education_MSCRM].[dbo].[STOF_JobRunHistory] (
     JobName NVARCHAR(100) PRIMARY KEY,
     LastRunDateTime DATETIME
@@ -89,37 +93,37 @@ BEGIN
     -- Update StudentBase with the data from the temporary table
     UPDATE sb
     SET 
-        sb.ait_FirstName = tc.firstname COLLATE Latin1_General_CI_AI,
-        sb.ait_MiddleName = tc.middlename COLLATE Latin1_General_CI_AI,
-        sb.ait_LastName = tc.lastname COLLATE Latin1_General_CI_AI,
-        sb.ait_Suffix = tc.suffix COLLATE Latin1_General_CI_AI,
-        sb.ait_Nickname = tc.nickname COLLATE Latin1_General_CI_AI,
-        sb.ait_HomePhone = tc.homephone COLLATE Latin1_General_CI_AI,
-        sb.ait_MobilePhone = tc.mobilephone COLLATE Latin1_General_CI_AI,
-        sb.ait_Email = tc.emailaddress COLLATE Latin1_General_CI_AI,
-        sb.ait_MemberStatus = tc.membershipstatus COLLATE Latin1_General_CI_AI,
+        sb.ait_FirstName = tc.firstname COLLATE Latin1_General_CI_AS,
+        sb.ait_MiddleName = tc.middlename COLLATE Latin1_General_CI_AS,
+        sb.ait_LastName = tc.lastname COLLATE Latin1_General_CI_AS,
+        sb.ait_Suffix = tc.suffix COLLATE Latin1_General_CI_AS,
+        sb.ait_Nickname = tc.nickname COLLATE Latin1_General_CI_AS,
+        sb.ait_HomePhone = tc.homephone COLLATE Latin1_General_CI_AS,
+        sb.ait_MobilePhone = tc.mobilephone COLLATE Latin1_General_CI_AS,
+        sb.ait_Email = tc.emailaddress COLLATE Latin1_General_CI_AS,
+        sb.ait_MemberStatus = tc.membershipstatus COLLATE Latin1_General_CI_AS,
         sb.ait_Gender = CASE 
                             WHEN tc.gender = '1' THEN 914600000
                             WHEN tc.gender = '2' THEN 914600001
                             ELSE NULL  -- Handle cases where gender is not 1 or 2
                         END,
         sb.ait_DateofBirth = tc.birthdate,
-        sb.ait_MaidenName = tc.maidenname COLLATE Latin1_General_CI_AI,
-        sb.ait_VendorID = tc.vendorid_1099 COLLATE Latin1_General_CI_AI,
-        sb.ait_Clan = tc.clan COLLATE Latin1_General_CI_AI,
-        sb.ait_SSN = tc.ssn COLLATE Latin1_General_CI_AI,  -- Updated for ait_SSN mapping
-        sb.ait_SSNLast4 = tc.ssnlast4 COLLATE Latin1_General_CI_AI,  -- Updated for ait_SSNLast4 mapping
-        sb.ait_Address1 = tc.address1 COLLATE Latin1_General_CI_AI,  -- Updated for ait_Address1 mapping
+        sb.ait_MaidenName = tc.maidenname COLLATE Latin1_General_CI_AS,
+        sb.ait_VendorID = tc.vendorid_1099 COLLATE Latin1_General_CI_AS,
+        sb.ait_Clan = tc.clan COLLATE Latin1_General_CI_AS,
+        sb.ait_SSN = tc.ssn COLLATE Latin1_General_CI_AS,  -- Updated for ait_SSN mapping
+        sb.ait_SSNLast4 = tc.ssnlast4 COLLATE Latin1_General_CI_AS,  -- Updated for ait_SSNLast4 mapping
+        sb.ait_Address1 = tc.address1 COLLATE Latin1_General_CI_AS,  -- Updated for ait_Address1 mapping
 
         -- Concatenating first name, middle name, and last name, trimming spaces in between
         sb.ait_name = LTRIM(RTRIM(CONCAT(
-            tc.firstname COLLATE Latin1_General_CI_AI, 
+            tc.firstname COLLATE Latin1_General_CI_AS, 
             ' ', 
-            ISNULL(tc.middlename COLLATE Latin1_General_CI_AI, ''), 
+            ISNULL(tc.middlename COLLATE Latin1_General_CI_AS, ''), 
             ' ', 
-            tc.lastname COLLATE Latin1_General_CI_AI,
+            tc.lastname COLLATE Latin1_General_CI_AS,
             CASE 
-                WHEN ISNULL(tc.suffix, '') <> '' THEN ' ' + tc.suffix COLLATE Latin1_General_CI_AI 
+                WHEN ISNULL(tc.suffix, '') <> '' THEN ' ' + tc.suffix COLLATE Latin1_General_CI_AS 
                 ELSE '' 
             END
         ))),
@@ -131,10 +135,10 @@ BEGIN
         [Education_MSCRM].[dbo].[ait_studentBase] sb
     INNER JOIN 
         #TempContactBase tc 
-        ON sb.ait_MemberID COLLATE SQL_Latin1_General_CP1_CI_AI = tc.memberid COLLATE SQL_Latin1_General_CP1_CI_AI
+        ON sb.ait_MemberID COLLATE SQL_Latin1_General_CP1_CI_AS = tc.memberid COLLATE SQL_Latin1_General_CP1_CI_AS
     LEFT JOIN 
         [Education_MSCRM].[dbo].[ait_reservationBase] ar
-        ON ar.ait_name COLLATE SQL_Latin1_General_CP1_CI_AI = tc.residency COLLATE SQL_Latin1_General_CP1_CI_AI;  -- Matching tc.residency string with ait_reservationBase.ait_name
+        ON ar.ait_name COLLATE SQL_Latin1_General_CP1_CI_AS = tc.residency COLLATE SQL_Latin1_General_CP1_CI_AS;  -- Matching tc.residency string with ait_reservationBase.ait_name
 
     -- Drop the temporary table
     DROP TABLE #TempContactBase;
