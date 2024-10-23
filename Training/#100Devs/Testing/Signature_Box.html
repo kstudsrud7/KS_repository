@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Box</title>
+    <style>
+        .signature-box {
+            border: 2px solid #000;
+            width: 100%;
+            max-width: 500px;
+            height: 200px;
+            cursor: crosshair;
+        }
+        #signature-pad {
+            background-color: #f9f9f9;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons button {
+            padding: 10px;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Signature Box</h2>
+
+    <canvas id="signature-pad" class="signature-box"></canvas>
+    
+    <div class="buttons">
+        <button id="clear">Clear</button>
+        <button id="save">Save</button>
+    </div>
+
+    <script>
+        // Get the canvas and its context
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        
+        // Set canvas width and height dynamically based on element dimensions
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        let drawing = false;
+
+        // Start drawing when the user presses down
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('touchstart', startDrawing);
+
+        // Stop drawing when the user lifts the mouse or removes the finger
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseleave', stopDrawing);
+        canvas.addEventListener('touchend', stopDrawing);
+
+        // Draw on the canvas
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('touchmove', draw);
+
+        function startDrawing(event) {
+            drawing = true;
+            ctx.beginPath();
+            ctx.moveTo(getMousePosition(event).x, getMousePosition(event).y);
+        }
+
+        function stopDrawing() {
+            drawing = false;
+        }
+
+        function draw(event) {
+            if (!drawing) return;
+            ctx.lineWidth = 2;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = '#000';
+            ctx.lineTo(getMousePosition(event).x, getMousePosition(event).y);
+            ctx.stroke();
+        }
+
+        function getMousePosition(event) {
+            const rect = canvas.getBoundingClientRect();
+            let x, y;
+
+            if (event.touches && event.touches.length) {
+                x = event.touches[0].clientX - rect.left;
+                y = event.touches[0].clientY - rect.top;
+            } else {
+                x = event.clientX - rect.left;
+                y = event.clientY - rect.top;
+            }
+            return { x, y };
+        }
+
+        // Clear the canvas
+        document.getElementById('clear').addEventListener('click', function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Save the signature as an image
+        document.getElementById('save').addEventListener('click', function() {
+            const dataURL = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.href = dataURL;
+            link.download = 'signature.png';
+            link.click();
+        });
+    </script>
+
+</body>
+</html>
