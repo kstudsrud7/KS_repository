@@ -1,16 +1,16 @@
-CREATE TABLE dbo.JobRunHistory (
+CREATE TABLE [Education_MSCRM].[dbo].[STOF_JobRunHistory] (
     JobName NVARCHAR(100) PRIMARY KEY,
     LastRunDateTime DATETIME
 );
 
 -- Initialize the table with the job name and a default date
-INSERT INTO dbo.JobRunHistory (JobName, LastRunDateTime)
-VALUES ('UpdateStudentBaseFromContactBase', '2099-01-01');
+INSERT INTO [Education_MSCRM].[dbo].[STOF_JobRunHistory] (JobName, LastRunDateTime)
+VALUES ('UpdateStudentBaseFromContactBase', '1999-01-01');
 
 
 -----------------------------------
 
-CREATE PROCEDURE UpdateStudentBaseFromContactBase
+CREATE PROCEDURE STOF_UpdateStudentBaseFromMysticContactBase
 AS
 BEGIN
     DECLARE @LastRunDateTime DATETIME;
@@ -18,8 +18,8 @@ BEGIN
 
     -- Get the last run date/time from the tracking table
     SELECT @LastRunDateTime = LastRunDateTime
-    FROM dbo.JobRunHistory
-    WHERE JobName = 'UpdateStudentBaseFromContactBase';
+    FROM dbo.STOF_JobRunHistory
+    WHERE JobName = 'STOF_UpdateStudentBaseFromContactBase';
 
     -- Get the current date/time
     SET @CurrentRunDateTime = GETDATE();
@@ -63,7 +63,7 @@ BEGIN
           [EMailAddress1] AS email,
           [ait_MembershipStatus] AS membershipstatus,
           [GenderCode] AS gender,
-          DATEADD(day,1, [BirthDate]) AS birthdate,
+          DATEADD(day, 1, [BirthDate]) AS birthdate,
           [ait_Residency] AS residency,
           [ait_MaidenName] AS maidenname,
           [EMailAddress1] AS emailaddress,
@@ -72,48 +72,65 @@ BEGIN
           [ait_SSN] AS ssn,
           RIGHT([ait_SSN], 4) AS ssnlast4,  -- Extracting last 4 digits for ait_SSNLast4
           [ait_Address1] AS address1 -- Assuming Address1_Line1 holds the address data
-      FROM [SeminoleTribeofFlorida_MSCRM].[dbo].[ContactBase]
+    FROM [SeminoleTribeofFlorida_MSCRM].[dbo].[ContactBase]
     WHERE [ModifiedOn] >= @LastRunDateTime;
 
     -- Update StudentBase with the data from the temporary table
     UPDATE sb
     SET 
-        sb.ait_FirstName = tc.firstname,
-        sb.ait_MiddleName = tc.middlename,
-        sb.ait_LastName = tc.lastname,
-        sb.ait_Suffix = tc.suffix,
-        sb.ait_Nickname = tc.nickname,
-        sb.ait_HomePhone = tc.homephone,
-        sb.ait_MobilePhone = tc.mobilephone,
-        sb.ait_Email = tc.emailaddress,
-        sb.ait_MemberStatus = tc.membershipstatus,
+        sb.ait_FirstName = tc.firstname COLLATE Latin1_General_CI_AI,
+        sb.ait_MiddleName = tc.middlename COLLATE Latin1_General_CI_AI,
+        sb.ait_LastName = tc.lastname COLLATE Latin1_General_CI_AI,
+        sb.ait_Suffix = tc.suffix COLLATE Latin1_General_CI_AI,
+        sb.ait_Nickname = tc.nickname COLLATE Latin1_General_CI_AI,
+        sb.ait_HomePhone = tc.homephone COLLATE Latin1_General_CI_AI,
+        sb.ait_MobilePhone = tc.mobilephone COLLATE Latin1_General_CI_AI,
+        sb.ait_Email = tc.emailaddress COLLATE Latin1_General_CI_AI,
+        sb.ait_MemberStatus = tc.membershipstatus COLLATE Latin1_General_CI_AI,
         sb.ait_Gender = CASE 
                             WHEN tc.gender = '1' THEN 914600000
                             WHEN tc.gender = '2' THEN 914600001
                             ELSE NULL  -- Handle cases where gender is not 1 or 2
                         END,
         sb.ait_DateofBirth = tc.birthdate,
-        --sb.ait_Reservation = tc.residency, -- Lookup confirmation needed for this field
-        sb.ait_MaidenName = tc.maidenname,
-        sb.ait_VendorID = tc.vendorid_1099,
-        sb.ait_Clan = tc.clan,
-        sb.ait_SSN = tc.ssn,  -- Updated for ait_SSN mapping
-        sb.ait_SSNLast4 = tc.ssnlast4,  -- Updated for ait_SSNLast4 mapping
-        sb.ait_Address1 = tc.address1,  -- Updated for ait_Address1 mapping
+        sb.ait_MaidenName = tc.maidenname COLLATE Latin1_General_CI_AI,
+        sb.ait_VendorID = tc.vendorid_1099 COLLATE Latin1_General_CI_AI,
+        sb.ait_Clan = tc.clan COLLATE Latin1_General_CI_AI,
+        sb.ait_SSN = tc.ssn COLLATE Latin1_General_CI_AI,  -- Updated for ait_SSN mapping
+        sb.ait_SSNLast4 = tc.ssnlast4 COLLATE Latin1_General_CI_AI,  -- Updated for ait_SSNLast4 mapping
+        sb.ait_Address1 = tc.address1 COLLATE Latin1_General_CI_AI,  -- Updated for ait_Address1 mapping
+
         -- Concatenating first name, middle name, and last name, trimming spaces in between
-        sb.ait_name = LTRIM(RTRIM(CONCAT(tc.firstname, ' ', ISNULL(tc.middlename, ''), ' ', tc.lastname)))
+        sb.ait_name = LTRIM(RTRIM(CONCAT(
+    tc.firstname COLLATE Latin1_General_CI_AI, 
+    ' ', 
+    ISNULL(tc.middlename COLLATE Latin1_General_CI_AI, ''), 
+    ' ', 
+    tc.lastname COLLATE Latin1_General_CI_AI,
+    CASE 
+        WHEN ISNULL(tc.suffix, '') <> '' THEN ' ' + tc.suffix COLLATE Latin1_General_CI_AI 
+        ELSE '' 
+    END
+)))
+
+
     FROM [Education_MSCRM].[dbo].[ait_studentBase] sb
-    INNER JOIN #TempContactBase tc ON sb.ait_MemberID COLLATE SQL_Latin1_General_CP1_CI_AS = tc.memberid COLLATE SQL_Latin1_General_CP1_CI_AS;
+    INNER JOIN #TempContactBase tc ON sb.ait_MemberID COLLATE Latin1_General_CI_AI = tc.memberid COLLATE Latin1_General_CI_AI;
 
     -- Drop the temporary table
     DROP TABLE #TempContactBase;
 
     -- Update the tracking table with the current run date/time
-    UPDATE dbo.JobRunHistory
+    UPDATE [Education_MSCRM].[dbo].[STOF_JobRunHistory]
     SET LastRunDateTime = @CurrentRunDateTime
-    WHERE JobName = 'UpdateStudentBaseFromContactBase';
+    WHERE JobName = 'STOF_UpdateStudentBaseFromContactBase';
 END;
 
 
 -- Execute the stored procedure
-EXEC UpdateStudentBaseFromContactBase;
+EXEC STOF_UpdateStudentBaseFromMysticContactBase;
+
+
+--- Review Collation and Data Type Mismatches between STOF and Education_MSCRM Databases
+--Check service see if SQL Server Agent is running
+--Start, search, 'SQL Server Agent'
