@@ -1,0 +1,18 @@
+adx_accountrelationship: 
+adx_append: true
+adx_appendto: true
+adx_childTablePermissions: []
+adx_contactrelationship: 
+adx_copy: undefined
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: account
+adx_entityname: Active Accounts
+adx_entitypermission_webrole:
+- a7b26a60-c922-46e0-ad61-d0b8823855b7
+adx_entitypermissionid: 8bd12118-96ce-40a4-968b-29f0e1c1c770
+adx_parententitypermission: 
+adx_parentrelationship: 
+adx_read: true
+adx_scope: 756150000
+adx_write: true

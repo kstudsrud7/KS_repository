@@ -1,0 +1,18 @@
+adx_accountrelationship: 
+adx_append: false
+adx_appendto: false
+adx_childTablePermissions: []
+adx_contactrelationship: 
+adx_copy: undefined
+adx_create: false
+adx_delete: false
+adx_entitylogicalname: recurringappointmentmaster
+adx_entityname: All Recurring Appointments
+adx_entitypermission_webrole:
+- a17a6a68-8b0d-4e1a-abe5-6c59bb3235e1
+adx_entitypermissionid: 39e15297-95c8-4e7b-ab1f-311e8f7c8593
+adx_parententitypermission: 
+adx_parentrelationship: 
+adx_read: true
+adx_scope: 756150000
+adx_write: false
