@@ -1,0 +1,60 @@
+{% block main %}
+
+{% assign AccountDetails_marker = sitemarkers["AccountDetails"] %}
+{% assign AccountContactDetails_marker = sitemarkers["AccountContactDetails"] %}
+
+{% fetchxml accounts %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" >
+  <entity name="account">
+    <attribute name="name" />
+    <attribute name="address1_city" />
+    <order attribute="name" descending="false" />
+    <attribute name="primarycontactid" />
+    <attribute name="telephone1" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0" />
+    </filter>
+    <link-entity alias="accountprimarycontactidcontactcontactid" name="contact" from="contactid" to="primarycontactid" link-type="outer" visible="false">
+      <attribute name="emailaddress1" />
+      <attribute name="fullname" />
+    </link-entity>
+    <attribute name="accountid" />
+  </entity>
+</fetch>
+{% endfetchxml %} 
+{% if accounts.results.total_record_count &gt; 0 %}
+
+<div class="container"><b>Total Records: {{ accounts.results.entities.size }}</b></div>
+
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-primary"
+  >
+    <thead>
+      <tr>
+      <th scope="col">{{ snippets["Accounts/Gridheader/Name"] }}</th>
+      <th scope="col">{{ snippets["Accounts/Gridheader/Telephone"] }}</th>
+      <th scope="col">{{ snippets["Accounts/Gridheader/Contact"] }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for account in accounts.results.entities %}
+      <tr>
+        <td>
+          <a href="{{ AccountDetails_marker.url }}?id={{ account.id }}">{{ account.name }}</a>
+        <td>{{ account.telephone1 }}</td>
+        <td>
+          {% if account.primarycontactid %}
+          <a href="{{ AccountContactDetails_marker.url }}?id={{ account.primarycontactid.id }}">{{ account.primarycontactid.name }}</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+{% endblock %}
+

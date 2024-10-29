@@ -16,6 +16,10 @@ adx_contentsnippet:
   DisplayName: Search/NoResults
   CheckSum: 8997e123b63ba557c5620bff5711b2f78088d965383ac5770d5b87908956696b
   IsDeleted: false
+- RecordId: 61a7ba9f-fc95-ef11-8a69-00224821ea2f
+  DisplayName: Accounts/Gridheader/Telephone
+  CheckSum: b4cd48cc4f31e7570bfc0b7c5d430c04a16db2f54c2fb7617096e0a8acf42fed
+  IsDeleted: false
 - RecordId: 6ee6c896-ec9b-4a58-9d7c-0be196e9023e
   DisplayName: Header/Toggle Navigation
   CheckSum: 82f5c4be43dd484e68a41fbb26d88a0f6a3aa79aa53a05256d4eb9459755b6c1
@@ -32,9 +36,29 @@ adx_contentsnippet:
   DisplayName: Search/ResultsTitle
   CheckSum: ca6c9ddea359ede64bb1a5012745c3e28620816f61b656858c58aaa24aada3d1
   IsDeleted: false
+- RecordId: 9749b06a-fc95-ef11-8a69-00224821ea2f
+  DisplayName: Accounts/Gridheader/Name
+  CheckSum: 9db04be4c5aa4a0378aa4688ace28a761e24c7b151cb39c560f7bf797447be9b
+  IsDeleted: false
+- RecordId: a4ff36b0-f195-ef11-8a69-00224821ea2f
+  DisplayName: RecurringAppointments/GridHeader/Subject
+  CheckSum: 11b45ba12abe1cc46ea2ef8f4b0053d2f962156487978fc4ef54d9cd2ca0f058
+  IsDeleted: true
 - RecordId: b888106e-eea7-4934-b863-e2b3a76b204f
   DisplayName: Search/Title
   CheckSum: b67e66413b8c84140e2e1bf26ef0e0c1da32145fedbfcc5e388fdc07d451849b
+  IsDeleted: false
+- RecordId: c06130d5-f195-ef11-8a69-00224821ea2f
+  DisplayName: RecurringAppointments/GridHeader/PriorityCode
+  CheckSum: 549b76615c92393c84fc68a980712d7588fff62b78b090072a68c0eed96f5946
+  IsDeleted: true
+- RecordId: cd88fec9-f195-ef11-8a69-00224821ea2f
+  DisplayName: RecurringAppointments/GridHeader/ScheduledStart
+  CheckSum: f2e056f57a6079093710cbe55e32004d8050379462f705fbaae300fb20ceb5ab
+  IsDeleted: true
+- RecordId: dca82db0-fc95-ef11-8a69-00224821ea2f
+  DisplayName: Accounts/Gridheader/Contact
+  CheckSum: a6956ac17275e0256f7d601f46e16d8e7b89868f7b70d4b8d72c96c4fe2a5489
   IsDeleted: false
 - RecordId: e3d8988c-fd56-fbc6-64a3-69230f90cf6e
   DisplayName: Logo alt text
@@ -49,9 +73,17 @@ adx_contentsnippet:
   CheckSum: c159ac0da080542a857809520eaba3d53b1dca80f32c8e46745f4418999dab76
   IsDeleted: false
 adx_entityform:
+- RecordId: 2b7b3e44-f995-ef11-8a69-00224821ea2f
+  DisplayName: Account - View - Basic Form
+  CheckSum: 6c8aa78d5cc29c09d24cdc5b00df6eb605e44ab034503fe68f1d40185a75ccd5
+  IsDeleted: false
 - RecordId: 2e5459cc-662e-44b9-b238-af7d8599ad7b
-  DisplayName: Contact - Create Form
-  CheckSum: f554ad549ba83e66a535619166df6cf2dd7a37743dda2f2a8d1f5abd7884bae3
+  DisplayName: Contact - View Form
+  CheckSum: 972f9c82a3d96eb952dfec4472c9f38088b6b2fe7f6a5c3ee100885f72b177cf
+  IsDeleted: false
+- RecordId: 4669ad30-fa95-ef11-8a69-00224821ea2f
+  DisplayName: Contact - View Details
+  CheckSum: 63f649be01b17107dc38ff8c335a6ddadcdc7abd27d403c8f00131618ff2953c
   IsDeleted: false
 - RecordId: db283b1c-c25f-4a9f-8e55-5278982cae24
   DisplayName: Account - Edit - Basic Form
@@ -64,7 +96,7 @@ adx_entitylist:
   IsDeleted: false
 - RecordId: e429de91-7569-4b2c-9ccb-0f7e4a78752c
   DisplayName: Active Accounts
-  CheckSum: 59491e4b8736a18cb852d885949af5d63326928522e5278cae6c0e8c4d367648
+  CheckSum: a084fafeac82ae7a5bc78c9ac35312c6a43daf6cf5643e84b71923a273f79f1d
   IsDeleted: false
 adx_entitypermission:
 - RecordId: 39e15297-95c8-4e7b-ab1f-311e8f7c8593
@@ -77,7 +109,7 @@ adx_entitypermission:
   IsDeleted: false
 - RecordId: 8bd12118-96ce-40a4-968b-29f0e1c1c770
   DisplayName: Active Accounts
-  CheckSum: cc5eb7b1a76d011a16852aecb121ea8ee8a9e1df5865e4114d9da8ec104be246
+  CheckSum: d8adbc4239af8de0619b7e01c025e2d0101b22df3c86ad4df4092b15e16f5351
   IsDeleted: false
 - RecordId: d25bc7e2-5295-ef11-8a69-00224821ea2f
   DisplayName: Activity Pointer
@@ -136,9 +168,17 @@ adx_sitemarker:
   DisplayName: Page Not Found
   CheckSum: 545bd41db26595222231efa126929139ecf438c317110b73bf7d61745e12a011
   IsDeleted: false
+- RecordId: 64aeb5af-fa95-ef11-8a69-00224821ea2f
+  DisplayName: AccountContactDetails
+  CheckSum: 03b59672f52ea24f6ff93fe9b7f0fe131ef21d9e9a734a3dd8d1a224195df908
+  IsDeleted: false
 - RecordId: 68bd6ba7-ab69-4705-a273-48761721dcc5
   DisplayName: Search
   CheckSum: 016ed44db85e3dd70fba2a6806a8deb46d9d3199e2a4baf55486408f5dd8ec83
+  IsDeleted: false
+- RecordId: 781a2678-fb95-ef11-8a69-00224821ea2f
+  DisplayName: AccountDetails
+  CheckSum: d9a08dc0b686c670f3e273fc5834515bd130b254330790b7a5ac67eb1218c18a
   IsDeleted: false
 - RecordId: 7b3132d7-e6ac-40ea-98e5-bf77588d5049
   DisplayName: Access Denied
@@ -368,7 +408,7 @@ adx_webfile:
   IsDeleted: false
 - RecordId: 64437850-3844-452a-85e6-f59dd050cd63
   DisplayName: Stoke_Custom_CSS.css
-  CheckSum: 9158a49f7c9ce07a268ca73a4cbbff1e7c358b2052de0277f22c3b3e4fbd09a0
+  CheckSum: d6b5cac730e9318329a9efa73bb080fd0f9b72812d4c2c09a738c78f21563257
   IsDeleted: false
 - RecordId: 65f82b0f-4063-4e96-9ac1-d9c1a81c3bd0
   DisplayName: theme.css
@@ -379,6 +419,10 @@ adx_webfile:
   CheckSum: e3e13f6b245864c5ada6fb8970ff76dd1f9a066af67d4ca91d1e8e3cdfc3a5bf
   IsDeleted: false
 adx_weblink:
+- RecordId: 0690b619-9b6a-0918-d084-10c06b9dbafc
+  DisplayName: Accounts
+  CheckSum: b0bc0c8e4a7159ce5625448f3fe591b618da5d27a9334afa744082d929fcb854
+  IsDeleted: false
 - RecordId: 34b39ece-1462-935f-c578-b4844c562d33
   DisplayName: Add Contact
   CheckSum: 88d9caab9575589012e58615e17dda5623293bbaa7baf47fb239c9fc7da79438
@@ -392,8 +436,8 @@ adx_weblink:
   CheckSum: 4fb7902aa40ec1ce5c71648e1e0f558e4ca7ceaa15c151704f1137c08d674827
   IsDeleted: false
 - RecordId: 9e646997-4fab-d7d1-37ab-853574919932
-  DisplayName: Landing Page
-  CheckSum: 6163ee4c92a6b8b3daba2d97c35f061a494df2ecb52d7fb84d39cdc9c3f5887d
+  DisplayName: Landing Page-deleted
+  CheckSum: be94f27dadd855b77475cd065d6a6627d6200627005f4df6fb235c0ad90723b7
   IsDeleted: false
 - RecordId: bac5362f-2d1f-2f35-4c7d-7c89535022ea
   DisplayName: Account-Edit-Webpage
@@ -413,29 +457,37 @@ adx_webpage:
   DisplayName: Page Not Found
   CheckSum: 62f04c9cdf56846ac7944b877411d8053742ae03b98a81a43c5fc73f71946ed0
   IsDeleted: false
+- RecordId: 093c8a86-fa95-ef11-8a69-00224821ea2f
+  DisplayName: Account-Contact-Details
+  CheckSum: 1ae0935898807e5103cba7f4020a22fe5157e260f5aa20aec3dfd5e8a1ff4a6a
+  IsDeleted: false
+- RecordId: 0a3c8a86-fa95-ef11-8a69-00224821ea2f
+  DisplayName: Contact Details
+  CheckSum: 962f309c9dd7026d17814060b1eec46632fe26ac2f165c5d8ce6ed65fa8ef70c
+  IsDeleted: false
 - RecordId: 2e59ee47-b2c2-7a20-d349-f8583bf44dd0
   DisplayName: Add Contact
   CheckSum: 9496901c02db3eb70b8aa12b03b136a0fcf8f651b7bd0300c64300bdce2b4fac
   IsDeleted: false
 - RecordId: 2eb37995-b6a0-9821-339c-46b835e4a52f
-  DisplayName: Account-Edit-Webpage
-  CheckSum: 56addc12c8c534348310ed16ba07280da7448d05ce5e0216c9d4ca0ac2772f1d
+  DisplayName: Account-Details
+  CheckSum: dee9638d1cea606735b7fe9d5fb875e1c5d34eab6593aaf47ccfbc1e3d020aa8
   IsDeleted: false
 - RecordId: 367c600e-2842-4987-89f2-0320366c8fc7
   DisplayName: Search
   CheckSum: d9432edbfff778013cd956c28bca49530e2025956e26676558903a9b8559be89
   IsDeleted: false
 - RecordId: 4305e0da-ea8b-7911-1d7b-d1bfa5d3fb16
-  DisplayName: Landing Page
-  CheckSum: 3ed04786e0f7872a451edf5afb5c20f767df880738d4a6c811a4cf2f4a580c70
+  DisplayName: Landing Page-deleted
+  CheckSum: 63087dc95770bbcdcfab053ec4f187d9926c7e6267a71dea61dd12e2d9df616a
   IsDeleted: false
 - RecordId: 45f52d72-93be-4aa6-81c1-41dfd5b19c72
   DisplayName: Profile
   CheckSum: 39fda386d368fb2cfb8d8ef94054fec4dd8c37024cdf68fd8d33d595a3773e84
   IsDeleted: false
 - RecordId: 5e229598-963d-3ab5-2edc-95f4e0b26d81
-  DisplayName: Landing Page
-  CheckSum: d2e1b7a141035b7f2c8b0ffba702dd64c942052788f42566bf09b6fa1cc0d6c4
+  DisplayName: Landing Page-deleted
+  CheckSum: 4c7178078f8f4cd7a0b13bc53fc06ca733aac62cd6ad7525d75435d05d9ad395
   IsDeleted: false
 - RecordId: 702353ef-8b0f-4c43-8153-524b736803da
   DisplayName: Page Not Found
@@ -445,9 +497,17 @@ adx_webpage:
   DisplayName: Search
   CheckSum: 66f15429ca22e4c21a301141ed1f254d75b09ddb2d04e08f45abff876d0dbdb2
   IsDeleted: false
+- RecordId: 86e4e5e3-bc8e-ee87-c6a7-bce2c9abc198
+  DisplayName: Accounts
+  CheckSum: 68dd13e4359b9ff668cc3ed57678dbe23b5be4b94fb5faf0fa283272b76a33b0
+  IsDeleted: false
 - RecordId: a975416d-aaf6-4a34-9162-2d6fc8a47975
   DisplayName: Access Denied
   CheckSum: 345cc4b8fc229ac9c7dcdc479f099bfa18e0eb1057758db3dc7c05129ac2b0be
+  IsDeleted: false
+- RecordId: b51180fd-116a-e3c0-3bae-4c343540d860
+  DisplayName: Accounts
+  CheckSum: 9a9085743ac715ec6012410898f51658b5d27f1d0c1556ea0638efdfacbda463
   IsDeleted: false
 - RecordId: b5dd1325-a75d-4125-8867-6488dddb100d
   DisplayName: Access Denied
@@ -455,11 +515,11 @@ adx_webpage:
   IsDeleted: false
 - RecordId: bf0e02ed-29a8-9364-d8bb-346a8591a19e
   DisplayName: Account-Edit-Webpage
-  CheckSum: b984ddd337d8d9a6e7093a77e9fd63aa73bdcbfcd60c57e9d2ec6442d02dfdb2
+  CheckSum: bddb6f9bd9cca3fd493567a98e537babe95eeeb0e5c19b980438ed1f3d28e5f5
   IsDeleted: false
 - RecordId: c0a485ab-5802-4ec3-817e-b175f35686de
   DisplayName: Home
-  CheckSum: ee5fbcf4cd0a34e2344afdbeb881f60759cb4d3e6775a736ca4ec228e0d7defe
+  CheckSum: 49bc287668220deda1a0b03934053d3116acb7bff6a95eafddec1a3718bc4311
   IsDeleted: false
 - RecordId: c92a81f6-51d4-425c-9823-0454009ff394
   DisplayName: Home
@@ -533,6 +593,10 @@ adx_webtemplate:
   DisplayName: Default studio template
   CheckSum: 3c4cb610537bd5f82361453b385c1e80d065cfef638e008a78225f78c3d3f3ee
   IsDeleted: false
+- RecordId: 593baab1-f495-ef11-8a69-00224821ea2f
+  DisplayName: RecurringAppointments
+  CheckSum: 6b0f956e092120a041edb1b37d38481c3c145d2414b40698ec0bcada1af24431
+  IsDeleted: true
 - RecordId: 6c874214-87e0-40f8-8155-775db6b360cd
   DisplayName: Power Virtual Agents
   CheckSum: 6b85d8d5fd1714ad202b81ba944882a2079a367ae88abdc1b82eff160c6760da
@@ -569,6 +633,10 @@ adx_webtemplate:
   DisplayName: Page Copy
   CheckSum: db0eece64b2dbfc59af51b23fe8b05282a92e041aa1047c39cd963667b1e68ce
   IsDeleted: false
+- RecordId: deb733c0-f995-ef11-8a69-00224821ea2f
+  DisplayName: Accounts
+  CheckSum: ee6b370380f4fc7aa5d2ee1d0fd0300c3a0e75d430fae40d41439b7fb3344a5f
+  IsDeleted: false
 - RecordId: e2cc1bc9-4b98-4d3e-934f-5c975fad758d
   DisplayName: Layout 2 Column Wide Left
   CheckSum: 77047aa54f22a0a38be6405214f9985e3d64201407e9ce1649e90f840c95a519
@@ -581,6 +649,10 @@ annotation:
 - RecordId: 488e3307-6695-ef11-8a69-7c1e520c5273
   DisplayName: Stoke_Custom_CSS.css
   CheckSum: 8aa9d32c38fe003280740b2229ded44cd1505f5ae92b7ced153e8097933b5686
+  IsDeleted: true
+- RecordId: d81dacf6-f395-ef11-8a69-00224821ea2f
+  DisplayName: Stoke_Custom_CSS.css
+  CheckSum: 1f081e07c41b6972ae88eae50ec3061fde46b848ac86cf6a21732fa90ff7fba5
   IsDeleted: false
 - RecordId: e0958996-da87-ef11-ac20-6045bddbee3e
   DisplayName: Cat-PC.png

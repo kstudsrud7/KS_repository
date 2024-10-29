@@ -12,10 +12,10 @@ adx_geolocation_maptype: 756150000
 adx_hideformonsuccess: true
 adx_lcid: 1033
 adx_maximumnooffiles: 5
-adx_mode: 100000001
-adx_name: Contact - Create Form
+adx_mode: 100000002
+adx_name: Contact - View Form
 adx_onsuccess: 756150000
-adx_recordidquerystringparametername: accountid
+adx_recordidquerystringparametername: id
 adx_redirecturl: 
 adx_redirectwebpage: 
 adx_showcaptchaforauthenticatedusers: false

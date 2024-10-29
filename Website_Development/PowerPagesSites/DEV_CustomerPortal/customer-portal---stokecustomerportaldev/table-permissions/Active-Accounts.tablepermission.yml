@@ -9,8 +9,10 @@ adx_delete: false
 adx_entitylogicalname: account
 adx_entityname: Active Accounts
 adx_entitypermission_webrole:
+- a17a6a68-8b0d-4e1a-abe5-6c59bb3235e1
 - a7b26a60-c922-46e0-ad61-d0b8823855b7
 adx_entitypermissionid: 8bd12118-96ce-40a4-968b-29f0e1c1c770
+adx_filecontent: 
 adx_parententitypermission: 
 adx_parentrelationship: 
 adx_read: true

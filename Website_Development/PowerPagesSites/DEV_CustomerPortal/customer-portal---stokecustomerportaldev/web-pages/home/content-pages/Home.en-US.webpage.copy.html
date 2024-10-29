@@ -1,33 +1,5 @@
-{% fetchxml recurringappointments %}
-<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
-  <entity name="activitypointer">
-    <attribute name="subject">
-    <attribute name="scheduledstart">
-    <attribute name="prioritycode">
-  </attribute></attribute></attribute></entity>
-</fetch>
-{% endfetchxml %}
-
-<div class="container"><b>Total Records: {{ recurringappointments.results.entities.size }}</b></div>
-
-<div class="container">
-  <div class="table-responsive">
-    
-      {% for result in recurringappointments.results.entities %}
-      
-      {% endfor %}
-    <table class="table table-dark table-striped table-hover table-bordered table-primary align-top">
-      <tbody><tr>
-        <th>Subject</th>
-        <th>Scheduled Start</th>
-        <th>Priority Code</th>
-      </tr><tr>
-        <td>{{ result.subject }}</td>
-        <td>{{ result.scheduledstart }}</td>
-        <td>{{ result.prioritycode }}</td>
-      </tr></tbody></table>
-  </div>
-</div>
 <div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;">
-  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;"><div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"></div></div>
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px;"><p>Header</p></div>
+  </div>
 </div>

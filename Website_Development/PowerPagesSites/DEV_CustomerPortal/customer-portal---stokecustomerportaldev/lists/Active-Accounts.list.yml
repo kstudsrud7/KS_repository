@@ -7,9 +7,10 @@ adx_createRecordTargetType: 0
 adx_createRecordTargetValue: ''
 adx_deleteRecordDisplayLabel: ''
 adx_downloadRecordsDisplayLabel: ''
-adx_editRecordDisplayLabel: ''
+adx_editRecordDisplayLabel: Edit
 adx_editRecordTargetType: 0
 adx_editRecordTargetValue: db283b1c-c25f-4a9f-8e55-5278982cae24
+adx_emptylisttext: ''
 adx_emptyListTextMessage: ''
 adx_entitylistid: e429de91-7569-4b2c-9ccb-0f7e4a78752c
 adx_entityname: account
@@ -34,6 +35,7 @@ adx_map_zoom: 12
 adx_mapinfoboxoffsetx: 25
 adx_name: Active Accounts
 adx_pagesize: 10
+adx_searchplaceholdertext: ''
 adx_settings: >-
   {
     "Type": "CrmEntityFormView-GridMetadata",
@@ -43,21 +45,21 @@ adx_settings: >-
     "ItemActions": [
       {
         "Type": "CrmEntityFormView-DetailsAction",
-        "RecordIdQueryStringParameterName": "id",
-        "TargetType": 1,
-        "OnComplete": 0,
-        "RedirectWebpageId": "2eb37995-b6a0-9821-339c-46b835e4a52f",
-        "RedirectUrl": "",
-        "EntityFormId": "",
-        "ShowModal": 0,
-        "Confirmation": [
+        "SuccessMessage": [
           {
             "Type": "LanguageResources",
             "LCID": 1033,
             "Value": ""
           }
         ],
-        "SuccessMessage": [
+        "RecordIdQueryStringParameterName": "id",
+        "TargetType": 0,
+        "OnComplete": 0,
+        "RedirectWebpageId": "",
+        "RedirectUrl": "",
+        "EntityFormId": "2b7b3e44-f995-ef11-8a69-00224821ea2f",
+        "ShowModal": 0,
+        "Confirmation": [
           {
             "Type": "LanguageResources",
             "LCID": 1033,
@@ -68,7 +70,7 @@ adx_settings: >-
           {
             "Type": "LanguageResources",
             "LCID": 1033,
-            "Value": "View-Webpage"
+            "Value": "View Details"
           }
         ],
         "ButtonTooltip": [
@@ -90,7 +92,7 @@ adx_settings: >-
             "Value": "The record has been saved."
           }
         ],
-        "RecordIdQueryStringParameterName": "id",
+        "RecordIdQueryStringParameterName": "accountid",
         "TargetType": 0,
         "OnComplete": 0,
         "RedirectWebpageId": "",
@@ -108,7 +110,7 @@ adx_settings: >-
           {
             "Type": "LanguageResources",
             "LCID": 1033,
-            "Value": ""
+            "Value": "Edit"
           }
         ],
         "ButtonTooltip": [
@@ -119,46 +121,6 @@ adx_settings: >-
           }
         ],
         "ActionIndex": 1,
-        "FilterCriteria": ""
-      },
-      {
-        "Type": "CrmEntityFormView-EditAction",
-        "SuccessMessage": [
-          {
-            "Type": "LanguageResources",
-            "LCID": 1033,
-            "Value": "The record has been saved."
-          }
-        ],
-        "RecordIdQueryStringParameterName": "accountid",
-        "TargetType": 1,
-        "OnComplete": 0,
-        "RedirectWebpageId": "2e59ee47-b2c2-7a20-d349-f8583bf44dd0",
-        "RedirectUrl": "",
-        "EntityFormId": "",
-        "ShowModal": 0,
-        "Confirmation": [
-          {
-            "Type": "LanguageResources",
-            "LCID": 1033,
-            "Value": ""
-          }
-        ],
-        "ButtonLabel": [
-          {
-            "Type": "LanguageResources",
-            "LCID": 1033,
-            "Value": "Create Contact"
-          }
-        ],
-        "ButtonTooltip": [
-          {
-            "Type": "LanguageResources",
-            "LCID": 1033,
-            "Value": ""
-          }
-        ],
-        "ActionIndex": 2,
         "FilterCriteria": ""
       }
     ],
@@ -600,16 +562,16 @@ adx_settingsDetails:
   editRecordRedirectUrl: *o0
   editRecordTargetType: *o1
   editRecordWebpageId: *o0
-  viewRecordEntityFormId: *o0
+  viewRecordEntityFormId: []
   viewRecordRedirectUrl: *o0
-  viewRecordTargetType: []
-  viewRecordWebpageId: []
+  viewRecordTargetType: *o1
+  viewRecordWebpageId: *o0
 adx_successDeleteRecordMessage: Deleted successfully
 adx_successSaveRecordMessage: Saved successfully
 adx_view: 00000000-0000-0000-00aa-000010001002
-adx_viewRecordDisplayLabel: View-Webpage
-adx_viewRecordTargetType: 1
-adx_viewRecordTargetValue: 2eb37995-b6a0-9821-339c-46b835e4a52f
+adx_viewRecordDisplayLabel: View Details
+adx_viewRecordTargetType: 0
+adx_viewRecordTargetValue: 2b7b3e44-f995-ef11-8a69-00224821ea2f
 adx_views: >-
   {
     "Type": "ViewMetadata",
