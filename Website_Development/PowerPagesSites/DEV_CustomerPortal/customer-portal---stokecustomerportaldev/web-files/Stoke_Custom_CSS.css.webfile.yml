@@ -5,11 +5,11 @@ adx_excludefromsearch: false
 adx_hiddenfromsitemap: false
 adx_name: Stoke_Custom_CSS.css
 adx_parentpageid: c92a81f6-51d4-425c-9823-0454009ff394
-adx_partialurl: Stoke_Custom_CSS
+adx_partialurl: StokeCustomCSS.css
 adx_publishingstateid: 0e226476-4266-4937-9cb3-e94cb502e02d
 adx_setHighestDisplayOrder: false
-adx_summary: ""
-adx_title: ""
+adx_summary: ''
+adx_title: ''
 adx_webfileid: 64437850-3844-452a-85e6-f59dd050cd63
 annotationid: 488e3307-6695-ef11-8a69-7c1e520c5273
 filename: Stoke_Custom_CSS.css
