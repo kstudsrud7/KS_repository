@@ -1,0 +1,39 @@
+header {
+    border: 1px solid black;
+    height: 100px;
+}
+section{
+    border: 1px solid black;
+    height: 300px;
+}
+.main{
+    height: 200px;
+}
+.main2{
+    height: 400px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.col-2{
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box  ;
+    padding: 10px;
+    height: auto;
+}
+.col-3{
+    width: 33.33%;
+    border: 1px solid black;
+    box-sizing: border-box  ;
+    padding: 10px;
+    height: auto;
+
+}

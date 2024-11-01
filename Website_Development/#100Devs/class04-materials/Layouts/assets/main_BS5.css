@@ -1,0 +1,28 @@
+header {
+    border: 1px solid black;
+    height: 100px;
+}
+section{
+    border: 1px solid black;
+    height: 300px;
+}
+.container-fluid{
+    border: 1px solid black;
+    height: 300px;
+}
+.row{
+    border: 1px solid black;
+    height: 100%;
+}
+.col{
+    border: 1px solid black;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+footer{
+    border: 1px solid black;
+    height: 100px;
+}
+

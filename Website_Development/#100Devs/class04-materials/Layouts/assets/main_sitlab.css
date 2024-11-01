@@ -1,0 +1,15 @@
+body{
+    border: 5px solid green;
+    margin: 30px;
+    background: bs-primary-rgb;
+    height: 100%;
+    padding: 30px;
+}
+
+/* 
+Custome Image Properties
+*/
+.custom-img {
+    height: 250px;
+    float:right;
+  }

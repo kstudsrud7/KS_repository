@@ -1,0 +1,23 @@
+header{
+    border: 1px solid black;
+    height: 100px;
+}
+
+
+.row{
+    border: 1px solid black;
+    height: 100px;
+}
+.col-2{
+    border: 1px solid black;
+    height: 100px;
+}
+.col-5{
+    border: 1px solid black;
+    height: 100px;
+}
+.col-3{
+    border: 1px solid black;
+    height: 100px;
+}
+
