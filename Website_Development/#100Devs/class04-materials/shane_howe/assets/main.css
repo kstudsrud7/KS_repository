@@ -2,19 +2,6 @@
 body {
   font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 }
-.container:before,
-.container:after {
-  content: "";
-  display: table;
-}
-.container:after {
-  clear: both;
-}
-.container {
-  background: #eaeaed;
-  zoom: 1;
-}
-.container,
 section,
 aside {
   border-radius: 6px;
