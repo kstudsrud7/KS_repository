@@ -1,3 +1,76 @@
+@use '../abstracts';
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+// Global Element Styling
+h1 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h1;
+    font-weight: abstracts.$font-weight-bold;
+}
+
+h2 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h2;
+    font-weight: abstracts.$font-weight-semibold;
+}
+
+h3 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h3;
+    font-weight: abstracts.$font-weight-medium;
+}
+
+h4 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h4;
+    font-weight: abstracts.$font-weight-regular;
+}
+
+h5 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h5;
+    font-weight: abstracts.$font-weight-light;
+}
+
+h6 {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h6;
+    font-weight: abstracts.$font-weight-extralight;
+}
+
+p {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-p;
+    font-weight: abstracts.$font-weight-regular;
+}
+
+p.smallText {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-small;
+    font-weight: abstracts.$font-weight-light;
+}
+
+header {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h1;
+    font-weight: abstracts.$font-weight-bold;
+}
+
+// Power Pages Site Title Custom Font
+h1.siteTitle, 
+.static-top.navbar-dark .navbar-brand a h1.siteTitle, 
+.static-top.navbar-dark .navbar-brand a h1.siteTitle > span {
+    font-family: abstracts.$font-family;
+    font-size: abstracts.$font-size-h2;
+    font-weight: abstracts.$font-weight-bold;
+}
+
+// Navigation Link Item Styling
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a {
+    font-family: abstracts.$font-family;
+    // font-size: abstracts.$font-size-h2;
+    // font-weight: abstracts.$font-weight-bold;
+}

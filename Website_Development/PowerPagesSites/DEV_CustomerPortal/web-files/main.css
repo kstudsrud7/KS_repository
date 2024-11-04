@@ -1,0 +1,102 @@
+h1 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 500 !important;
+}
+
+h4 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+}
+
+h5 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 300 !important;
+}
+
+h6 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 200 !important;
+}
+
+p {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
+p.smallText {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 300 !important;
+}
+
+header {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+}
+
+h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle > span {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.navbar-brand.navbar-header h1 {
+  color: rgb(35, 39, 42);
+}
+
+.static-top.navbar-dark {
+  background-color: rgb(197, 171, 147); /* Example: Change background color */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link {
+  color: rgb(35, 39, 42); /* Example: Change color of the navigation links */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(35, 39, 42);
+  background-color: transparent; /* Change color of the navigation link text on hover */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand.navbar-header h1 {
+  margin: 0; /* Example: Remove margin */
+  padding: 10px; /* Example: Add padding */
+}
+
+.navbar-brand.navbar-header img {
+  height: 50px !important; /* Example: Change height */
+  margin-left: 11px; /* Example: Add margin to the left */
+  border-radius: 50%; /* Example: Make image round */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example: Add shadow */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
