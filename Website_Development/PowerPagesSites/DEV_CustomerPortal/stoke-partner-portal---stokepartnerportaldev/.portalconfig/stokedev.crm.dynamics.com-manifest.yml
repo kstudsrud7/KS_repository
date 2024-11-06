@@ -6,7 +6,7 @@ adx_botconsumer:
 adx_contentsnippet:
 - RecordId: 3d479c3b-8d46-4dd6-b4af-c092582ab3b3
   DisplayName: Mobile Header
-  CheckSum: ce20da8d029361a9d093579e2b19a887f0786bd87881bbeda6b14c6f55ebf371
+  CheckSum: c195528ced1daa66ec4187981381dc97bb13fc9e45423f3e1b2cfe1898054cad
   IsDeleted: false
 - RecordId: 4fe25970-5df2-43e3-9322-755026d4fe29
   DisplayName: Header/Search/ToolTip
@@ -325,14 +325,18 @@ adx_webfile:
 - RecordId: 7e06e813-531d-48bb-b9c1-8b4304ef5237
   DisplayName: Stoke_Custom_CSS.css
   CheckSum: e2eb4a9ff30e67fc6eda1655356dc80e079f69879c07ce80f7f073c6e95ff27a
-  IsDeleted: false
+  IsDeleted: true
 - RecordId: 841a9a8d-3c26-4f24-8518-958ab4cfcf44
   DisplayName: Cat-PC.png
   CheckSum: 8cde7e6818655b6bb66204b76c64d82e8051afaf8ad45d31a726ad2f28b35b5e
   IsDeleted: false
+- RecordId: d073e4a7-96e4-45d2-b266-29be501256e2
+  DisplayName: main.css
+  CheckSum: cdf8029d5a993333382339612665c6c3fde1e6e749fbbf0782b851cb5bbf06e6
+  IsDeleted: false
 - RecordId: eeea3e08-a1e4-4525-8b61-ec4187ed5c02
   DisplayName: portalbasictheme.css
-  CheckSum: 9620c88401ff40358528a2570fa879dbf10031e3f4b624b2e7418e6d99bf051a
+  CheckSum: c6024c24ed7e87e065c277e8d9b620e0c4d20fb4fbc2b0b960eefb9ddbaa8023
   IsDeleted: false
 adx_weblink:
 - RecordId: 9d09a5ec-861d-4eda-9fa8-a2894af0be9e
@@ -355,7 +359,7 @@ adx_weblinkset:
 adx_webpage:
 - RecordId: 10518f9b-6f90-48b2-acc7-f38bdba6b22e
   DisplayName: Home
-  CheckSum: 7f6ca8fb3425ab1a8ff3143b831167195ddaeb5a3e1e0a73f03f52eb767955a2
+  CheckSum: 7b9cd07a11d133fbea038cfa12c11c74380010aab29d6117d55fbe648c4784f0
   IsDeleted: false
 - RecordId: 1fd369aa-b7a9-452e-a556-1e695640647a
   DisplayName: Access Denied
@@ -463,7 +467,7 @@ adx_webtemplate:
   IsDeleted: false
 - RecordId: b24d9df0-fc0c-462f-a4ee-d0bef586d17e
   DisplayName: Header
-  CheckSum: 305a6ba796714d65bc5de9b815c9dc14931985a25981032c7521757d11ddcc0c
+  CheckSum: 924831eb44a3ef49f6d82a5321ca73923f4d14c80e918d7d7cc41defd6becf29
   IsDeleted: false
 - RecordId: b8dfb460-8b9f-4ae2-ba95-2c16512a01af
   DisplayName: Layout 2 Column Wide Left
@@ -513,6 +517,10 @@ annotation:
 - RecordId: 922346d5-f799-ef11-8a69-6045bdd66be3
   DisplayName: StokeCustomCSS.css
   CheckSum: 807faf31205972ff4ab7aec3c3ca5823febff118be84d67094a1913d839dfba4
+  IsDeleted: true
+- RecordId: c7fa572c-359a-ef11-8a69-6045bdd66be3
+  DisplayName: main.css
+  CheckSum: 90682e87ac37c0bbb3a1a8a04b367698b96d62b2daf391c70b1f86448c128dbd
   IsDeleted: false
 - RecordId: f940e987-8998-ef11-8a69-6045bdd66be3
   DisplayName: theme.css

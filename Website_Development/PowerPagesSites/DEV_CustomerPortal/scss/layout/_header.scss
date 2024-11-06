@@ -9,9 +9,8 @@
 
 // Header Image Customization
 .navbar-brand.navbar-header img {
-    height: 50px !important; /* Example: Change height */
-    margin-left: 11px; /* Example: Add margin to the left */
     border-radius: 50%; /* Example: Make image round */
+    height: 50px; /* Example: Set height */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example: Add shadow */
 }
 //Mobile Navigation Drop Down Menu Customization
@@ -22,6 +21,11 @@
     text-align: center;
 }
 
+//Remove Vertical Dividers between Navigation Links in Header
+.static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
+    border-right: 0px;
+    border-left: 0px;
+}
 
 
 
