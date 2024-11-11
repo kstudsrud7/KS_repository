@@ -7,12 +7,12 @@
   DTS:CreatorName="ARCTICIT\aitadmin"
   DTS:DTSID="{2B7F0D50-C840-4203-8725-8577D59CFBDA}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="91"
-  DTS:VersionGUID="{2D70DFAC-BFB2-4566-AB4E-050B5AB29C04}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{C7A3B01B-347C-49F0-8294-A29EF3965398}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://mhatpprod.crm9.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=5c5c2856-1559-45ac-9a72-72f3073d9d26;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://orge8dea455.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=9cfbfdd3-6cda-4546-8a5b-fc5cd99598f4;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAF7x0IYLRP02wfpeqW8xR5QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA472J69qo/5vXHIv19lKDMAAAAAASAAACgAAAAEAAAAC/YOdsE7tfGmuwWwfZMq+RYAAAAge2jiU4cV/F0uRY6IFVkWcxsaVyVPz03Iai14nyHO7CmopimvzDAocCtiu6PFWpoehbWOSXnWI8XSKcZkaWvVkSrYzK0N7Yf586yKn2DBKX/V4qFuTbkCxQAAABNQjxf7U3DrEuQkyUFYJ3JvDlb2g</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgDSp7TSIXEucem7L0nq6PgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAodPsRCq1Q6pkasLHQY1T6vT7egnFassRBiYxafBDL9AAAAAAOgAAAAAIAACAAAACbrrjcLqrzRCI5nqOoBShltzAl1GsZLvlQwp67ogIqsmAAAABQztBqgBZx5bz7iFseq0ewDFlF9VSLDmL8mCGHBVC3euuHd/kWL5cM97bRxUSiBS4h75bo+D8bCWn83QNb9Vm4IObil+h/p85jAqQ8qYwnO4c/SaGrp5RVDE0Abh6eyulAAAAAIEpIC9wANTsubzOXye6+DnmZxtrFe6ejAkVVgqqx+fl67ecZxAhYTgBojKf3iKlU+3SA9FGo85hHd4HrJs46pQ</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="SourceEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://mhatpsandbox.crm9.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=5c5c2856-1559-45ac-9a72-72f3073d9d26;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpprod.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=7c56de9f-871b-4ab7-a54b-e9b23acdc8a2;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAF7x0IYLRP02wfpeqW8xR5QAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAS/mqxs9au/o7KewMSMYcrAAAAAASAAACgAAAAEAAAAFQioQcMy1bqJKsWFOQ9bGlYAAAAE3xT5JWH1vHxnJPSuutM4ZhAZkNWVXueAWqbe+/6KsqQo2gdC/oYnnkG6baAhNaQOMX/OK19jZAjg9AwZ26ftX3UyVcjO/N1lR9TYpCTlW+184hpEYQrpxQAAABbN7qAamL7IkrzWIE3YkanC+3v1A</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgDSp7TSIXEucem7L0nq6PgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABm1AUxk8NPXlYJTRamMATtxKPwZRmrMDmD5BfIm2t0UAAAAAAOgAAAAAIAACAAAAAHuT1PhBPx11bSgIKNskOXpaDA4lLWHBY+tzUKb/w3EmAAAADP2EpnW3HCeZRHbwr3wa4mqIUHUnTyctaUGPdF9vLa7A4SYGbveuAJgjJ34+EG3SUZw/5qjWzzOMX6q/84CNdvK8a7NvPJBANtUIk0Er+BpAVtu3gcRvtfsH8+N/+dlk5AAAAAOhyDVBt9JHXGiYk0ZiliGr8jv3EB2I6uvu7u/O6axDswx0UhXcWUkJj6P0ZcOoGdC04BRyUTLRAXXlNhE+0Slw</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -19955,7 +19955,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20097,7 +20099,7 @@
     design-time-name="Package\Clans">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="210.666666666667,42.6666666666667"
           Id="Package\Clans\Dynamics CRM Destination"
@@ -20137,7 +20139,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20349,7 +20353,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20467,7 +20473,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20637,7 +20645,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20683,7 +20693,7 @@
     design-time-name="Package\Name Type">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="210.666666666667,42.6666666666667"
           Id="Package\Name Type\Dynamics CRM Destination"
@@ -20723,7 +20733,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20733,7 +20745,7 @@
     design-time-name="Package\Name Types">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="118.666666666667,42.6666666666667"
           Id="Package\Name Types\Name types"
@@ -20761,7 +20773,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

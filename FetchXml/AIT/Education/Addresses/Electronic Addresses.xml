@@ -1,0 +1,16 @@
+<fetch>
+  <entity name="ait_electronicaddress">
+    <attribute name="ait_addresstype" />
+    <attribute name="ait_communicationtype" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_current" />
+    <attribute name="ait_electronicaddressid" />
+    <attribute name="ait_phonenumberoremail" />
+    <link-entity name="contact" from="contactid" to="ait_contact" link-type="inner" alias="CONTACT">
+      <attribute name="ait_contacttype" />
+      <link-entity name="ait_studentprofile" from="ait_studentprofileid" to="ait_studentprofile" link-type="outer" alias="STUDENTPROF">
+        <attribute name="ait_studenttype" />
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>

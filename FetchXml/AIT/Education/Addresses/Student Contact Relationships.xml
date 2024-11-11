@@ -1,0 +1,15 @@
+<fetch>
+  <entity name="ait_studentprofile">
+    <attribute name="ait_studentprofileid" />
+    <attribute name="ait_studenttype" />
+    <attribute name="ait_student" />
+    <filter>
+      <condition attribute="ait_studenttype" operator="ne" value="748120002" />
+    </filter>
+    <order attribute="ait_student" />
+    <link-entity name="ait_studentcontact" from="ait_student" to="ait_studentprofileid" link-type="inner" alias="STUCONT">
+      <attribute name="ait_contact" />
+      <attribute name="ait_relationship" />
+    </link-entity>
+  </entity>
+</fetch>

@@ -1,0 +1,22 @@
+<fetch>
+  <entity name="ait_physicaladdress">
+    <attribute name="ait_addresstype" />
+    <attribute name="ait_city" />
+    <attribute name="ait_contact" />
+    <attribute name="ait_physicaladdressid" />
+    <attribute name="ait_zipcode" />
+    <attribute name="ait_street1" />
+    <attribute name="ait_street2" />
+    <attribute name="ait_stateprovince" />
+    <attribute name="ait_current" />
+    <attribute name="ait_mailing" />
+    <order attribute="ait_contact" />
+    <link-entity name="contact" from="contactid" to="ait_contact" alias="CNT">
+      <link-entity name="ait_studentprofile" from="ait_studentprofileid" to="ait_studentprofile" link-type="inner" alias="STUPROF">
+        <filter>
+          <condition attribute="ait_studenttype" operator="ne" value="748120002" />
+        </filter>
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>
