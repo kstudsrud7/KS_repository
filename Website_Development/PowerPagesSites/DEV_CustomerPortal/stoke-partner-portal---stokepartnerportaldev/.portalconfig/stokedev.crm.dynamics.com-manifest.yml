@@ -16,6 +16,10 @@ adx_contentsnippet:
   DisplayName: Site name
   CheckSum: a731885df6dc5267e4e2b36c53288683c4c27b6f443bd03f18a52fd0d9666486
   IsDeleted: false
+- RecordId: 8b3bf951-af9c-ef11-8a69-6045bdd66be3
+  DisplayName: FetchXML.ActiveAccounts
+  CheckSum: 04fe4739ed7f9d15ef74e1de421842a8504f8c12415cae439339c760956d69b5
+  IsDeleted: false
 - RecordId: 8d3b94d7-9e37-e203-d10b-12a939df822b
   DisplayName: Logo URL
   CheckSum: d652f16b16d122bb3450ba79faae2a6c37b09737fdad5dd3665d532f54866f04
@@ -332,7 +336,7 @@ adx_webfile:
   IsDeleted: false
 - RecordId: d073e4a7-96e4-45d2-b266-29be501256e2
   DisplayName: main.css
-  CheckSum: cdf8029d5a993333382339612665c6c3fde1e6e749fbbf0782b851cb5bbf06e6
+  CheckSum: 7107b04b899940c20a6993039864ef6c8c5117e1bd272a7816daaf67959f1064
   IsDeleted: false
 - RecordId: eeea3e08-a1e4-4525-8b61-ec4187ed5c02
   DisplayName: portalbasictheme.css
@@ -359,7 +363,7 @@ adx_weblinkset:
 adx_webpage:
 - RecordId: 10518f9b-6f90-48b2-acc7-f38bdba6b22e
   DisplayName: Home
-  CheckSum: 7b9cd07a11d133fbea038cfa12c11c74380010aab29d6117d55fbe648c4784f0
+  CheckSum: 242ea2f8f9bd65286e04b6fe0502001cb33d33a9b1b90fc2b76ad49fbf1c4421
   IsDeleted: false
 - RecordId: 1fd369aa-b7a9-452e-a556-1e695640647a
   DisplayName: Access Denied
@@ -467,7 +471,7 @@ adx_webtemplate:
   IsDeleted: false
 - RecordId: b24d9df0-fc0c-462f-a4ee-d0bef586d17e
   DisplayName: Header
-  CheckSum: 924831eb44a3ef49f6d82a5321ca73923f4d14c80e918d7d7cc41defd6becf29
+  CheckSum: ec57f1537bd22aca775f2fbb2c4bc9044142b4afd961cead3acc1a132d85a662
   IsDeleted: false
 - RecordId: b8dfb460-8b9f-4ae2-ba95-2c16512a01af
   DisplayName: Layout 2 Column Wide Left
@@ -510,6 +514,10 @@ annotation:
   DisplayName: Stoke_Custom_CSS.css
   CheckSum: cffe23f5148684a6d8622893400c5c820304f31d3777cd32f3d2b784c1382cb0
   IsDeleted: true
+- RecordId: 7d03920a-e29a-ef11-8a69-6045bdd66be3
+  DisplayName: main.css
+  CheckSum: cc4282370f390fd1eccbaf229cb46a6b618ba26cabd1c218cc202f7cd392ab5c
+  IsDeleted: false
 - RecordId: 81242cb2-3399-ef11-8a69-6045bdd66be3
   DisplayName: stoke-solutions-logo-1 (1).png
   CheckSum: b9b24e5301aac67a146eb5e6eb4debcd12e41b24050bacb0746f4028c086f483
@@ -521,7 +529,7 @@ annotation:
 - RecordId: c7fa572c-359a-ef11-8a69-6045bdd66be3
   DisplayName: main.css
   CheckSum: 90682e87ac37c0bbb3a1a8a04b367698b96d62b2daf391c70b1f86448c128dbd
-  IsDeleted: false
+  IsDeleted: true
 - RecordId: f940e987-8998-ef11-8a69-6045bdd66be3
   DisplayName: theme.css
   CheckSum: 2f02a67f8e586b8689ffee92a0db55dabb5138bf1ace0f4ca05c38bfdf74df6b

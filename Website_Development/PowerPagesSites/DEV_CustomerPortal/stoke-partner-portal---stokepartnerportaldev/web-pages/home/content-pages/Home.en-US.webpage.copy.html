@@ -6,48 +6,95 @@
     <h4>H4-Log in to access exclusive content and tools</h4>
     <h5>H5-Don't have an account? Register now</h5>
     <h6>H6-Need help? Contact us</h6>
-    <p>P-Contet goes here for paragraph</p>
+    <p>P-Content goes here for paragraph</p>
   </div>
 </div>
 <div class="container hero justify-content-center align-content-center d-flex">
   <div class="row">
-    <div class="col-12">
-      <h1>Welcome To Stoke Partner Portal!</h1>
-    </div>
+    <div class="col-12"><h1>Welcome To Stoke Partner Portal!</h1></div>
   </div>
 </div>
 <div class="container action-tiles justify-content-center align-content-center d-flex text-center">
   <div class="row g-lg-5">
     <div class="col">
       <h3>Action Tile 1</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
     <div class="col">
       <h3>Action Tile 2</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
     <div class="col">
       <h3>Action Tile 3</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
     <div class="col">
       <h3>Action Tile 4</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
     <div class="col">
       <h3>Action Tile 5</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
     <div class="col">
       <h3>Action Tile 6</h3>
-      <h5> Action Sub Title</h5>
+      <h5>Action Sub Title</h5>
       <p>Action Description</p>
     </div>
   </div>
 </div>
 
+{% fetchxml activeaccounts %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" returntotalrecordcount='true'>
+  <entity name="account">
+    <attribute name="name" />
+    <attribute name="address1_city" />
+    <order attribute="name" descending="false" />
+    <attribute name="primarycontactid" />
+    <attribute name="telephone1" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0" />
+    </filter>
+    <link-entity alias="accountprimarycontactidcontactcontactid" name="contact" from="contactid" to="primarycontactid" link-type="outer" visible="false">
+      <attribute name="emailaddress1" />
+      <attribute name="fullname" />
+    </link-entity>
+    <attribute name="accountid" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Account Name</th>
+          <th scope="col">Main Phone</th>
+          <th scope="col">Primary Contact</th>
+          <th scope="col">Primary Contact Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if activeaccounts.results.entities.size > 0 %}
+          {% for activeaccount in activeaccounts.results.entities %}
+          <tr>
+            <td>{{ activeaccount.name | escape }}</td>
+            <td>{{ activeaccount.telephone1 | escape }}</td>
+            <td>{{ activeaccount['accountprimarycontactidcontactcontactid.fullname'] | escape }}</td>
+            <td>{{ activeaccount['accountprimarycontactidcontactcontactid.emailaddress1'] | escape }}</td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td colspan="4">No active accounts found.</td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div> 
+</div>

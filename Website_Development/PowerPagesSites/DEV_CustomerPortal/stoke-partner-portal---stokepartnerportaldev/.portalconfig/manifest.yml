@@ -12,6 +12,10 @@ annotation:
   DisplayName: StokeCustomCSS.css
   CheckSum: 
   IsDeleted: true
+- RecordId: c7fa572c-359a-ef11-8a69-6045bdd66be3
+  DisplayName: main.css
+  CheckSum: 
+  IsDeleted: true
 - RecordId: fe40e987-8998-ef11-8a69-6045bdd66be3
   DisplayName: Logo-sm-64.png
   CheckSum: 
