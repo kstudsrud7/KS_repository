@@ -1,0 +1,42 @@
+<fetch version="1.0" mapping="logical" savedqueryid="ab557ced-51fe-4060-bf4e-a0f147374f3e"
+    no-lock="false" distinct="true">
+    <entity name="sss_events">
+        <attribute name="sss_eventimage_url" /> Image Field
+        <attribute name="statecode" />
+        <attribute name="sss_eventsid" />
+        <attribute name="sss_name" />
+        <attribute name="createdon" />
+        <order attribute="sss_name" descending="false" />
+        <attribute name="sss_description" />
+        <attribute name="sss_enddate" />
+        <attribute name="sss_eventimage" />
+        <attribute name="sss_eventtype" />
+        <attribute name="sss_startdate" />
+        <attribute name="statuscode" />
+        <attribute name="ownerid" />
+        <attribute name="sss_hyperlink" />
+        <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <link-entity name="imagedescriptor" from="imagedescriptorid" to="sss_eventimageid"
+            link-type="outer" alias="sss_eventimageid_imagedescriptor" visible="false">
+            <attribute name="filesizebytes" />
+            <attribute name="filename" />
+            <attribute name="mimetype" />
+            <attribute name="fullimageurl" />
+            <attribute name="imagedata" />
+            <attribute name="imagepixelwidth" />
+            <attribute name="imagepixelheight" />
+            <attribute name="colordepthbits" />
+            <attribute name="imageurl" />
+            <attribute name="imagetimestamp" />
+            <attribute name="imagedescriptorid" />
+        </link-entity>
+        <link-entity name="" alias="aa" link-type="outer" from="" to="" />
+        <filter type="and">
+            <condition attribute="" operator="null" entityname="aa" />
+        </filter>
+    </entity>
+</fetch>
+
+<!-- https://stokedev.crm.dynamics.com/Image/download.aspx?Entity=sss_events&Attribute=sss_eventimage&Id=569dc834-02a2-ef11-8a69-6045bdd66be3&Full=true -->
