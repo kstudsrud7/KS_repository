@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{C7A3B01B-347C-49F0-8294-A29EF3965398}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{77055697-B247-411B-9FC8-4D9BD87B2790}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://orge8dea455.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=9cfbfdd3-6cda-4546-8a5b-fc5cd99598f4;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5eddev.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgDSp7TSIXEucem7L0nq6PgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA2f0EnOwbBkCUFSTniEoquBdNOptw/7TxOHddBJAQ6nwAAAAAOgAAAAAIAACAAAAArtfek/6EATdm1fLKkUo0kVO3b7YCB3XCJwEa0cmrlcGAAAADxXQQTr9QsW4jjXuGVAK4EaGVFYFMt5gD32tqjWoEE9tlb/0oa527A4DJFTvTBb3Vf031MER4wmR9mgNoKed7BM7KkYqA/Qf/g0WvTeBhjGQuBaY8L50yL2jjz+oo3N09AAAAANWcbwYQkxi07V7AikfFqhfcMNXEdUALrViMly1Ifb+vkWQbDtew5KWJCWoqezZoM9fZ3EfCKMlqUT2ZSfTk0rg</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAQJjyhDQX943wRtE00ll7LfOw+T1DUs92WMVwdKD8aSAAAAAAOgAAAAAIAACAAAACvpGb8SYAVfR2grH3hAEJ9y0/v8qDb9LnUqs4Yn8QxgmAAAABnmq4QBodD3H/lHhblYy4PpG7GDmdjwvJGkymuIHn4WkBi6vtbIt0XVW0QUat8SnutEtsPISVKOp5UjgzjOxRPrStIeYbb1okf79KCSsSCzM/mV9o4pUC+7lWJeanbPTpAAAAARZ19D2OWPfAPhLFnBzLFP+4wOn0nW4JUqv9n3LtZs6RvOg5qvCnk5sF7AFZLQ/Ok49mfVqmHrxnPfgPGCPbZwQ</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAgDSp7TSIXEucem7L0nq6PgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC/8vPNKtwTOq7q9RsmQPINJqWxV3dPjFNTgEqAznR7nQAAAAAOgAAAAAIAACAAAADlrBeNoS212p3ClvWnyjv46PQUQo4mplWkzLOoMTWuZWAAAAAOznk67eU/VTooqnhO7WBfYihpQpu/Lm3UeiJEulJePw2FkH7G9RV6jdmXTKeVOU+pCHJquPANnXSIaUN7O2sTOJzgGMjDX8zvCWguTON1xxAmvwnxW9LTAo3xlD3Q80hAAAAAMapGEqU0zUmy0Kn2IhmlVCpIRXm7QnB2rZOgEhg1GmrW81BQaJL9NuWfCLAuNWUckjPd8fsIm9roQ64XQpPvWQ</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAApJhC6OBB2Cm/TKpv+roctpORvFGwXf8Dz/gIdxXV5tAAAAAAOgAAAAAIAACAAAACsAdFoYM0cO6QHNIVfxxTnluh9/JhRFluLKKRyKu96/2AAAAA/u3il5puI0w3KyDML798yCCvwYL+Ku8fnZKvikI3Dt6sdshETD7LA7AVm4LvkPFuWgg3bbfnTYekW6x7l5PnblrCuDlMuNKW0fent35z1ee3KY45ph9i5HccEWB8EgrpAAAAA19CEduy4majcO/9ue8s9jE+SByFy55Lh6Fw+omGA+c5sY8SImvrxCIyt2iJ411XX/B30xQj0J1k08KYtTqn81g</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -20195,7 +20195,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout

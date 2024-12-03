@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>MHA_Progeny</Name>
-    <LastWriteTime>2024-11-08T22:56:32.3120656Z</LastWriteTime>
+    <LastWriteTime>2024-11-27T16:33:20.2406356Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Base Data Insert (1).dtsx</Name>
-      <LastWriteTime>2024-11-08T22:56:32.2312675Z</LastWriteTime>
+      <LastWriteTime>2024-11-27T16:33:20.0828079Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
