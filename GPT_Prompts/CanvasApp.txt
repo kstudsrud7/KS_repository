@@ -1,4 +1,0 @@
-I'm working on a Power Platform project using Canvas Apps and I need help creating formulas for properties within the app.
-
-Can you help me with the following:
-
