@@ -1,0 +1,108 @@
+- adx_adddescription: true
+  adx_attributelogicalname: ait_servicerequestname
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Brief description of the request"
+
+      }
+
+    ]
+  adx_descriptionposition: 100000000
+  adx_entityform: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: 16d7bce3-7a91-eb11-b1ac-000d3a597785
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_servicerequestname
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+- adx_adddescription: true
+  adx_attributelogicalname: ait_program
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Select the program that best fits the situation you are contacting us about."
+
+      }
+
+    ]
+  adx_descriptionposition: 100000000
+  adx_entityform: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: 641a893b-7a91-eb11-b1ac-000d3a597785
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_label: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Family Wellness Program"
+
+      }
+
+    ]
+  adx_name: ait_program
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+- adx_adddescription: false
+  adx_attributelogicalname: ait_servicerequestdate
+  adx_descriptionposition: 100000000
+  adx_entityform: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: 74eea5e6-1d19-eb11-a813-000d3a194b63
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_servicerequestdate
+  adx_onsavetype: 100000001
+  adx_prepopulatetype: 100000001
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_program
+  adx_controlstyle: 756150000
+  adx_descriptionposition: 100000000
+  adx_entityform: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: ba74dd10-1e19-eb11-a813-000d3a194b63
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_program
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_servicerequesttype
+  adx_descriptionposition: 100000000
+  adx_entityform: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 1e991c75-1319-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: ebac33a3-1b19-eb11-a813-000d3a194b63
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_servicerequesttype
+  adx_onsavetype: 100000000
+  adx_onsavevalue: Child Protective Services
+  adx_prepopulatetype: 100000000
+  adx_prepopulatevalue: Child Protective Services
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true

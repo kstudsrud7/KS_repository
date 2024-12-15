@@ -1,0 +1,7 @@
+{% include 'Entity List or Form' %}
+{% comment %}
+Passes specific Change Request Type name to the "Change Request Type - Get" web template 
+This also assigns the proper "Change Request Type" value to the field on the form.
+{% endcomment %}
+{% assign Requested_CRT = "Household Member" %}
+{% include 'Change Request Type - Get' %}

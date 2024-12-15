@@ -1,0 +1,94 @@
+- adx_adddescription: true
+  adx_attributelogicalname: ait_existingtribalmember
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Are you currently or have you ever been enrolled in another federally recognized tribe? "
+
+      }
+
+    ]
+  adx_descriptionposition: 100000002
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_purchasecreateinvoiceonpayment: false
+  adx_purchasefulfillorderonpayment: false
+  adx_purchaserequiresshipping: false
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+  adx_webformmetadataid: 6eaf8e6e-f588-eb11-a812-000d3a593f9e
+  adx_webformstep: d9b90457-e681-eb11-a812-000d3a3b2ab4
+- adx_adddescription: false
+  adx_attributelogicalname: ait_applicationstatus
+  adx_descriptionposition: 100000000
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_onsavetype: 100000000
+  adx_onsavevalue: New
+  adx_purchasecreateinvoiceonpayment: false
+  adx_purchasefulfillorderonpayment: false
+  adx_purchaserequiresshipping: false
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+  adx_webformmetadataid: 788c118d-ad8d-eb11-a812-000d3a58b92b
+  adx_webformstep: d9b90457-e681-eb11-a812-000d3a3b2ab4
+- adx_adddescription: true
+  adx_attributelogicalname: ait_tribename
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "If yes, what is the name of the tribe?"
+
+      }
+
+    ]
+  adx_descriptionposition: 100000002
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_purchasecreateinvoiceonpayment: false
+  adx_purchasefulfillorderonpayment: false
+  adx_purchaserequiresshipping: false
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+  adx_webformmetadataid: a5d86e87-f588-eb11-a812-000d3a593f9e
+  adx_webformstep: d9b90457-e681-eb11-a812-000d3a3b2ab4
+- adx_adddescription: true
+  adx_attributelogicalname: ait_tribename
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Evidence of relinquishment must be provided. Evidence may include a letter or statement regarding relinquishment of membership. "
+
+      }
+
+    ]
+  adx_descriptionposition: 100000001
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_purchasecreateinvoiceonpayment: false
+  adx_purchasefulfillorderonpayment: false
+  adx_purchaserequiresshipping: false
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+  adx_webformmetadataid: e4eaedb1-f588-eb11-a812-000d3a593f9e
+  adx_webformstep: d9b90457-e681-eb11-a812-000d3a3b2ab4

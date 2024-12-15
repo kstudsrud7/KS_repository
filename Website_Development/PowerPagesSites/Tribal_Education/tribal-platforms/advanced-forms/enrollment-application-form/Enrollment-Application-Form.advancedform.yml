@@ -1,0 +1,13 @@
+adx_authenticationrequired: true
+adx_editexistingrecordpermitted: true
+adx_multiplerecordsperuserpermitted: true
+adx_name: Enrollment Application Form
+adx_progressindicatorenabled: true
+adx_progressindicatorignorelaststep: false
+adx_progressindicatorposition: 756150000
+adx_progressindicatorprependstepnum: false
+adx_progressindicatortype: 756150001
+adx_savechangeswarningonclose: true
+adx_startnewsessiononload: true
+adx_startstep: 9410260a-b082-eb11-a812-000d3a3b2ab4
+adx_webformid: fd56a2e1-e581-eb11-a812-000d3a3b2ab4

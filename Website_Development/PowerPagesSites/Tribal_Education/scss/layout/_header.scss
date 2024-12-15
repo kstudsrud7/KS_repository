@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+// Header Title
+.navbar-brand.navbar-header h1 {
+    margin: 0; /* Example: Remove margin */
+    padding: 10px; /* Example: Add padding */
+}   
+
+// Header Image Customization
+.navbar-brand.navbar-header img {
+    border-radius: 50%; /* Example: Make image round */
+    height: 50px; /* Example: Set height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example: Add shadow */
+}
+//Mobile Navigation Drop Down Menu Customization
+.navbar-nav .nav-item .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+//Remove Vertical Dividers between Navigation Links in Header
+.static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
+    border-right: 0px;
+    border-left: 1px;
+}
+
+
+

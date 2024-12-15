@@ -1,0 +1,14 @@
+adx_append: true
+adx_appendto: true
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: activitypointer
+adx_entityname: Activity Pointer - Enrollment Application
+adx_entitypermission_webrole:
+- bde7522a-3a52-4619-8531-b022b9c5104f
+adx_entitypermissionid: 10b43d4b-b43d-ec11-8c63-00224808b44d
+adx_parententitypermission: 80bb6b51-ea81-eb11-a812-000d3a3b2ab4
+adx_parentrelationship: ait_programapplications_ActivityPointers
+adx_read: true
+adx_scope: 756150003
+adx_write: true

@@ -1,0 +1,67 @@
+adx_allowmultiplefiles: true
+adx_appendquerystring: false
+adx_associatecurrentportaluser: true
+adx_attachfile: true
+adx_attachfilelabel: >-
+  [
+
+    {
+
+      "LCID": 1033,
+
+      "Value": "Attach Birth Certificate"
+
+    }
+
+  ]
+adx_attachfilerequired: false
+adx_attachfilerequirederrormessage: >-
+  [
+
+    {
+
+      "LCID": 1033,
+
+      "Value": "Please attach the associated birth certificate here."
+
+    }
+
+  ]
+adx_attachfilerestrictaccept: false
+adx_attachfilestoragelocation: 756150000
+adx_autogeneratesteps: false
+adx_captcharequired: false
+adx_createautonumber: false
+adx_editexistingrecordpermitted: false
+adx_entitypermissionsenabled: true
+adx_forceallfieldsrequired: false
+adx_formname: Enrollment Application Insert Portal Form
+adx_geolocation_displaymap: false
+adx_geolocation_enabled: false
+adx_geolocation_maptype: 756150000
+adx_hideformonsuccess: true
+adx_loguser: false
+adx_mode: 100000000
+adx_movepreviouspermitted: true
+adx_multiplerecordsperuserpermitted: false
+adx_name: Descendant Lineage
+adx_populatereferenceentitylookupfield: false
+adx_portaluserlookupattributeisactivityparty: false
+adx_recommendedfieldsrequired: false
+adx_redirecturlappendentityidquerystring: false
+adx_referenceentityshowreadonlyform: false
+adx_referenceentitysourcetype: 100000001
+adx_referencequerystringisprimarykey: true
+adx_renderwebresourcesinline: false
+adx_setentityreference: false
+adx_showcaptchaforauthenticatedusers: false
+adx_showownerfields: false
+adx_showunsupportedfields: false
+adx_tabname: descendantlineage
+adx_targetentitylogicalname: ait_programapplications
+adx_targetentityportaluserlookupattribute: ait_contact
+adx_tooltipenabled: false
+adx_type: 100000001
+adx_validationsummarylinksenabled: true
+adx_webform: fd56a2e1-e581-eb11-a812-000d3a3b2ab4
+adx_webformstepid: 3d41832c-e681-eb11-a812-000d3a3b2ab4

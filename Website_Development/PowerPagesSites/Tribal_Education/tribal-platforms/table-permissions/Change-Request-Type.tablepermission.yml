@@ -1,0 +1,13 @@
+adx_append: true
+adx_appendto: false
+adx_create: false
+adx_delete: false
+adx_entitylogicalname: ait_changerequesttype
+adx_entityname: Change Request Type
+adx_entitypermission_webrole:
+- 73aa6040-261e-eb11-a813-000d3a31cf04
+- bde7522a-3a52-4619-8531-b022b9c5104f
+adx_entitypermissionid: a45f5f0a-df13-eb11-a813-000d3a1fbddc
+adx_read: true
+adx_scope: 756150000
+adx_write: false

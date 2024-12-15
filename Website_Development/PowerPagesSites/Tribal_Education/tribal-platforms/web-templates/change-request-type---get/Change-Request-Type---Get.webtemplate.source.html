@@ -1,0 +1,28 @@
+{% comment %}
+Retrieve the Change Request Type record that was specified in the preceding Web Template
+Returns record in the "crt" collection.
+{% endcomment %}
+{% fetchxml crt %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" top="1">
+  <entity name="ait_changerequesttype">
+    <filter type="and">
+      <condition attribute="ait_name" operator="eq" value="{{ Requested_CRT }}" />
+    </filter>
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign crt_results = crt.results.entities %}
+{% if crt_results.size > 0 %}
+    {% for crt_rec in crt_results %}
+        {% comment %}
+        Prepopulate the Change Request Type value in the form.
+        {% endcomment %}
+        <script>
+          $("#ait_crtype_name").attr("value", "{{ crt_rec.ait_name }}" );
+          $("#ait_crtype").attr("value", "{{ crt_rec.ait_changerequesttypeid }}" );
+          $("#ait_crtype_entityname").attr("value","ait_changerequesttype");
+        </script>
+    {% endfor %}
+{% else %}
+    <b>Error: The Change Request Type record of '{{ Requested_CRT }}' was not retrieved.<b><br>
+{% endif %}

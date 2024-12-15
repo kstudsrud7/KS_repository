@@ -1,0 +1,12 @@
+adx_append: true
+adx_appendto: true
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: activitypointer
+adx_entityname: Activity - Change Request
+adx_entitypermissionid: 07f8b953-999c-eb11-b1ac-000d3a3aee0f
+adx_parententitypermission: a6ac6bf7-a01e-eb11-a813-000d3a31c867
+adx_parentrelationship: ait_changerequest_ActivityPointers
+adx_read: true
+adx_scope: 756150003
+adx_write: true

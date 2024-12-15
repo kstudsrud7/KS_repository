@@ -1,0 +1,14 @@
+adx_append: false
+adx_appendto: false
+adx_create: false
+adx_delete: false
+adx_entitylogicalname: ait_safetyplan
+adx_entityname: Safety Plan
+adx_entitypermission_webrole:
+- 28d77d95-261e-eb11-a813-000d3a31cf04
+- 6bcf8d45-9ff1-404a-827e-efc5c668f813
+- bde7522a-3a52-4619-8531-b022b9c5104f
+adx_entitypermissionid: ee54d149-5096-eb11-b1ac-0022480a0369
+adx_read: true
+adx_scope: 756150000
+adx_write: false

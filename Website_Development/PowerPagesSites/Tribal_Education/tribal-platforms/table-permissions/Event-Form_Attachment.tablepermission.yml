@@ -1,0 +1,12 @@
+adx_append: true
+adx_appendto: false
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: annotation
+adx_entityname: Event Form_Attachment
+adx_entitypermissionid: f31c864d-2b91-4acb-9ac6-10c382915e4a
+adx_parententitypermission: b257cadb-29f0-461e-8b8e-a85b78252928
+adx_parentrelationship: ait_educationevent_Annotations
+adx_read: false
+adx_scope: 756150003
+adx_write: false

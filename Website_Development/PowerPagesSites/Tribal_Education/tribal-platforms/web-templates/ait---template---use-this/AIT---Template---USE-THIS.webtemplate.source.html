@@ -1,0 +1,29 @@
+<div class="wrapper-body">
+    <div class="container">
+        <div class="page-heading">
+            {% block breadcrumbs %}
+            {% include 'Breadcrumbs' %}
+            {% endblock %}
+            {% block title %}
+            {% include 'Page Header' %}
+            {% endblock %}
+        </div>
+        {{ snippets["TribalPlatformsPortal/DisplayDiagnosticModeWarningIfEnabled"] }}
+        {% include 'Page Copy' %}
+    </div>
+    {% block main %}
+    <div class="container" role="main">
+        {% if page.adx_entitylist %}
+        {% include 'entity_list' key: page.adx_entitylist.id %}
+        {% endif %}
+
+        {% if page.adx_entityform %}
+        {% entityform id: page.adx_entityform.id %}
+        {% endif %}
+
+        {% if page.adx_webform %}
+        {% webform id: page.adx_webform.id %}
+        {% endif %}
+    </div>
+    {% endblock %}
+</div>

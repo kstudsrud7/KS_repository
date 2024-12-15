@@ -1,0 +1,25 @@
+adx_authenticationrequired: false
+adx_editexistingrecordpermitted: true
+adx_multiplerecordsperuserpermitted: true
+adx_name: Education - Edit In-Progress Application
+adx_progressindicatorenabled: true
+adx_progressindicatorignorelaststep: false
+adx_progressindicatorposition: 756150000
+adx_progressindicatorprependstepnum: true
+adx_progressindicatortype: 756150001
+adx_savechangeswarningmessage: >-
+  [
+
+    {
+
+      "LCID": 1033,
+
+      "Value": "Save Changes Warning"
+
+    }
+
+  ]
+adx_savechangeswarningonclose: true
+adx_startnewsessiononload: true
+adx_startstep: 22c62865-f992-ef11-ac21-000d3a3b9861
+adx_webformid: 262a85af-a985-ef11-ac21-000d3a5b0e68

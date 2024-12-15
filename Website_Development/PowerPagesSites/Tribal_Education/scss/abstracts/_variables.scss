@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Portal Override Theme Colors
+$portal-theme-color-1: rgba(35, 39, 42, 1); // Cup-Of-Team-On-Fall-1-rgba
+$portal-theme-color-2: rgba(182, 201, 227, 1); // Cup-Of-Team-On-Fall-2-rgba
+$portal-theme-color-3: rgba(145, 125, 105, 1); // Cup-Of-Team-On-Fall-3-rgba
+$portal-theme-color-4: rgba(197, 171, 147, 1); // Cup-Of-Team-On-Fall-4-rgba
+$portal-theme-color-5: rgba(212, 205, 202, 1); // Cup-Of-Team-On-Fall-5-rgba
+$portal-theme-color-6: #5C5A58;
+$portal-theme-color-7: #FFFFFF;
+$portal-theme-color-8: #000000;
+$portal-theme-color-9: #191817;
+$portal-theme-color-10: null;
+$portal-theme-color-11: null;
+$portal-theme-color-12: null;
+$portal-theme-on-color-1: #000000;
+$portal-theme-on-color-2: #FFFFFF;
+$portal-theme-on-color-3: #000000;
+$portal-theme-on-color-4: #FFFFFF;
+$portal-theme-on-color-5: #000000;
+$portal-theme-on-color-6: #FFFFFF;
+$portal-theme-on-color-7: #000000;
+$portal-theme-on-color-8: #FFFFFF;
+$portal-theme-on-color-9: #FFFFFF;
+$portal-theme-on-color-10: null;
+$portal-theme-on-color-11: null;
+$portal-theme-on-color-12: null;
+
+//Power Pages Font Family
+$font-family: 'IBM Plex Sans', sans-serif !important;
+
+// Define font-weight variables
+$font-weight-thin: 100 !important;
+$font-weight-extralight: 200 !important;
+$font-weight-light: 300 !important;
+$font-weight-regular: 400 !important;
+$font-weight-medium: 500 !important;
+$font-weight-semibold: 600 !important;
+$font-weight-bold: 700 !important;
+
+// Define font-style variables
+$font-style-normal: normal !important;
+$font-style-italic: italic !important;
+
+// Define font-size variables
+$font-size-h1: 2.5rem !important;
+$font-size-h2: 2rem !important;
+$font-size-h3: 1.75rem !important;
+$font-size-h4: 1.5rem !important;
+$font-size-h5: 1.25rem !important;
+$font-size-h6: 1rem !important;
+$font-size-p: 1rem !important;
+$font-size-small: 0.875rem !important;

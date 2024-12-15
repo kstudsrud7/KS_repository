@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="97"
-  DTS:VersionGUID="{77055697-B247-411B-9FC8-4D9BD87B2790}">
+  DTS:VersionBuild="99"
+  DTS:VersionGUID="{B5E05730-0373-4FE8-9239-2E3A7EA74A33}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5eddev.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAQJjyhDQX943wRtE00ll7LfOw+T1DUs92WMVwdKD8aSAAAAAAOgAAAAAIAACAAAACvpGb8SYAVfR2grH3hAEJ9y0/v8qDb9LnUqs4Yn8QxgmAAAABnmq4QBodD3H/lHhblYy4PpG7GDmdjwvJGkymuIHn4WkBi6vtbIt0XVW0QUat8SnutEtsPISVKOp5UjgzjOxRPrStIeYbb1okf79KCSsSCzM/mV9o4pUC+7lWJeanbPTpAAAAARZ19D2OWPfAPhLFnBzLFP+4wOn0nW4JUqv9n3LtZs6RvOg5qvCnk5sF7AFZLQ/Ok49mfVqmHrxnPfgPGCPbZwQ</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEiU6y2UmSoTKNRoDs25xxO7bRi/3oOSpdNlElyCz6UwAAAAAOgAAAAAIAACAAAADCyr806sfOgTNg8LyKw5VJaH0WzwbNAvYDGdpWMJdK3WAAAAAboT5CrMa9rpOel8cfdyxaB6gSRuXsOyGwf5FO8nW+Bi+Y1jdzQyNrDfc2tqyBabKL74sz/c/Af9pXzTPkQA8G7ZGFMjv/pgLfwDNc5ZeDYIiZoPbigsQ+od1qc0p6KK9AAAAAdgcNFSR4uDlOjVgwgqS7C1n3TDLFCdj0ElqN3EHpP5jxM+6744gguRwKNo7/SLh4nVV+/zeqjDaSiJNCddfXpA</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAApJhC6OBB2Cm/TKpv+roctpORvFGwXf8Dz/gIdxXV5tAAAAAAOgAAAAAIAACAAAACsAdFoYM0cO6QHNIVfxxTnluh9/JhRFluLKKRyKu96/2AAAAA/u3il5puI0w3KyDML798yCCvwYL+Ku8fnZKvikI3Dt6sdshETD7LA7AVm4LvkPFuWgg3bbfnTYekW6x7l5PnblrCuDlMuNKW0fent35z1ee3KY45ph9i5HccEWB8EgrpAAAAA19CEduy4majcO/9ue8s9jE+SByFy55Lh6Fw+omGA+c5sY8SImvrxCIyt2iJ411XX/B30xQj0J1k08KYtTqn81g</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9z/egDvaDCx0yqwXGjHDs5ket2YbuWdFYHLdfT7j5uwAAAAAOgAAAAAIAACAAAABOknvGXKP8pz37sLvhRt0vaTloowPvKGhHoM6Fd5ck1WAAAAA5e90vJS83Gus+5hj0OyICkjNN5zeqewjxKLtMh130wAvY9yCKhtWI7fuuXY0Ol3hM8MbVO3BHvsRvGDxH1I9m+v5RA+FdAsqLGC6Xa85pTLhEZbQ5825xOvI0ZFPI6u9AAAAAW7t2grKTQNWlWii0p+INVPbFxDYB8tpLDRaEL/5FOVkWvJ9onVlMp7dJ1b6cX22FOtcqtTwKdPSE3PQJSJQPQw</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -19155,11 +19155,11 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
+          Size="173,43"
           Id="Package\Address types"
           TopLeft="348.333333333333,463.666666666667" />
         <NodeLayout
-          Size="162,42.6666666666667"
+          Size="162,43"
           Id="Package\Causes of Death"
           TopLeft="636.666666666667,169" />
         <NodeLayout
@@ -19167,7 +19167,7 @@
           Id="Package\Certifications"
           TopLeft="353.333333333333,386.333333333333" />
         <NodeLayout
-          Size="189.333333333334,42"
+          Size="189,42"
           Id="Package\Change Request Type"
           TopLeft="876,340" />
         <NodeLayout
@@ -19175,11 +19175,11 @@
           Id="Package\City"
           TopLeft="113,266" />
         <NodeLayout
-          Size="106.666666666667,42.6666666666667"
+          Size="107,43"
           Id="Package\Clans"
           TopLeft="914.749987799674,265.561396253846" />
         <NodeLayout
-          Size="137.333333333334,42"
+          Size="137,42"
           Id="Package\Country"
           TopLeft="96,32" />
         <NodeLayout
@@ -19187,11 +19187,11 @@
           Id="Package\County"
           TopLeft="100.333333333333,177.666666666667" />
         <NodeLayout
-          Size="169.333333333334,42.6666666666667"
+          Size="169,43"
           Id="Package\Degrees"
           TopLeft="359,295.333333333333" />
         <NodeLayout
-          Size="162.666666666667,42"
+          Size="163,42"
           Id="Package\Incident Types"
           TopLeft="891.666666666667,440" />
         <NodeLayout
@@ -19211,11 +19211,11 @@
           Id="Package\Membership Categories"
           TopLeft="339,549" />
         <NodeLayout
-          Size="135.333333333334,42.6666666666667"
+          Size="135,43"
           Id="Package\Name Type"
           TopLeft="907.458321241662,183.456131550524" />
         <NodeLayout
-          Size="201.333333333334,42.6666666666667"
+          Size="201,43"
           Id="Package\Name Types"
           TopLeft="612,531.315789460806" />
         <NodeLayout
@@ -19223,11 +19223,11 @@
           Id="Package\Payment Type"
           TopLeft="901.333333333333,527.666666666667" />
         <NodeLayout
-          Size="142.666666666667,42"
+          Size="143,42"
           Id="Package\School Type"
           TopLeft="380,137" />
         <NodeLayout
-          Size="150.666666666667,48"
+          Size="151,48"
           Id="Package\Schools"
           TopLeft="368.666666666667,219.333333333333" />
         <NodeLayout
@@ -19235,7 +19235,7 @@
           Id="Package\Skills"
           TopLeft="383.333333333333,45" />
         <NodeLayout
-          Size="129.333333333334,42"
+          Size="129,42"
           Id="Package\States"
           TopLeft="99,105.666666666667" />
         <NodeLayout

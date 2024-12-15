@@ -1,0 +1,13 @@
+- adx_adddescription: false
+  adx_attributelogicalname: ait_graduationterm
+  adx_descriptionposition: 100000000
+  adx_entityform: c44fe00c-c73e-ef11-8409-6045bd0345c0
+  adx_entityformforcreate: c44fe00c-c73e-ef11-8409-6045bd0345c0
+  adx_entityformmetadataid: 6ba69a8d-97a6-ef11-8a6a-000d3a5b0e68
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_graduationterm
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true

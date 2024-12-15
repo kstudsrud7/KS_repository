@@ -1,0 +1,33 @@
+{% comment %}
+Retrieve the list of Service Request Programs
+{% endcomment%}
+{% fetchxml programs %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" returntotalrecordcount="true">
+  <entity name="ait_program">
+    <attribute name="ait_name" />
+    <attribute name="ait_category" />
+    <attribute name="ait_programid" />
+    <order descending="false" attribute="ait_name" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0" />
+    </filter>
+  </entity>
+</fetch>
+{% endfetchxml %}{
+    "totalcount": {{ programs.results.total_record_count }},
+    "morerecords": {{ programs.results.more_records }},
+    "page": {{ request.params['page'] | default: 0 }},
+    "results": [
+        {% for item in programs.results.entities %}
+            {
+                "programid": {{ item.ait_programid }},
+                "programname": {{ item.ait_name }},
+                "category": {
+                    "value": {{ item.ait_category.value }},
+                    "label": {{ item.ait_category.label }}
+            }   
+     ]
+    }{% unless forloop.last %},{%endunless %}
+{% endfor -%}
+]
+} 

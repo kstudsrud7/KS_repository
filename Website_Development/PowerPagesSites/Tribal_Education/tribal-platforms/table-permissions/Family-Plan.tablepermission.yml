@@ -1,0 +1,12 @@
+adx_append: false
+adx_appendto: false
+adx_create: false
+adx_delete: false
+adx_entitylogicalname: ait_caseplan
+adx_entityname: Family Plan
+adx_entitypermissionid: 7c8f50e1-4596-eb11-b1ac-0022480a0369
+adx_parententitypermission: 3a293181-6219-eb11-a813-000d3a194b63
+adx_parentrelationship: ait_ait_clientprofile_ait_caseplan_Individual
+adx_read: true
+adx_scope: 756150003
+adx_write: false

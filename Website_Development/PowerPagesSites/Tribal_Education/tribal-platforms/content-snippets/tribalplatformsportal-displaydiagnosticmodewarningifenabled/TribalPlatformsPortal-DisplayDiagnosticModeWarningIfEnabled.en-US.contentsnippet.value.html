@@ -1,0 +1,12 @@
+{% comment %}
+Display diagnostic mode warning message if diagnostic mode is enabled.
+{% endcomment %}
+{% assign tpp_diagnosticmode = settings["TribalPlatformsPortal/DiagnosticMode"] | boolean | default:false %}
+{% if tpp_diagnosticmode %}
+    <div class="alert alert-block alert-warning">
+        <p>
+            <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>&nbsp;Tribal Platforms Portal diagnostic mode is enabled. Extra information may appear.<br>
+            Change the Site Setting "TribalPlatformsPortal/DiagnosticMode" to "false" to disable diagnostic mode.
+        </p>
+    </div>
+{% endif %}

@@ -1,0 +1,54 @@
+<div class="row sectionBlockLayout" style="display: flex; flex-wrap: wrap; text-align: center; min-height: auto; padding: 8px; margin: 0px;">
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column; padding-bottom: 20px; width: 100%; text-align: left;">
+      Below is your contact and member information on record with the Enrollment Department.<br />
+      Please review your information and submit change requests to update any out of date information.<br />
+      This is the primary information used to contact you or is used on any applications for service.
+    </div>
+    <div class="col-md-2 columnBlockLayout" style="display: flex; flex-direction: column;"><img alt="Member Profile image" src="/MemberProfile.png" style="width: 130px; height: auto; margin-left: auto; margin-right: auto;" /></div>
+    <div class="col-md-10 columnBlockLayout" style="display: flex; flex-direction: column; text-align: left;">{% entityform name: 'Contact' %}</div>
+  </div>
+</div>
+<div class="row sectionBlockLayout" style="display: flex; flex-wrap: wrap; text-align: left; min-height: 50px; padding: 8px; margin: 0px;">
+  <div class="container" style="display: flex; flex-wrap: wrap;"><div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column;"></div></div>
+</div>
+<div class="row sectionBlockLayout" style="display: flex; flex-wrap: wrap; text-align: left; min-height: 100px; padding: 80px; margin: 0px; background: rgb(242, 242, 242);">
+  <div class="container" style="display: flex; flex-wrap: wrap;">
+    <h3 class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column; padding-bottom: 20px; width: 100%; text-align: left;">Change Request Submissions</h3>
+    <div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column; padding-bottom: 20px; width: 100%; text-align: left;">The list below shows the change requests submitted by you for review along with the status of the change request.</div>
+    <div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column;">{% include 'entity_list' key: 'Change Requests' %}</div>
+    <div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column;"><h3>Profile Change Actions:</h3></div>
+    <div class="col-md-3 columnBlockLayout" style="display: flex; flex-direction: column;">
+      <p style="text-align: center;">
+        <a href="/contact/housemembers"><img alt="Household image" src="/Household.png" style="width: 130px; height: auto; margin-left: auto; margin-right: auto;" /></a>
+      </p>
+      <p style="text-align: center;">
+        <a href="/contact/housemembers"><span style="color: #0072bc; text-align: center; font-size: 13pt;">Update Household</span></a>
+      </p>
+    </div>
+    <div class="col-md-3 columnBlockLayout" style="display: flex; flex-direction: column;">
+      <p style="text-align: center;">
+        <a href="/contact/contact_income_and_expense/"><img alt="Income and Expenses image" src="/contact/contact_income_and_expense/IncomeExpenses.png" style="width: 130px; margin-left: auto; margin-right: auto; height: 130px;" /></a>
+      </p>
+      <p style="text-align: center;">
+        <a href="/contact/contact_income_and_expense/"><span style="color: #0072bc; text-align: center; font-size: 13pt;">Update Income and Expenses</span></a>
+      </p>
+    </div>
+    <div class="col-md-3 columnBlockLayout" style="display: flex; flex-direction: column;">
+      <p style="text-align: center;">
+        <a href="/contact/medicalrecords/"><img alt="Medical Records image" src="/MedicalRecords.png" style="width: 130px; height: auto; margin-left: auto; margin-right: auto;" /></a>
+      </p>
+      <p style="text-align: center;">
+        <a href="/contact/medicalrecords/"><span style="color: #0072bc; text-align: center; font-size: 13pt;">Update Medical Records</span></a>
+      </p>
+    </div>
+    <div class="col-md-3 columnBlockLayout" style="display: flex; flex-direction: column;">
+      <p style="text-align: center;">
+        <a href="/contact/myprofilechange"><img alt="Address Change Request image" src="/contact/myprofilechange/AddressChangeRequest.png" style="width: 130px; margin-left: auto; margin-right: auto; height: 130px;" /></a>
+      </p>
+      <p style="text-align: center;">
+        <a href="/contact/myprofilechange"><span style="color: #0072bc; text-align: center; font-size: 13pt;">Address update</span></a>
+      </p>
+    </div>
+  </div>
+</div>

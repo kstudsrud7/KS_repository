@@ -1,0 +1,13 @@
+adx_authenticationrequired: false
+adx_editexistingrecordpermitted: true
+adx_multiplerecordsperuserpermitted: true
+adx_name: Education - View in Progress
+adx_progressindicatorenabled: true
+adx_progressindicatorignorelaststep: false
+adx_progressindicatorposition: 756150000
+adx_progressindicatorprependstepnum: false
+adx_progressindicatortype: 756150001
+adx_savechangeswarningonclose: false
+adx_startnewsessiononload: true
+adx_startstep: b593f664-969b-ef11-8a6a-000d3a5b0e68
+adx_webformid: a72d0935-969b-ef11-8a6a-000d3a5b0e68

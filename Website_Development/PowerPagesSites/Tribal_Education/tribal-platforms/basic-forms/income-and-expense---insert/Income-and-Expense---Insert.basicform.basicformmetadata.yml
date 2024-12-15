@@ -1,0 +1,50 @@
+- adx_adddescription: false
+  adx_attributelogicalname: ait_source
+  adx_descriptionposition: 100000000
+  adx_entityform: 91a2ce97-8e19-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 91a2ce97-8e19-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: 4ba0969c-e21e-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_label: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Income Source <i>(if applicable)</i>"
+
+      }
+
+    ]
+  adx_name: ait_source
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: true
+  adx_attributelogicalname: ait_incomeorexpensetype
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "<i><b>Earned income</b> includes all income from employment, but only if it is includable in gross income. Examples of <b>earned income</b> are: wages; salaries; tips; and other taxable employee compensation. <b>Earned income</b> also includes net earnings from self-employment.<br><b>Unearned income</b> includes amounts such as pensions and annuities, welfare benefits, unemployment compensation, worker's compensation benefits, or social security benefits.</i>"
+
+      }
+
+    ]
+  adx_descriptionposition: 100000001
+  adx_entityform: 91a2ce97-8e19-eb11-a814-000d3a5314b6
+  adx_entityformforcreate: 91a2ce97-8e19-eb11-a814-000d3a5314b6
+  adx_entityformmetadataid: e6cadf52-e21e-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_incomeorexpensetype
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false

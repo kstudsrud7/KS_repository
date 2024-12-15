@@ -1,0 +1,60 @@
+<div class="wrapper-body">
+    <div class="container">
+        <div class="page-heading">
+            {% block breadcrumbs %}
+            {% include 'Breadcrumbs' %}
+            {% endblock %}
+            {% block title %}
+            {% include 'Page Header' %}
+            {% endblock %}
+        </div>
+        {{ snippets["TribalPlatformsPortal/DisplayDiagnosticModeWarningIfEnabled"] }}
+        {% include 'Page Copy' %}
+    </div>
+    {% block main %}
+    <div class="container" role="main">
+        {% if page.adx_entitylist %}
+        {% include 'entity_list' key: page.adx_entitylist.id %}
+        {% endif %}
+
+        {% if page.adx_entityform %}
+        {% entityform id: page.adx_entityform.id %}
+        {% endif %}
+
+        {% if page.adx_webform %}
+        {% webform id: page.adx_webform.id %}
+        {% endif %}
+    </div>
+    {% endblock %}
+
+{{ snippets["TribalPlatformsPortal/SR/Privacy"] }}
+{% comment %}
+Retrieve the Client Profile of the Contact. Service Requests must be associated
+to Client Profile, not Contact.
+Returns record in the "cp" collection.
+{% endcomment %}
+{% fetchxml cp %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false" top="1">
+  <entity name="ait_clientprofile">
+    <filter type="and">
+      <condition attribute="ait_contact" operator="eq" value="{{ user.id }}" />
+    </filter>
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign cp_results = cp.results.entities %}
+{% if cp_results.size > 0 %}
+    {% for cp_rec in cp_results %}
+        {% comment %}
+        Prepopulate the Client Profile value in the Service Request form.
+        {% endcomment %}
+        <script>
+          $("#ait_clientprofile_name").attr("value", "{{ cp_rec.ait_name }}" );
+          $("#ait_clientprofile").attr("value", "{{ cp_rec.ait_clientprofileid }}" );
+          $("#ait_clientprofile_entityname").attr("value","ait_clientprofile");
+        </script>
+    {% endfor %}
+{% else %}
+    <b>Error: The Client Profile record for '{{ user.fullname }}'' was not retrieved.<b><br>
+{% endif %}
+

@@ -1,0 +1,36 @@
+This is line 1 of the template.
+<pre class="wp-block-syntaxhighlighter-code">  {% block main %} {% include 'Page Copy' %} {% comment %} {% if page.adx_entityform %} {% endcomment %}
+<div id="printForm">
+    <div id="dvLogo" style="text-align:center; display:none">
+        <img style="width: 300px;" src="/company-logo.png">
+    </div>
+    {% include 'Education Application - View' key: page.adx_entityform.id %}
+</div>
+<form id="printForm">
+    <input class="entityform-download btn btn-info action" type="button" value="Print Application" id="btnPrint" />
+</form>
+{% comment %}
+{% endif %}
+{% endcomment %}
+<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js</a>
+<script type="text/javascript">
+    $("#btnPrint").on("click", function() {
+        document.getElementById('dvLogo').style.display = 'block';
+        document.getElementsByClassName("view-toolbar grid-actions clearfix")[0].style.display = 'none';
+ 
+        var divContents = $("#printForm").html();
+ 
+        document.getElementsByClassName("view-toolbar grid-actions clearfix")[0].style.display = 'block';
+        document.getElementById('dvLogo').style.display = 'none';
+ 
+        var printWindow = window.open('', '', 'height=600,width=800');
+        printWindow.document.write('<link rel="stylesheet" href="/bootstrap.min.css" />');
+        printWindow.document.write('<html><head><title> Enrollment Application</title>');
+        printWindow.document.write('</head><body>');
+        printWindow.document.write(divContents);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
+    });
+</script>
+{% endblock %}</pre>

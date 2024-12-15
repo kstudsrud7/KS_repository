@@ -1,0 +1,12 @@
+adx_append: true
+adx_appendto: true
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: ait_educationassessment
+adx_entityname: Education - Portal Assessments in Progress
+adx_entitypermission_webrole:
+- 015d3c31-4f91-ef11-ac21-000d3a5b0e68
+adx_entitypermissionid: 73f58277-5796-4d4a-94d1-9e66f8c74fb3
+adx_read: true
+adx_scope: 756150000
+adx_write: true

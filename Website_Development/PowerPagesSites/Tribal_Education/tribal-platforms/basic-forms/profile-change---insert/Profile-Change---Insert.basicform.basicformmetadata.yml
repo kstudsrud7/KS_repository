@@ -1,0 +1,160 @@
+- adx_adddescription: false
+  adx_attributelogicalname: ait_changerequestaddresstype
+  adx_controlstyle: 100000000
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: 0f5ca086-bf1e-eb11-a813-000d3a31c867
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: ait_changerequestaddresstype
+  adx_randomizeoptionsetvalues: false
+  adx_requiredfieldvalidationerrormessage: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Please select a Change Request Address Type"
+
+      }
+
+    ]
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_contact
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: 2a30a8d5-a31e-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_contact
+  adx_onsavefromattribute: contactid
+  adx_onsavetype: 100000002
+  adx_prepopulatefromattribute: contactid
+  adx_prepopulatetype: 100000002
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_city_user
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: 3726a49a-95ca-ed11-b597-6045bd006a3a
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: ait_city_user
+  adx_randomizeoptionsetvalues: false
+  adx_requiredfieldvalidationerrormessage: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Please enter a value for City"
+
+      }
+
+    ]
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_zipcode_user
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: 60780cba-95ca-ed11-b597-6045bd006a3a
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: ait_zipcode_user
+  adx_randomizeoptionsetvalues: false
+  adx_requiredfieldvalidationerrormessage: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Please enter a value for Zip Code"
+
+      }
+
+    ]
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_changerequestsource
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: 6b772ed9-a51e-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: true
+  adx_name: ait_changerequestsource
+  adx_onsavetype: 100000000
+  adx_onsavevalue: Member
+  adx_prepopulatetype: 100000000
+  adx_prepopulatevalue: Member
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_stateprovince_user
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: a952c8ad-95ca-ed11-b597-6045bd006a3a
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: ait_stateprovince_user
+  adx_randomizeoptionsetvalues: false
+  adx_requiredfieldvalidationerrormessage: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Please enter a value for State"
+
+      }
+
+    ]
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_street1_user
+  adx_descriptionposition: 100000000
+  adx_entityform: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformforcreate: 339024df-f20e-eb11-a813-000d3a1fbddc
+  adx_entityformmetadataid: ef3dad73-95ca-ed11-b597-6045bd006a3a
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_name: ait_street1_user
+  adx_randomizeoptionsetvalues: false
+  adx_requiredfieldvalidationerrormessage: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "Please enter a value for Street 1"
+
+      }
+
+    ]
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true

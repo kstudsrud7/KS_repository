@@ -1,0 +1,27 @@
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_description: Web role for authenticated users to view TP education modules.
+  adx_name: Authenticated Users - Education
+  adx_webroleid: 015d3c31-4f91-ef11-ac21-000d3a5b0e68
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_description: Used for members who can only access Family Wellness pages
+  adx_name: Authenticated Users - Family Wellness
+  adx_webroleid: 28d77d95-261e-eb11-a813-000d3a31cf04
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_name: Administrators
+  adx_webroleid: 6bcf8d45-9ff1-404a-827e-efc5c668f813
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: false
+  adx_description: Role assigned to Tribal Members who can access Enrollment pages.
+  adx_name: Authenticated Users - Enrollment
+  adx_webroleid: 73aa6040-261e-eb11-a813-000d3a31cf04
+- adx_anonymoususersrole: true
+  adx_authenticatedusersrole: false
+  adx_name: Anonymous Users
+  adx_webroleid: a60a3ce4-2db4-4c26-8ba7-1a3b36f3a0a7
+- adx_anonymoususersrole: false
+  adx_authenticatedusersrole: true
+  adx_name: Authenticated Users - ALL
+  adx_webroleid: bde7522a-3a52-4619-8531-b022b9c5104f

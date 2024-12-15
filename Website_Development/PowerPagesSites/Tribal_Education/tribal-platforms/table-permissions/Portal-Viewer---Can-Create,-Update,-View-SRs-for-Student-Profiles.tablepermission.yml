@@ -1,0 +1,16 @@
+adx_append: true
+adx_appendto: true
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: ait_servicerequest
+adx_entityname: 'Portal Viewer:  Can Create, Update, View SRs for Student Profiles'
+adx_entitypermission_webrole:
+- 6bcf8d45-9ff1-404a-827e-efc5c668f813
+- 73aa6040-261e-eb11-a813-000d3a31cf04
+- bde7522a-3a52-4619-8531-b022b9c5104f
+adx_entitypermissionid: 1718060b-c8fc-ee11-a1ff-000d3a3541fa
+adx_parententitypermission: 235071bb-6a93-40a5-b57c-cfeed6a0535d
+adx_parentrelationship: ait_ait_servicerequest_StudentProfile_ait_stu
+adx_read: true
+adx_scope: 756150003
+adx_write: true

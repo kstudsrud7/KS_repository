@@ -1,0 +1,72 @@
+- adx_adddescription: false
+  adx_attributelogicalname: ait_changerequestsource
+  adx_descriptionposition: 100000000
+  adx_entityform: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformforcreate: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformmetadataid: 12c50f90-5b20-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: true
+  adx_name: ait_changerequestsource
+  adx_onsavetype: 100000000
+  adx_onsavevalue: Member
+  adx_prepopulatetype: 100000000
+  adx_prepopulatevalue: Member
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_contact
+  adx_descriptionposition: 100000000
+  adx_entityform: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformforcreate: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformmetadataid: 6cc10241-5b20-eb11-a813-000d3a31c867
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_contact
+  adx_onsavefromattribute: contactid
+  adx_onsavetype: 100000002
+  adx_prepopulatefromattribute: contactid
+  adx_prepopulatetype: 100000002
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: true
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_descriptionposition: 100000000
+  adx_entityform: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformforcreate: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformmetadataid: cd770786-b990-eb11-b1ac-000d3a597785
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_timeline_settings: '{"$type":"Adxstudio.Xrm.Web.UI.JsonConfiguration.TimelineMetadata, Adxstudio.Xrm","AddNoteButtonLabel":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"CreateEnabled":true,"CreateDialog":{"$type":"Adxstudio.Xrm.Web.UI.JsonConfiguration.TimelineModal, Adxstudio.Xrm","NoteFieldLabel":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"DisplayAttachFile":true,"AttachFileLabel":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"AttachFileAccept":"","LeftColumnCSSClass":"","RightColumnCSSClass":"","NoteFieldColumns":0,"NoteFieldRows":0,"Size":0,"CssClass":"","Title":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"TitleCssClass":"","PrimaryButtonText":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"DismissButtonSrText":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"CloseButtonText":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"PrimaryButtonCssClass":"","CloseButtonCssClass":""},"LoadingMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"ErrorMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"AccessDeniedMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"EmptyMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"ListTitle":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"ListOrders":[],"AttachFileLocation":756150000,"AttachFileAccept":"*/*","AttachFileAcceptExtensions":".*","AttachFileRestrictAccept":false,"AttachFileRestrictErrorMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"AttachFileMaximumSize":null,"AttachFileMaximumSizeErrorMessage":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}],"LoadMoreButtonLabel":[{"$type":"Adxstudio.Xrm.Web.UI.WebForms.LanguageResources, Adxstudio.Xrm","LCID":1033,"Value":""}]}'
+  adx_type: 756150000
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: false
+  adx_attributelogicalname: ait_crtype
+  adx_controlstyle: 756150000
+  adx_descriptionposition: 100000000
+  adx_entityform: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformforcreate: 47bc2180-5920-eb11-a813-000d3a31c867
+  adx_entityformmetadataid: d0eb9767-5a20-eb11-a813-000d3a31c867
+  adx_fieldisrequired: true
+  adx_ignoredefaultvalue: false
+  adx_label: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": ""
+
+      }
+
+    ]
+  adx_name: ait_crtype
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: true

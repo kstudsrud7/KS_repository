@@ -1,0 +1,100 @@
+- adx_adddescription: true
+  adx_attributelogicalname: ait_requiredverificationdocumentation
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "<b>Required Verification Documentation:</b> Please provide Institutional Invoice as verification from Educational Institution's student portal displaying total tuition and fees for current term with name and/or student identification number displayed."
+
+      }
+
+    ]
+  adx_descriptionposition: 100000000
+  adx_entityform: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformforcreate: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformmetadataid: 1b3eaf80-0d8b-ef11-ac21-000d3a3b9861
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_requiredverificationdocumentation
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+- adx_adddescription: true
+  adx_attributelogicalname: ait_educationalinstitutionw9
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "<b>Required Verification Documentation:</b> Please provide the Educational Institution’s Internal Revenue Service Form, W9."
+
+      }
+
+    ]
+  adx_descriptionposition: 100000000
+  adx_entityform: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformforcreate: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformmetadataid: 1e42444c-0d8b-ef11-ac21-000d3a3b9861
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_educationalinstitutionw9
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false
+- adx_adddescription: false
+  adx_descriptionposition: 100000000
+  adx_entityform: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformforcreate: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformmetadataid: 59695189-0d8b-ef11-ac21-000d3a3b9861
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_label: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "<center><b>Federated Indians of Graton Rancheria <br> Higher Education Assistance Program Application</b><br> <br> <h5>The Federated Indians of Graton Rancheria Tribal Council has established the Higher Education Assistance Program. The funding allocated may only be used for eligible education expenses identified in the Application. Please refer to Program Rules for more details. <u><b>In order to receive educational assistance, you must complete and submit this application. </b></u>Submitting supporting documents is timely for monetary education assistance. </h5></center>"
+
+      }
+
+    ]
+  adx_name: tab_4_section_1
+  adx_randomizeoptionsetvalues: false
+  adx_sectionname: tab_4_section_1
+  adx_setvalueonsave: false
+  adx_type: 100000001
+  adx_useattributedescriptionproperty: true
+- adx_adddescription: true
+  adx_attributelogicalname: ait_institutiondepttoprocesspayments
+  adx_description: >-
+    [
+
+      {
+
+        "LCID": 1033,
+
+        "Value": "<b>Name of Institutional Department responsible for processing tuition payments (i.e., Bursar’s Office, Admissions, Accounts Payable, Financial Aid Department, etc.) </b>"
+
+      }
+
+    ]
+  adx_descriptionposition: 100000000
+  adx_entityform: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformforcreate: bf638518-4c8a-ef11-ac21-000d3a3b9861
+  adx_entityformmetadataid: 99cf2067-0d8b-ef11-ac21-000d3a3b9861
+  adx_fieldisrequired: false
+  adx_ignoredefaultvalue: false
+  adx_name: ait_institutiondepttoprocesspayments
+  adx_randomizeoptionsetvalues: false
+  adx_setvalueonsave: false
+  adx_type: 100000000
+  adx_useattributedescriptionproperty: false

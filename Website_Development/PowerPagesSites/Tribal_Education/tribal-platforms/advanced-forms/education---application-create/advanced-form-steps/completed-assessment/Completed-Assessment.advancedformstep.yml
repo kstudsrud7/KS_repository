@@ -1,0 +1,49 @@
+adx_allowmultiplefiles: false
+adx_appendquerystring: false
+adx_associatecurrentportaluser: false
+adx_attachfile: false
+adx_attachfilerequired: false
+adx_attachfilerestrictaccept: false
+adx_autogeneratesteps: false
+adx_captcharequired: false
+adx_createautonumber: false
+adx_editexistingrecordpermitted: false
+adx_entitypermissionsenabled: true
+adx_forceallfieldsrequired: false
+adx_geolocation_displaymap: false
+adx_geolocation_enabled: false
+adx_geolocation_maptype: 756150000
+adx_hideformonsuccess: true
+adx_loguser: false
+adx_movepreviouspermitted: true
+adx_multiplerecordsperuserpermitted: false
+adx_name: Completed Assessment
+adx_populatereferenceentitylookupfield: false
+adx_portaluserlookupattributeisactivityparty: false
+adx_recommendedfieldsrequired: false
+adx_redirecturlappendentityidquerystring: false
+adx_redirectwebpage: 695dd753-1825-1c46-5d1a-78949cb8a7df
+adx_referenceentityshowreadonlyform: false
+adx_referenceentitysourcetype: 100000001
+adx_referencequerystringisprimarykey: true
+adx_renderwebresourcesinline: false
+adx_setentityreference: false
+adx_showcaptchaforauthenticatedusers: false
+adx_showownerfields: false
+adx_showunsupportedfields: false
+adx_successmessage: >-
+  [
+
+    {
+
+      "LCID": 1033
+
+    }
+
+  ]
+adx_targetentitylogicalname: ait_educationassessment
+adx_tooltipenabled: false
+adx_type: 100000003
+adx_validationsummarylinksenabled: true
+adx_webform: 0382d6e9-7753-ef11-a317-6045bd0807e0
+adx_webformstepid: dd2264dd-438a-ef11-ac21-000d3a3b9861

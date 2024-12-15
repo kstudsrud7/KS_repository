@@ -1,0 +1,71 @@
+{% block main %}
+
+{% fetchxml programs %}
+<fetch count="10" returntotalrecordcount="true">
+    <entity name="ait_program">
+        <attribute name="ait_name" />
+        <attribute name="ait_category" />
+        <attribute name="ait_programstartdate" />
+        <attribute name="ait_programenddate" />
+        <attribute name="ait_programstatus" />
+        <attribute name="ait_programimage_url" />
+        <attribute name="ait_description" />
+        <attribute name="statecode" />
+        <attribute name="statuscode" />
+        <attribute name="ait_applicationdeadline" />
+        <filter>
+            <condition attribute="ait_programstatus" operator="eq" value="914600001" />
+            <condition attribute="statecode" operator="eq" value="0" />
+        </filter>
+        <order attribute="ait_applicationdeadline" />
+    </entity>
+</fetch>
+{% endfetchxml %}
+
+{% assign organizationUrl = request.url | split: '/' | slice: 0, 3 | join: '/' %}
+<p>Organization URL: {{ organizationUrl }}</p>
+
+{% if programs and programs.results and programs.results.entities %}
+  <div class="record-count">
+      <p>Total Programs Found: {{ programs.results.entities.size }}</p>
+  </div>
+
+  {% if programs.results.entities.size > 0 %}
+      {% assign programsResults = programs.results.entities %}
+      <div class="container-fluid justify-content-center text-center">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {% for program in programsResults %}
+            <div class="col">
+              <div class="card h-100">
+                <img src="{{ program.ait_programimage_url }}&Full=true" class="img-fluid" alt="{{ program.ait_name }}">
+                <div class="card-body">
+                  <h5 class="card-title text-center">{{ program.ait_name }}</h5>
+                  <p class="card-text">{{ program.ait_description }}</p>
+                  <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MMMM d, yyyy" }} - {{ program.ait_programenddate | date: "MMMM d, yyyy" }}</small></p>
+                  <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MMMM d, yyyy" }}</small></p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+  {% else %}
+    <div class="row card-row">
+      <div class="col-lg-12 col-md-12 col-xl-12">
+        <p>{{ snippets["NoProgramsFound"] }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% else %}
+  <div class="row card-row">
+    <div class="col-lg-12 col-md-12 col-xl-12">
+      <p>{{ snippets["NoProgramsFound"] }}</p>
+    </div>
+  </div>
+{% endif %}
+
+<!-- Debugging output -->
+<p>{{ programs | json }}</p>
+
+{% endblock %}
