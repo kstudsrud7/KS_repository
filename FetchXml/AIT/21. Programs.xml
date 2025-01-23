@@ -1,0 +1,13 @@
+<fetch>
+  <entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programid" />
+    <attribute name="ait_programstartdate" />
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>

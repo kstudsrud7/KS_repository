@@ -1,0 +1,16 @@
+<fetch count="10">
+  <entity name="ait_event">
+    <attribute name="ait_description" />
+    <attribute name="ait_enddate" />
+    <attribute name="ait_eventid" />
+    <attribute name="ait_eventtype" />
+    <attribute name="ait_location" />
+    <attribute name="ait_name" />
+    <attribute name="ait_startdate" />
+    <order attribute="ait_startdate" />
+    <link-entity name="imagedescriptor" from="imagedescriptorid" to="ait_imageid" alias="IMG">
+      <attribute name="fullimageurl" />
+      <attribute name="imageurl" />
+    </link-entity>
+  </entity>
+</fetch>

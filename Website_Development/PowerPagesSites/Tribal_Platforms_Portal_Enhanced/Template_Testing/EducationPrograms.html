@@ -1,0 +1,46 @@
+{% block main %}
+{% include 'Page Copy' %}
+{% fetchxml educationprograms %}
+<fetch count="10">
+  <entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programimage" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programid" />
+    <attribute name="ait_programstartdate" />
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign programdetails_marker = sitemarkers["ProgramDetails"] %}
+{% assign educationapplicationcreate_marker = sitemarkers["EducationApplicationCreate"] %}
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    {% for program in educationprograms.results.entities %}
+    <div class="col">
+      <div class="card portal-card text-center h-100 shadow-sm" style="width: 18rem;">
+        <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="d-block">
+          <img src="{{ program.ait_programimage.url }}" alt="{{ program.ait_name }}" class="portal-card-img card-img-top img-fluid">
+        </a>
+        <div class="card-body">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="portal-card-title text-decoration-none">
+            <h3 class="fw-bold">{{ program.ait_name }}</h3>
+          </a>
+          <p class="card-text">{{ program.ait_description }}</p>
+          <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MM/d/yy" }} - {{ program.ait_programenddate | date: "MM/d/yy" }}</small></p>
+          <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MM/d/yy" }}</small></p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="btn btn-primary">Learn More</a>
+          <a href="{{ educationapplicationcreate_marker.url }}?id={{ program.ait_programid }}&name={{ program.ait_name }}&entityname=ait_program" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

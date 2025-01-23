@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="100"
-  DTS:VersionGUID="{4509BAB4-7C72-4673-83CA-3C54EC8FBF86}">
+  DTS:VersionBuild="102"
+  DTS:VersionGUID="{D4DBA352-40C7-4FCB-8BF8-C2CC9F7715FD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA7dcuV9hMIUtOk1bdHowPVE5DO/UEfhIf/ReJfbloXFAAAAAAOgAAAAAIAACAAAAB5syIde16Hbe1vSKZSKRttuDradfkYe+9VgK0SrJlawWAAAAD/rVqfjW1/BOsYFIYQ3xv3rzzoIK9NtrPkrmbMwK9UiuG+T11hXLXTLVkeMDBpQrB+odGVALOWww6lYrvGZk5cB7yFz2YzlOnS3MvF3tYxqeMREn9roXsXH6fAY8KCLcRAAAAAkMH8PdvM00gjdcagYdfq9j5Tj5/aS7mK8i+AMdP9HfStFyai/Vs7QQ8/+cLF+RxRmO03qhh+BZAaWFMW1c/9KA</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD5X+xRQxxmwmOYsZHk+GIx+mMvVyqaRluwFZ7iX4er9QAAAAAOgAAAAAIAACAAAADto3rbtwIO6gfBRMjS6JKQ43NQOEoH0oU7WeDW1DnQN2AAAABR4z5QTzXLo+SC9Viwx51GB5VHy/81EQVJdzgdKfyaLMdu8TPKuiF1T0h3JU+Ow2FOqX7B/kCbra1kdQBKr4LzB44umYNwl08ZEcKLn9PiyJzwWO1HOpFpCKTMP7GtRfxAAAAA5TOCaisD7Jp/+SkN3eZggT3tujefQGH2qzDMzXvOz6jvtLg1LVJWKcEGPaL0jezy3DqqWS68xDuWzNoYA2bq4Q</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADEFyLJ2Pft6ygdSF70uaok5iU6lUziCclmxWVFGln63QAAAAAOgAAAAAIAACAAAABf77ku0GVr/SNHOwCCoNT4DLGTcbiyan/s3YCSVW3/7GAAAAAvABvEXxItxOvPuLcv2Qr8inXskCPkMUdLSa8ydDae69FRpYuTNdF+/Wm/n90R6t4PEVDYi2ZOapTjA/ohmKf4Q8s/d6deRGxJlPFDennik+sEI//4pHs5mAzesB3LNitAAAAAbr9FXw4boV00Bshdg9RiHx94bOOjpyl8Yl5SbyV7QltazdkSGp627KsZRtA/X7EvrOSoHVhxoFTDblaKv/4Ijw</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADwKzvRJZ0RrenCIfoiEmUYR9nO4KfKW5XOfkPsZsQ/AgAAAAAOgAAAAAIAACAAAACEHSVjktk9Zbh8SVL7wTZkaI1f0A9k+ctUvl+NRR9quGAAAAAWdZ5vMqodVhwo3CMLDpOIAcWTzvOYAV9DzmJUIPHRl9pQY+lJhdsWwoAYT/xdDxknVov1U3J/SSxVK5OAizBVNIN9SO+6GRv39jFu0nizCnxBWFxJB1mM32F1btK/k8pAAAAAJqRfzpCgCdMOivmSayoJwdy/pUmD8utdcAe+LjtvYY4Zh4Hd9H2iNyTU6ER+rW42nDlBAXQ3YcQBkfHYypeEqg</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>

@@ -1,0 +1,86 @@
+h1 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h4 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h5 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h6 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+p {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+p.smallText {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+header {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle > span {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.navbar-brand.navbar-header h1 {
+  color: rgb(35, 39, 42);
+}
+
+.static-top.navbar-dark {
+  background-color: rgb(197, 171, 147); /* Example: Change background color */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link {
+  color: rgb(35, 39, 42); /* Example: Change color of the navigation links */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(35, 39, 42);
+  background-color: transparent; /* Change color of the navigation link text on hover */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand.navbar-header h1 {
+  margin: 0; /* Example: Remove margin */
+  padding: 10px; /* Example: Add padding */
+}
+
+.navbar-brand.navbar-header img {
+  border-radius: 50%; /* Example: Make image round */
+  height: 50px; /* Example: Set height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example: Add shadow */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
+  border-right: 0px;
+  border-left: 0px;
+}/*# sourceMappingURL=main.css.map */

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="99"
-  DTS:VersionGUID="{B5E05730-0373-4FE8-9239-2E3A7EA74A33}">
+  DTS:VersionBuild="102"
+  DTS:VersionGUID="{D4DBA352-40C7-4FCB-8BF8-C2CC9F7715FD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEiU6y2UmSoTKNRoDs25xxO7bRi/3oOSpdNlElyCz6UwAAAAAOgAAAAAIAACAAAADCyr806sfOgTNg8LyKw5VJaH0WzwbNAvYDGdpWMJdK3WAAAAAboT5CrMa9rpOel8cfdyxaB6gSRuXsOyGwf5FO8nW+Bi+Y1jdzQyNrDfc2tqyBabKL74sz/c/Af9pXzTPkQA8G7ZGFMjv/pgLfwDNc5ZeDYIiZoPbigsQ+od1qc0p6KK9AAAAAdgcNFSR4uDlOjVgwgqS7C1n3TDLFCdj0ElqN3EHpP5jxM+6744gguRwKNo7/SLh4nVV+/zeqjDaSiJNCddfXpA</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADyNApLOotyVQv2I0UGwUq+4QhYcYD8CiUK6/wE4GzAXAAAAAAOgAAAAAIAACAAAADS7ZduXGlsl4RBf5vubtU3qZ46MjQMMFr5VVluW5m5oWAAAAD2u7xgpYEexU/Q/57DSElzPSyVdOswStKgWUO3rQTeo9/b0neV96QVrcVd0KjZMa1aYTLnY4hygmMwWhK9pokJ1drBCWBCjm+5lbLl+VOCoCupHBPAtKSyfiUeu7lWCVBAAAAABavB9JFxlsVjyTsie6nD2efJQLKFYEbxA3Um4+Pikg3OJTNqIbWE10q+CPIhHtTTKfR1AADwh1/bpx5L6yuVdA</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9z/egDvaDCx0yqwXGjHDs5ket2YbuWdFYHLdfT7j5uwAAAAAOgAAAAAIAACAAAABOknvGXKP8pz37sLvhRt0vaTloowPvKGhHoM6Fd5ck1WAAAAA5e90vJS83Gus+5hj0OyICkjNN5zeqewjxKLtMh130wAvY9yCKhtWI7fuuXY0Ol3hM8MbVO3BHvsRvGDxH1I9m+v5RA+FdAsqLGC6Xa85pTLhEZbQ5825xOvI0ZFPI6u9AAAAAW7t2grKTQNWlWii0p+INVPbFxDYB8tpLDRaEL/5FOVkWvJ9onVlMp7dJ1b6cX22FOtcqtTwKdPSE3PQJSJQPQw</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACl4dg86L2hRWTTtqjNo0rC3v13hefkN7Eo02m/EyQncwAAAAAOgAAAAAIAACAAAADgEOepDpiee1d8FP2yzYplPhFjZxyCJllykB5x48fb3WAAAADPjv+QKuXroRPZ5wdugKgp8Awer7fKGowZlRjsRr56tu34hBPFzmEqp7ojyUJcYpNsroMmVkQpZXVKnA/aD3i2vqbye7UPuy6Qqo3TFKUB3SeKKPkVwmlWp2LysWBhaDpAAAAADBjjCLiI+Es8QgCtQi6dLED2/zVdmLR3sqEEaPx/6jf2uqWtZOi2iIGRvTcmezcFpBCNQ8AFCHQL0THh/44rYw</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4106,6 +4106,7 @@
       DTS:refId="Package\Clans"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{80922e10-a77f-48d7-971f-6ac01b179924}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"

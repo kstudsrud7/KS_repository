@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Portal Override Theme Colors
+$portal-theme-color-1: #0072BC; // Arctic IT Color Palette 2024 - Blue
+$portal-theme-color-2: #72808A; // Arctic IT Color Palette 2024 - Grey 
+$portal-theme-color-3: #3A617B; // Arctic IT Color Palette 2024 - Steel Blue
+$portal-theme-color-4: #1EB4B7; // Arctic IT Color Palette 2024 - Teal
+$portal-theme-color-5: #2DAD7D; // Arctic IT Color Palette 2024 - Seafoam Green
+$portal-theme-color-6: #1EAC4B; // Arctic IT Color Palette 2024 - Green
+$portal-theme-color-7: #717F87; // Arctic IT Color Palette 2024 - accent3
+$portal-theme-color-8: #20B5B8; // Arctic IT Color Palette 2024 - accent4
+$portal-theme-color-9: #2BAC7B; // Arctic IT Color Palette 2024 - accent5
+$portal-theme-color-10: #19AC41; // Arctic IT Color Palette 2024 - accent6
+$portal-theme-color-11: #1074B8; // Arctic IT Color Palette 2024 - hlink
+$portal-theme-color-12: #20B5B8; // Arctic IT Color Palette 2024 - folHlink
+$portal-theme-on-color-1: #FFFFFF; // On color for dk1
+$portal-theme-on-color-2: #000000; // On color for lt1
+$portal-theme-on-color-3: #000000; // On color for dk2
+$portal-theme-on-color-4: #000000; // On color for lt2
+$portal-theme-on-color-5: #FFFFFF; // On color for accent1
+$portal-theme-on-color-6: #FFFFFF; // On color for accent2
+$portal-theme-on-color-7: #FFFFFF; // On color for accent3
+$portal-theme-on-color-8: #FFFFFF; // On color for accent4
+$portal-theme-on-color-9: #FFFFFF; // On color for accent5
+$portal-theme-on-color-10: #FFFFFF; // On color for accent6
+$portal-theme-on-color-11: #FFFFFF; // On color for hlink
+$portal-theme-on-color-12: #FFFFFF; // On color for folHlink
+
+//Power Pages Font Family
+$font-family: 'Roboto', sans-serif !important;
+
+// Define font-weight variables
+$font-weight-thin: 100 !important;
+$font-weight-extralight: 200 !important;
+$font-weight-light: 300 !important;
+$font-weight-regular: 400 !important;
+$font-weight-medium: 500 !important;
+$font-weight-semibold: 600 !important;
+$font-weight-bold: 700 !important;
+
+// Define font-style variables
+$font-style-normal: normal !important;
+$font-style-italic: italic !important;
+
+// Define font-size variables
+$font-size-h1: 2.5rem !important;
+$font-size-h2: 2rem !important;
+$font-size-h3: 1.75rem !important;
+$font-size-h4: 1.5rem !important;
+$font-size-h5: 1.25rem !important;
+$font-size-h6: 1rem !important;
+$font-size-p: 1rem !important;
+$font-size-small: 0.875rem !important;

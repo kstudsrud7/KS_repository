@@ -1,0 +1,47 @@
+<div class="container">
+    <!-- Page Heading -->
+    <h1 class="mb-4"><b>Payments and Financial Caps</b></h1>
+    <p>Portal users can view payments made to them or on behalf of others (e.g., minors in their
+        care) as participants in an education program. While the portal does not display remaining funding eligibility, it
+        does show financial caps for service requests, total funding provided, and payment history.
+    </p>
+</div>
+
+<!-- Payments Section -->
+<div class="container-fluid my-5">
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h4">Payments</h2>
+                <p>
+                    Users can view the following details for payments made to them or on their behalf:
+                </p>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="p-3 border bg-light">
+                            {% include 'entity_list' key: 'All Education Payment Requests - Portal' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Caps Section -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h4">Financial Caps</h2>
+                <p>
+                    Users can view the financial caps and funding details for service requests:
+                </p>
+                <ul>
+                    <li>Service Request</li>
+                    <li>Financial Cap</li>
+                    <li>Total Funding Provided</li>
+                </ul>
+                <p class="text-muted">Note: Financial cap records are read-only.</p>
+            </div>
+        </div>
+    </section>
+</div>

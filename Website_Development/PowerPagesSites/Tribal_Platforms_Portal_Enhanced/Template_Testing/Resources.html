@@ -1,0 +1,57 @@
+{% block main %}
+{% include 'Page Copy' %}
+{% fetchxml publishedresources %}
+<fetch count="10">
+    <entity name="ait_resources"></entity>
+  <entity name="ait_resources">
+    <attribute name="ait_description" />
+    <attribute name="ait_file" />
+    <attribute name="ait_imageid" />
+    <attribute name="ait_newcolumn" />
+    <attribute name="ait_postdate" />
+    <attribute name="ait_resourcetype" />
+    <attribute name="ait_url" />
+    <attribute name="createdon" />
+    <attribute name="statuscode" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+<div class="container my-5">
+    <!-- Page Heading -->
+    <h1 class="mb-4">Community Resources</h1>
+    <p class="lead">Explore valuable resources for our community. You can either access online links or download files directly.</p>
+
+    <!-- Debugging Information -->
+    <p>Total Resources Returned: {{ publishedresources.results.entities.size }}</p>
+
+    <!-- Resources Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Resource Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for resource in publishedresources.results.entities %}
+                <tr>
+                    <td>{{ resource.ait_newcolumn }}</td>
+                    <td>{{ resource.ait_description }}</td>
+                    <td>
+                        {% if resource['ait_resourcetype'].value == 750000000 and resource.ait_url %}
+                        <a href="{{ resource.ait_url }}" class="btn btn-primary btn-sm" target="_blank">View Resource</a>
+                        {% elsif resource['ait_resourcetype'].value == 750000001 and resource.ait_file %}
+                        <a href="/File/download.aspx?entity=ait_resources&amp;attribute=ait_file&amp;ID={{ resource.id }}" class="btn btn-success btn-sm" target="_blank">Download File</a>
+                        {% else %}
+                        <span class="text-muted">No Resource Type Found</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

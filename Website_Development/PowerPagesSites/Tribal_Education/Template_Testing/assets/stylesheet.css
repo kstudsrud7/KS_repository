@@ -1,0 +1,31 @@
+/* Portal Card Styling */
+.portal-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Image Styling */
+  .portal-card-img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Ensures logos fit without distortion */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+  }
+  
+  /* Card Title Link Styling */
+  .portal-card-title h5 {
+    margin-top: 10px;
+    color: #212529; /* Bootstrap default text color */
+    transition: color 0.3s ease;
+  }
+  
+  .portal-card-title:hover h5 {
+    color: #0d6efd; /* Bootstrap primary color for hover effect */
+  }
+  
