@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- File Upload Instructions -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3>Required Documents</h3>
+                    <p>
+                        To complete your application, please ensure you have the following documents ready for upload.
+                        <span class="text-danger">Missing documents may delay processing.</span>
+                    </p>
+                    <h5 class="mb-3">Document Checklist:</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Education Institution Verification:</strong> Please attach proof of enrollment with the school, such as a certificate of enrollment, report card, or class schedule.
+                            <strong>Sponsor Organization’s W-9 form (if applicable):</strong> Please attach the W-9 form for the sponsor organization if applicable.
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Acknowledgement Instructions -->
+<div class="container my-5">
+    <div class="rowr">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3>Acknowledgement</h3>
+                    <p>By submitting this application, I:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Certify that I have reviewed the Youth Education Tutoring Program Application Rules and agree to all terms and conditions of the program </li>
+                        <li class="list-group-item">Certify that all information provided in this application is
+                            accurate</li>
+                        <li class="list-group-item">Acknowledge that if any monies paid under this Program by the
+                            Tribe are a result of any fraud or misrepresentation, I will be subject to discipline
+                            under the Citizenship Statute, recoupment of funds and loss of tribal benefits</li>
+                        <li class="list-group-item">Acknowledge that any monies paid under this Program by the Tribe
+                            as a result of error may result in recoupment of funds</li>
+                        <li class="list-group-item">Agree to assist the Tribe in verifying the accuracy of the
+                            information I have submitted upon reasonable request</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Required Documents and Form Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <!-- Section Title -->
+                    <h3 class="mb-4">Required Documents</h3>
+                    <p>
+                        To complete your application, please upload the required documents listed below.
+                        <span class="text-danger">Missing documents may delay processing.</span>
+                    </p>
+
+                    <!-- Document Checklist -->
+                    <h5 class="mb-3">Document Checklist:</h5>
+                    <ul class="list-group mb-4">
+                        <!-- <li class="list-group-item">
+                            <strong>Proof of Enrollment:</strong> Attach proof such as a certificate of enrollment, report card, or class schedule.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Sponsor Organization’s W-9 Form (if applicable):</strong> Please attach the Childcare/Early Education Provider’s Internal Revenue Service Form W-9 or request the Childcare/Early Education Provider email or fax its W-9 directly to the FIGR Government Office.
+                        </li>  -->
+                         <li class="list-group-item">
+                            <strong>Enrollment & Application Cost Documentation:</strong> Please attach documentation of cost (e.g., invoice or estimate for application or test registration fees).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Required Documents and Form Section -->
+
+<!-- Childcare/Early Education Form -->
+<!-- Youth Education Tutoring Program Application -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <!-- Form Title -->
+                    <h3 class="mb-4">Youth Education Tutoring Program Application</h3>
+
+                    <!-- Educational Institution Section -->
+                    <h4 class="mb-3">Educational Institution</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="schoolName" class="form-label">Name of School where Student is Enrolled:</label>
+                            <input type="text" class="form-control" id="schoolName" placeholder="Enter school name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gradeLevel" class="form-label">Grade Level:</label>
+                            <input type="text" class="form-control" id="gradeLevel" placeholder="Enter grade level">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Required Documentation:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="enrollmentProof">
+                                <label for="enrollmentProof" class="form-check-label">
+                                    Please attach proof of enrollment (e.g., certificate of enrollment, report card, class schedule).
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="schoolAddress" class="form-label">School Address:</label>
+                            <input type="text" class="form-control" id="schoolAddress" placeholder="Enter school address">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Type of School:</label>
+                            <select class="form-select">
+                                <option value="public">Public</option>
+                                <option value="private">Private</option>
+                                <option value="charter">Charter</option>
+                                <option value="montessori">Montessori</option>
+                                <option value="other">Other (Specify)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">School Attendance Location:</label>
+                            <select class="form-select">
+                                <option value="inPerson">In Person</option>
+                                <option value="online">Online</option>
+                                <option value="hybrid">Hybrid</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Does your child have an IEP or 504 Plan?</label>
+                            <select class="form-select">
+                                <option value="iep">IEP</option>
+                                <option value="504">504</option>
+                                <option value="notApplicable">Not Applicable</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- Tutoring Services Section -->
+                    <h4 class="mb-3">Tutoring Services</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="tutorName" class="form-label">Name of Tutor or Tutoring Services:</label>
+                            <input type="text" class="form-control" id="tutorName" placeholder="Enter tutor or service name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Location of Tutoring Service:</label>
+                            <select class="form-select">
+                                <option value="virtual">Virtual</option>
+                                <option value="onCampus">On School Campus</option>
+                                <option value="offCampus">Off School Campus</option>
+                            </select>
+                            <input type="text" class="form-control mt-2" placeholder="If off-campus, provide a description">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tutoring Service Contact Information:</label>
+                            <input type="text" class="form-control mb-2" placeholder="Phone Number">
+                            <input type="email" class="form-control mb-2" placeholder="Email Address">
+                            <input type="text" class="form-control mb-2" placeholder="Business Address (if applicable)">
+                            <input type="text" class="form-control" placeholder="Website (if any)">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Purpose of Tutoring:</label>
+                            <select class="form-select">
+                                <option value="subjectMatter">Subject Matter or Course</option>
+                                <option value="testPrep">Standardized Test Preparation (e.g., SAT, ACT)</option>
+                            </select>
+                            <input type="text" class="form-control mt-2" placeholder="If Subject Matter, specify the course">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Estimated Frequency of Tutoring Service:</label>
+                            <select class="form-select">
+                                <option value="weekly">Weekly</option>
+                                <option value="biWeekly">Bi-Weekly</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="text" class="form-control mt-2" placeholder="If other, describe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tutoringCost" class="form-label">Estimated Total Cost of Tutoring Service:</label>
+                            <input type="number" class="form-control" id="tutoringCost" placeholder="Enter total cost in USD">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Required Documentation:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="costDocumentation">
+                                <label for="costDocumentation" class="form-check-label">
+                                    Please attach documentation of cost (e.g., invoice or estimate).
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Payment Type:</label>
+                            <select class="form-select">
+                                <option value="reimbursement">Reimbursement</option>
+                                <option value="directPay">Direct Pay</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- Higher Education and Test Application Section -->
+                    <h4 class="mb-3">Applications for Enrollment & Standardized Tests</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Higher Education Support:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="applicationSupport">
+                                <label for="applicationSupport" class="form-check-label">
+                                    Application for Admission into a Higher Educational Institution
+                                </label>
+                            </div>
+                            <input type="text" class="form-control mt-2" placeholder="Attach list of schools the student plans to apply to">
+                        </div>
+                        <div class="mb-3">
+                            <label for="applicationFees" class="form-label">Higher Education Application Fees:</label>
+                            <input type="text" class="form-control" id="applicationFees" placeholder="List the amount of fees">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Standardized Test Registration:</label>
+                            <select class="form-select">
+                                <option value="sat">SAT</option>
+                                <option value="act">ACT</option>
+                                <option value="apExam">AP Exam</option>
+                            </select>
+                            <input type="text" class="form-control mt-2" placeholder="List registration fees">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Required Documentation:</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="testFeeDocumentation">
+                                <label for="testFeeDocumentation" class="form-check-label">
+                                    Please attach documentation for application or test registration fees.
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

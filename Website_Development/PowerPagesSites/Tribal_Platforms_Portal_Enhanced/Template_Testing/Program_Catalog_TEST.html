@@ -1,0 +1,46 @@
+{% block main %}
+
+{% include 'Page Copy' %}
+
+{% fetchxml publishedevents %}
+<fetch count="10">
+  <entity name="ait_event">
+    <attribute name="ait_description" />
+    <attribute name="ait_enddate" />
+    <attribute name="ait_eventid" />
+    <attribute name="ait_eventtype" />
+    <attribute name="ait_location" />
+    <attribute name="ait_name" />
+    <attribute name="ait_image" />
+    <attribute name="ait_startdate" />
+    <order attribute="ait_startdate" />
+    <link-entity name="imagedescriptor" from="imagedescriptorid" to="ait_imageid" alias="IMG">
+      <attribute name="fullimageurl" />
+    </link-entity>
+  </entity>
+</fetch>
+{% endfetchxml %}
+
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    {% for event in publishedevents.results.entities %}
+    <div class="col">
+      <div class="card portal-card text-center h-100 shadow-sm">
+        <a href="link-to-event-details" class="d-block">
+          <img src="{{ event.IMG.fullimageurl }}" alt="{{ event.ait_name }}" class="portal-card-img" style="height: 200px; object-fit: cover;">
+        </a>
+        <div class="card-body">
+          <a href="link-to-event-details" class="portal-card-title text-decoration-none">
+            <h5 class="fw-bold">{{ event.ait_name }}</h5>
+          </a>
+          <p class="card-text">{{ event.ait_description }}</p>
+          <p class="card-text"><small class="text-muted">{{ event.ait_startdate | date: "MM/d/yy" }} - {{ event.ait_enddate | date: "MM/d/yy" }}</small></p>
+          <p class="card-text"><small class="text-muted">{{ event.ait_location }}</small></p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">MHA-VM-SQL</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAACAAAAAAAQZgAAAAEAACAAAAAVbQCOQ7h3C+W9WdrKT9Eu6L/dZOJauV1YOFMI8bLF7wAAAAAOgAAAAAIAACAAAAAoybSk3C4mr4pVnRNbwV0GJPWYQpEfWxZT8vxvzv+qeJAAAACnv2a3P7eLnMq/3D6A62q1t25xEvHvJsQIHOykutTRi2Qz1lPd19factYvdG48SPexDfOzfOzBlNAXc8mch8BzcoUweBDH5uw083pHZLP5vwKnqfIz5pW+j4Gts6JNUaNjfoMF07Tq0O8ZgL6LR5aM0BbUZAQVi5KBTDppK/Bjm98cJPb6en15ci9JxO/cjINAAAAAhPWWvnTVO/VlghtNNOzof3exYVgEkR4GBbOflXoX0TMWaKEbcufJD9B3aEh0OqRqD/vb1B3DeVrrqazSV0/NXA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAACAAAAAAAQZgAAAAEAACAAAAB3WGD0TK0A8jl0uMy1yg+UoJGZLinpw0BmGY2kUvrvLgAAAAAOgAAAAAIAACAAAABdkE3SJqqWcMAFxmL3DX1WPHm5VIXy9FrNDWlQa+PzRpAAAAAZhSrF/qEnJuQ8f1f/nRjBgDr22aHFc3bP5cab0l+VujDzGNtjp7QI7sRjmW+2j0mWMM0dMCTnMKrCQFaeLUESWNizReRXK9rhyGfmJ/1QZELgIEMuzsyd1pchlTDN0qfZebovDKgZ+mInjYAoCoV2tTLxRErVYjViE3JFK8lRX1xEoRIRYP3CqKGliBYxMKtAAAAAWd8yfeLlyIQjvSLj2Z0tHnIi1Sj08fW36ULteJhcBeeqHuxWmq7a1GspvIgiM8aUD5OoaOtXLVIHblUC5j/tag==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -2353,10 +2353,10 @@
                 <SSIS:Property SSIS:Name="Name">Base Data Insert</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">99</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">102</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B5E05730-0373-4FE8-9239-2E3A7EA74A33}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D4DBA352-40C7-4FCB-8BF8-C2CC9F7715FD}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2512,7 +2512,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2725,7 +2725,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">https://tpversion5test.crm.dynamics.com</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">https://tpversion5test.crm.dynamics.com/</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
