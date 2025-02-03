@@ -1,0 +1,148 @@
+.home-section-bg {
+  background-color: #ca692d;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Quattrocento", sans-serif !important;
+  color: #ca692d;
+}
+
+h2 {
+  font-family: "Quattrocento", sans-serif !important;
+  color: #ca692d;
+}
+
+h3 {
+  font-family: "Quattrocento", sans-serif !important;
+  color: #ca692d;
+}
+
+h4 {
+  font-family: "Quattrocento", sans-serif !important;
+}
+
+h5 {
+  font-family: "Quattrocento", sans-serif !important;
+  color: #ca692d;
+}
+
+h6 {
+  font-family: "Quattrocento", sans-serif !important;
+}
+
+p {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+p.smallText {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+header {
+  font-family: "Quattrocento", sans-serif !important;
+}
+
+h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle,
+.static-top.navbar-dark .navbar-brand a h1.siteTitle > span {
+  font-family: "Quattrocento", sans-serif !important;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > li > a {
+  font-family: "Quattrocento", sans-serif !important;
+}
+
+.nav.nav-tabs button {
+  color: #ca692d; /* Change this to your desired color */
+}
+
+.navbar-brand.navbar-header h1 {
+  color: #ca692d;
+}
+
+.static-top.navbar-dark {
+  background-color: #F5F4F1; /* Example: Change background color */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link {
+  color: #ca692d; /* Example: Change color of the navigation links */
+}
+
+.static-top.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ca692d;
+  background-color: transparent; /* Change color of the navigation link text on hover */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand.navbar-header h1 {
+  margin: 0; /* Example: Remove margin */
+  padding: 10px; /* Example: Add padding */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.btn-primary {
+  background-color: #ca692d !important;
+  border: 1px solid #ca692d !important;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #64403E !important;
+  border: 1px solid #64403E !important;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-section-bg {
+  background-color: #ca692d;
+  padding: 20px;
+}
+
+/* Home Page Action Card Styling */
+.portal-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #ca692d;
+}
+
+/* Logo Image Styling */
+.portal-card-img {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures logos fit without distortion */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block;
+}
+
+/* Card Title Link Styling */
+.portal-card-title h3 {
+  margin-top: 10px;
+  color: #ca692d; /* Bootstrap default text color */
+  transition: color 0.3s ease;
+}
+
+.portal-card-title:hover h3 {
+  color: #ca692d; /* Bootstrap primary color for hover effect */
+}
+
+/* Event & Resources Card Carousel Row formatting  *//*# sourceMappingURL=main.css.map */

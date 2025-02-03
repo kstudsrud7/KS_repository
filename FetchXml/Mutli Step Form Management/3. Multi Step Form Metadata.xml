@@ -1,0 +1,79 @@
+<fetch>
+  <entity name="mspp_webformmetadata">
+    <attribute name="mspp_adddescription" />
+    <attribute name="mspp_attributelogicalname" />
+    <attribute name="mspp_constantsummaximumtotal" />
+    <attribute name="mspp_constantsumminimumtotal" />
+    <attribute name="mspp_constantsumvalidationerrormessage" />
+    <attribute name="mspp_controlstyle" />
+    <attribute name="mspp_createdby" />
+    <attribute name="mspp_createdon" />
+    <attribute name="mspp_cssclass" />
+    <attribute name="mspp_description" />
+    <attribute name="mspp_descriptionposition" />
+    <attribute name="mspp_entityformforcreate" />
+    <attribute name="mspp_entityformforcreateinwebformmetadata" />
+    <attribute name="mspp_fieldisrequired" />
+    <attribute name="mspp_geolocationvalidatorerrormessage" />
+    <attribute name="mspp_groupname" />
+    <attribute name="mspp_ignoredefaultvalue" />
+    <attribute name="mspp_label" />
+    <attribute name="mspp_maxmultiplechoiceselectedcount" />
+    <attribute name="mspp_minmultiplechoiceselectedcount" />
+    <attribute name="mspp_modifiedby" />
+    <attribute name="mspp_modifiedon" />
+    <attribute name="mspp_multiplechoicevalidationerrormessage" />
+    <attribute name="mspp_notes_settings" />
+    <attribute name="mspp_onsavefromattribute" />
+    <attribute name="mspp_onsavetype" />
+    <attribute name="mspp_onsavevalue" />
+    <attribute name="mspp_prepopulatefromattribute" />
+    <attribute name="mspp_prepopulatetype" />
+    <attribute name="mspp_prepopulatevalue" />
+    <attribute name="mspp_provisionedlanguages" />
+    <attribute name="mspp_purchasecreateinvoiceonpayment" />
+    <attribute name="mspp_purchasefulfillorderonpayment" />
+    <attribute name="mspp_purchaselineitemdescriptionattribute" />
+    <attribute name="mspp_purchaselineiteminstructionsattribute" />
+    <attribute name="mspp_purchaselineitemorderattribute" />
+    <attribute name="mspp_purchaselineitemproductattribute" />
+    <attribute name="mspp_purchaselineitemquantityattribute" />
+    <attribute name="mspp_purchaselineitemrelationship" />
+    <attribute name="mspp_purchaselineitemrequiredattribute" />
+    <attribute name="mspp_purchaselineitemuomattribute" />
+    <attribute name="mspp_purchaseoptionalproductsrelationship" />
+    <attribute name="mspp_purchasequotename" />
+    <attribute name="mspp_purchaserequiredproductsrelationship" />
+    <attribute name="mspp_purchaserequiresshipping" />
+    <attribute name="mspp_purchasetargetentityinvoicerelationship" />
+    <attribute name="mspp_purchasetargetentityorderrelationship" />
+    <attribute name="mspp_purchasetargetentityrelationship" />
+    <attribute name="mspp_randomizeoptionsetvalues" />
+    <attribute name="mspp_rangevalidationerrormessage" />
+    <attribute name="mspp_rankordernotiesvalidationerrormessage" />
+    <attribute name="mspp_requiredfieldvalidationerrormessage" />
+    <attribute name="mspp_sectionname" />
+    <attribute name="mspp_setvalueonsave" />
+    <attribute name="mspp_subgrid_name" />
+    <attribute name="mspp_subgrid_settings" />
+    <attribute name="mspp_tabname" />
+    <attribute name="mspp_timeline_settings" />
+    <attribute name="mspp_type" />
+    <attribute name="mspp_useattributedescriptionproperty" />
+    <attribute name="mspp_validationerrormessage" />
+    <attribute name="mspp_validationregularexpression" />
+    <attribute name="mspp_validationregularexpressionerrormessage" />
+    <attribute name="mspp_webformmetadataid" />
+    <attribute name="mspp_webformstep" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+    <link-entity name="mspp_webformstep" from="mspp_webformstepid" to="mspp_webformstep" link-type="inner" alias="FormStep">
+      <link-entity name="mspp_webform" from="mspp_webformid" to="mspp_webform" alias="Form">
+        <attribute name="mspp_webformid" />
+        <filter>
+          <condition attribute="mspp_webformid" operator="eq" value="e575614c-98d9-ef11-a730-000d3a37c958" />
+        </filter>
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>
