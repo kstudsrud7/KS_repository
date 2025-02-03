@@ -1,15 +1,7 @@
 $(document).ready(function() {
-    // Retrieve the values from the URL parameters
-    var urlParams = new URLSearchParams(window.location.search);
-    var recordId = urlParams.get('id');
-    var recordName = urlParams.get('name');
-    var entityName = urlParams.get('entityname');
-    //Contact Lookup Variable
-    var contactName = "{{user.fullname}}";
-    var contactId = "{{user.id}}";
-    var contactEntity = "contact";
+    console.log("Document is ready");
     
-    // Add event listener to the Applicant Type dropdown
+    // Add event listener to Applicant self or other field
     if ($('#gr_applicationforselforother_').length) {
         console.log("Element found, attaching event listener");
         $('#gr_applicationforselforother_').change(onApplicantTypeChange);
@@ -19,16 +11,6 @@ $(document).ready(function() {
 
     // Trigger the condition for showing/hiding Student Lookup Field
     onApplicantTypeChange();
-
-    // Set the program lookup field
-    $("#ait_program_name").val(recordName);
-    $("#ait_program").val(recordId);
-    $("#ait_program_entityname").val(entityName);
-
-    // Set the contact lookup field
-    $("#gr_contactstudent_name").val(contactName);
-    $("#gr_contactstudent").val(contactId);
-    $("#gr_contactstudent_entityname").val(contactEntity)
 });
 
 function onApplicantTypeChange() {

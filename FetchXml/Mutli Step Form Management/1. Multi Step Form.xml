@@ -1,0 +1,33 @@
+<fetch>
+  <entity name="mspp_webform">
+    <attribute name="mspp_authenticationrequired" />
+    <attribute name="mspp_createdby" />
+    <attribute name="mspp_createdon" />
+    <attribute name="mspp_editexistingrecordpermitted" />
+    <attribute name="mspp_editexpiredmessage" />
+    <attribute name="mspp_editexpiredstatecode" />
+    <attribute name="mspp_editexpiredstatuscode" />
+    <attribute name="mspp_editnotpermittedmessage" />
+    <attribute name="mspp_modifiedby" />
+    <attribute name="mspp_modifiedon" />
+    <attribute name="mspp_multiplerecordsperuserpermitted" />
+    <attribute name="mspp_name" />
+    <attribute name="mspp_progressindicatorenabled" />
+    <attribute name="mspp_progressindicatorignorelaststep" />
+    <attribute name="mspp_progressindicatorposition" />
+    <attribute name="mspp_progressindicatorprependstepnum" />
+    <attribute name="mspp_progressindicatortype" />
+    <attribute name="mspp_provisionedlanguages" />
+    <attribute name="mspp_savechangeswarningmessage" />
+    <attribute name="mspp_savechangeswarningonclose" />
+    <attribute name="mspp_startnewsessiononload" />
+    <attribute name="mspp_startstep" />
+    <attribute name="mspp_webformid" />
+    <attribute name="mspp_websiteid" />
+    <attribute name="statecode" />
+    <attribute name="statuscode" />
+    <filter>
+      <condition attribute="mspp_webformid" operator="eq" value="00000000-0000-0000-0000-000000000000" />
+    </filter>
+  </entity>
+</fetch>
