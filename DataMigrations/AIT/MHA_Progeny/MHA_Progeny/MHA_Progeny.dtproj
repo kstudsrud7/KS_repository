@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">MHA-VM-SQL</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAACAAAAAAAQZgAAAAEAACAAAACdcRxPggqQg8EuDt56p5VzM1TAGGQ/qsCsX2iuqBifVwAAAAAOgAAAAAIAACAAAADqqHTb58UAPCidGobXzmLn9el5rMJZq79mY55+/HNNMJAAAAA3zPE17LSssKEiBfYxrBOQXtDFMhwwcQdtzAPRfWgcyhcT6dqB162iWZXspt3b08kNLJDDDKmfLyVWvKcSzTv1RYnvb6hYGvcp1eXyUhQqWU5amvbokPTwhY/jNIQH7rIaQyiARWP9upVOJdVyz1pw20y7Z083oZOECRVoaJjuFpz3yHWPwLWlCwyd1/ydIHFAAAAAvaI7HsQ6n1p57P9V0ZWiFzTubCiitsiVLGE4tzbs2+Abfo+lbNcLIGrq3FpufBcnUyuIQpYEb/DvQXTVsiqC0Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAACAAAAAAAQZgAAAAEAACAAAACHTxqPqI46EzgxMEitEcl1P4eFUiGRqD31pr9qt5jZiAAAAAAOgAAAAAIAACAAAADhEL7kw8Djj7fe2inDvY+oiFgDDoCgDJFkVrLt1MwgVJAAAADtPB683y/BU5Jbat3BHvzbIWUiuRQaXlrKvpdXWvniutP8SyZ1/PCb32QeW6fteYlT+B1pN8oopBmVQhWnE8zKn1Ovk1cvESDfSYxO5MtWVLPjtHMNwuYioug/jx9DYqMeuFNZe7uh14p9WCm4udXEDt+UhFCbLch5h6wFVnKd51jsni4h3Roo4g7m3FKa22xAAAAAh4StushJpNWJlH2HRwAj5hQuuctEJei4DFFlAQdntFRAWjyrUtPTvuTcKf6a5pHAbuU6Cx2k3eQaNqQdI7hkPA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -2353,10 +2353,10 @@
                 <SSIS:Property SSIS:Name="Name">Base Data Insert</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">102</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">104</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D4DBA352-40C7-4FCB-8BF8-C2CC9F7715FD}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BAF3540F-6C83-4B94-89DD-5FCA81FA1A4D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2512,7 +2512,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5educationportalbase.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2725,7 +2725,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">https://tpversion5test.crm.dynamics.com/</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">https://tpv5educationportalbase.crm.dynamics.com/</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2972,7 +2972,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">7c56de9f-871b-4ab7-a54b-e9b23acdc8a2</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">4e73141a-d2c1-4781-aa11-a5b827d62187</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3016,7 +3016,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpprod.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=7c56de9f-871b-4ab7-a54b-e9b23acdc8a2;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5portaldev.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -3229,7 +3229,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">https://tpprod.crm.dynamics.com/</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">https://tpv5portaldev.crm.dynamics.com</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

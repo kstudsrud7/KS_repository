@@ -1,0 +1,129 @@
+{% block main %}
+{% include 'Page Copy' %}
+{% fetchxml highereducationprograms %}
+<fetch count="10">
+<entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programimage" />
+    <attribute name="ait_programstartdate" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0"/>
+      <condition attribute="gr_publishtoportal" operator="eq" value="1" />
+   <!-- Only include active programs published to the portal with Higher Ed application types -->
+      <condition attribute="gr_educationapplicationtype" operator="in">
+             <value>748120000</value>
+             <value>748120001</value>
+      </condition>
+    </filter>
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% fetchxml youtheducationprograms %}
+<fetch count="10">
+<entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programimage" />
+    <attribute name="ait_programstartdate" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0"/>
+      <condition attribute="gr_publishtoportal" operator="eq" value="1" />
+      <!-- Only include active programs published to the portal with Youth application types -->
+      <condition attribute="gr_educationapplicationtype" operator="in">
+             <value>315950001</value> <!-- Youth Tutoring -->
+             <value>315950002</value><!-- Youth Activities -->
+             <value>315950000</value><!-- Childcare & Early Education -->             
+      </condition>
+    </filter>
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign programdetails_marker = sitemarkers["ProgramDetails"] %}
+{% assign educationapplicationcreate_marker = sitemarkers["EducationApplicationCreate"] %}
+
+<!-- Nav pills -->
+<div class="container-fluid py-4 d-flex justify-content-center">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item mx-2" role="presentation">
+      <button class="nav-link active" id="pills-youth-tab" data-bs-toggle="pill" data-bs-target="#pills-youth" type="button" role="tab" aria-controls="pills-youth" aria-selected="true">Youth Education Programs</button>
+    </li>
+    <li class="nav-item mx-2" role="presentation">
+      <button class="nav-link" id="pills-higherEd-tab" data-bs-toggle="pill" data-bs-target="#pills-higherEd" type="button" role="tab" aria-controls="pills-higherEd" aria-selected="false">Higher Education Programs</button>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Tab content -->
+<div class="tab-content" id="pills-tabContent">
+  <!-- Youth Education Programs -->
+  <div class="tab-pane fade show active" id="pills-youth" role="tabpanel" aria-labelledby="pills-youth-tab">
+    <div class="container py-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+        {% for program in youtheducationprograms.results.entities %}
+        <div class="col">
+          <div class="card portal-card text-center h-100 shadow-sm" style="width: 18rem;">
+            <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="d-block">
+              <img src="{{ program.ait_programimage.url }}" alt="{{ program.ait_name }}" class="portal-card-img card-img-top img-fluid">
+            </a>
+            <div class="card-body">
+              <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="portal-card-title text-decoration-none">
+                <h3 class="fw-bold">{{ program.ait_name }}</h3>
+              </a>
+              <p class="card-text">{{ program.ait_description }}</p>
+              <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MM/d/yy" }} - {{ program.ait_programenddate | date: "MM/d/yy" }}</small></p>
+              <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MM/d/yy" }}</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="btn btn-primary">Learn More</a>
+              <a href="{{ educationapplicationcreate_marker.url }}?id={{ program.ait_programid }}&name={{ program.ait_name }}&entityname=ait_program" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Higher Education Programs -->
+  <div class="tab-pane fade" id="pills-higherEd" role="tabpanel" aria-labelledby="pills-higherEd-tab">
+    <div class="container py-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+        {% for program in highereducationprograms.results.entities %}
+        <div class="col">
+          <div class="card portal-card text-center h-100 shadow-sm" style="width: 18rem;">
+            <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="d-block">
+              <img src="{{ program.ait_programimage.url }}" alt="{{ program.ait_name }}" class="portal-card-img card-img-top img-fluid">
+            </a>
+            <div class="card-body">
+              <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="portal-card-title text-decoration-none">
+                <h3 class="fw-bold">{{ program.ait_name }}</h3>
+              </a>
+              <p class="card-text">{{ program.ait_description }}</p>
+              <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MM/d/yy" }} - {{ program.ait_programenddate | date: "MM/d/yy" }}</small></p>
+              <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MM/d/yy" }}</small></p>
+            </div>
+            <div class="card-footer">
+              <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="btn btn-primary">Learn More</a>
+              <a href="{{ educationapplicationcreate_marker.url }}?id={{ program.ait_programid }}&name={{ program.ait_name }}&entityname=ait_program" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

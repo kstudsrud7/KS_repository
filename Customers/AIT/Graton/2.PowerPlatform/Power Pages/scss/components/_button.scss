@@ -18,3 +18,16 @@
     border: 1px solid abstracts.$portal-theme-color-3 !important;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+
+.nav-pills .nav-link {
+    background-color: #ffffff !important;
+    color: abstracts.$portal-theme-color-1 !important; /* Optional: Set text color for better contrast */
+}
+
+.nav-pills .nav-link.active {
+    background-color: abstracts.$portal-theme-color-1 !important;
+    color: #ffffff !important; /* Optional: Set text color for better contrast */
+}
+#pills-tab .nav-item .nav-link {
+    border: 1px solid #432817 !important;
+}
