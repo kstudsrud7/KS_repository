@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC\\WSC\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC_V2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21B55B3C-F9E4-4736-837D-4131CC27E7C9}|WSC\\WSC.dtproj|C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC\\WSC\\WSC\\BlackBaude.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{21B55B3C-F9E4-4736-837D-4131CC27E7C9}|WSC\\WSC.dtproj|solutionrelative:WSC\\BlackBaude.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{83FBD770-E61A-470B-BE6E-CE4878D80466}|WSC_V2\\WSC_V2.dtproj|C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC_V2\\WSC_V2\\BlackBaude.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{83FBD770-E61A-470B-BE6E-CE4878D80466}|WSC_V2\\WSC_V2.dtproj|solutionrelative:WSC_V2\\BlackBaude.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,12 +20,12 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BlackBaude.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC\\WSC\\WSC\\BlackBaude.dtsx",
-              "RelativeDocumentMoniker": "WSC\\BlackBaude.dtsx",
-              "ToolTip": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC\\WSC\\WSC\\BlackBaude.dtsx [Design]",
-              "RelativeToolTip": "WSC\\BlackBaude.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC_V2\\WSC_V2\\BlackBaude.dtsx",
+              "RelativeDocumentMoniker": "WSC_V2\\BlackBaude.dtsx",
+              "ToolTip": "C:\\Users\\Admin\\repos\\KS_repository\\DataMigrations\\WSC_V2\\WSC_V2\\BlackBaude.dtsx [Design]*",
+              "RelativeToolTip": "WSC_V2\\BlackBaude.dtsx [Design]*",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO8SURBVEhLtZVNaFxVFMd/891kdJzaNjFJW20pKS6yUgxai6taENJU2uLHypVQQVEIoYguFIqCiN3YheJOt2rowqLSIoiFSv2iFKUobdFCp5PMTF4meW/uPee4eDNvJtMmdNM/HObNefee/7nnf859cDdhZqnO8\u002Btvvjd3cHp6SlWJzfCiqIA3RUQQUUQVEePav9e5dOniu3NffPxRUK82Vke\u002BDV47dnxO2xBR9V7UOdFWSzRseV2JvC6HXpdWnAbLTj/89Gv98vSPwb4jr7yTzeVz/fE6SHceRDRxplKQTqfIZFJksyny2TSFXJoN\u002BTSDhQwDhQyqnm1jo8XJycm3n5h6eSaVzmSSAD1ICEy7BOvBDMwML8bpM\u002BdoNkPM7Pj4I0/P9K\u002Bll8DfAYEZqIEqPLt/D5lMnlyuwMO7dwPs619PL4GKJM6VSFha8Yk1Q48BzcgTLDsaTUe5fD8vPT/FzNEXOXzwQLK3H9nOg6phFtf/87PX\u002BGsxnyzanGoye3icT765wnU3kPi35kJeeGo72s3tFnRFVsXMkhe6cTgxDEQNbLXfAC\u002BGt7XL29NFQk8j9cEQMbr0bW9bbO/X3NijgSq9OqcXq4kZnRPYKn/nZOuVKNFARPFqFEhxaM8YYUtRM1QNrIQITD8\u002BRuTiSfZipFJFnBjrHKBXA0nKUC7mGCrn2VIqsKm0gfI9BbwopcEcGwfz3FfMUy7mGcxn8WLIOi3e06bxCUzh58s1vr1Q4btfK5z5rcJPf87jFbxXnCpeDCeGGIjE\u002BqyFVV3kPBjG7/80\u002BH6\u002BxJmFEmdrJX65XEM8eAFREAET8N7a/\u002B\u002BAQFXQdjZqQDafmAFOFNG49iJKZTGkshhyoxGyFArloW2lkR0TkyM7JiYpDI/fSiDx9RwLtjojszhz3xbXK/xw8QZRFOJcyOhIidnZtx498dmpc\u002B\u002Bf/OocWw990NnbJTCNa9qe6Ox/lxMD2uSGKniNU5h46F52DQ/wQDHDQFrxYcSVa/VOSOgfNC\u002BKFzjy5DbeOLCLV5/ZydH9O3lu73a8gPfgfFwiDJxT6kHEfBBxsx5SrYfcrK\u002BsQaBxcJG4S\u002BJe72betVhsAyLnqQUtFhoR9SCithj/3pZAxRCzuDOSDol9KvFlKGKoj7UCaDllvhFRC6KYKGjRaLre\u002BN1Jdt5x/sIfVKq19p0fT7Gatcnbvs50lx8kWGpRrYUstLNfCCKCPoLko795ZPteJTu26u062PTYsROjW4aHqvWQyAktpzgfW/Xq\u002BVP8fXK6f89dwf/5qMc\u002BgAHYjAAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-01-20T15:07:37.948Z",
+              "WhenOpened": "2025-02-03T18:33:30.193Z",
               "EditorCaption": " [Design]"
             }
           ]
