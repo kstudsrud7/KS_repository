@@ -1,922 +1,109 @@
-<form shownavigationbar="true" showImage="false" maxWidth="1920" headerdensity="HighWithControls">
-  <tabs>
-    <tab verticallayout="true" id="{ce3cb8ce-dfb2-4658-92ee-a0afa2160a77}" IsUserDefined="1" name="ApplicantInformation" locklevel="0" expanded="false" showlabel="true" labelid="{92a955ae-b8ae-413f-8600-ba8432f4be20}">
-      <labels>
-        <label description="Applicant Information" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="Details" showlabel="false" showbar="false" locklevel="0" id="{0da4cc30-b436-8a01-1a42-03596e5b3485}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{4ba2f4bb-df8b-4d45-adcc-b1f272a8a3c5}">
-              <labels>
-                <label description="Details" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{d9e09faf-0d0e-4b44-8882-e57b40016d7c}" locklevel="0" colspan="1" rowspan="1" labelid="{5312a5c4-23d3-482e-82fc-27d7d123f837}">
-                    <labels>
-                      <label description="Program" languagecode="1033" />
-                    </labels>
-                    <control id="ait_program" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ait_program" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{a3b56c97-77ee-b565-3153-d584500a569d}" showlabel="true" labelid="{a823f60f-e8ea-413c-99be-a24a2e4c63c1}" visible="false">
-                    <labels>
-                      <label description="Application/Reverification" languagecode="1033" />
-                    </labels>
-                    <control id="ait_applicationreverification" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ait_applicationreverification" disabled="false" uniqueid="{0c6aec0c-82cb-b81a-6c3c-29d135173a6e}" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{aac66b60-d97c-6c77-63c6-0b4052d7d4dc}" showlabel="true" locklevel="0" visible="false" labelid="{617c5d06-4b43-4a1a-8ac2-7ec4c4875bb3}">
-                    <labels>
-                      <label description="Application Status" languagecode="1033" />
-                    </labels>
-                    <control id="ait_newapplicationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ait_newapplicationstatus" disabled="false" uniqueid="{923cc933-23a9-9b9d-12a8-43bdcc453420}" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{b8b0e1ca-573e-4ea9-e2bd-e16ec4a82b1c}" showlabel="true" locklevel="0" visible="false" labelid="{a305cc4e-0b5a-4ecc-941d-b121e9b2762f}">
-                    <labels>
-                      <label description="Reverification Status" languagecode="1033" />
-                    </labels>
-                    <control id="ait_reverificationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ait_reverificationstatus" disabled="false" uniqueid="{70e297b2-5aa4-551e-8b94-e971abdd9a09}" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{8e64c741-0b03-4ec2-b1e5-e43bc5ebde58}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{1535c2f6-be3a-4143-9e2c-6a9fb9f10f28}">
-                    <labels>
-                      <label description="Reverification Red Flag" languagecode="1033" />
-                    </labels>
-                    <control id="ait_reverificationredflag" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="ait_reverificationredflag" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{76dac11a-8e62-dba5-d974-01364147c581}" showlabel="true" locklevel="0" visible="false" labelid="{deb471ad-c8c9-4051-a49a-0b1816573c0f}">
-                    <labels>
-                      <label description="Education Application Type" languagecode="1033" />
-                    </labels>
-                    <control id="ait_educationapplicationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ait_educationapplicationtype" disabled="false" uniqueid="{be7a0148-5db6-d616-bb96-c36d7765b0c8}" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{74ce9a6f-58ed-4311-9bfd-e2584bf5030d}" showlabel="true" locklevel="0" visible="false" labelid="{d7462207-a155-4dc2-a65c-f199e31c42da}">
-                    <labels>
-                      <label description="Name" languagecode="1033" />
-                    </labels>
-                    <control id="ait_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ait_name" uniqueid="{b7393a99-394c-31eb-76a7-4bc84a8a6a83}" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{92d05494-a0ba-4fe5-94eb-0244280a48ba}" showlabel="true" locklevel="1" visible="false" labelid="{3d89ffe9-9e1d-4008-b367-566ed23d38d1}">
-                    <labels>
-                      <label description="Owner" languagecode="1033" />
-                    </labels>
-                    <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{e76a91ad-c1e4-d839-9630-914ad9448a65}" disabled="false">
-                      <parameters>
-                        <AutoResolve>true</AutoResolve>
-                        <DisableMru>false</DisableMru>
-                      </parameters>
-                    </control>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{c7e62f9a-ab36-48d4-82e1-c1c5d65b6e67}" locklevel="0" colspan="1" rowspan="1">
-                    <labels>
-                      <label description="Application for Self or Other" languagecode="1033" />
-                    </labels>
-                    <control id="gr_applicationforselforother_" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_applicationforselforother_" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{b39dad63-af41-400c-8a21-149d9f27bf94}" locklevel="0" colspan="1" rowspan="1" labelid="{c6068d89-ed03-4140-8e17-c62be41764a2}">
-                    <labels>
-                      <label description="Student Profile" languagecode="1033" />
-                    </labels>
-                    <control id="ait_studentprofileid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ait_studentprofileid" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{229c7c9f-1da1-4ae0-aed4-b61cb39cc3d6}" locklevel="0" colspan="1" rowspan="1" labelid="{45cf1b2b-e927-4f7f-a16c-1547d14b914c}" visible="false">
-                    <labels>
-                      <label description="Contact (Student)" languagecode="1033" />
-                    </labels>
-                    <control id="gr_contactstudent" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="gr_contactstudent" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-            <section name="1_section_4" id="1751aa15-f162-41d3-89f8-67c519f114be" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{9c890459-0e15-4fee-85dc-1ee18a9b4ed3}">
-              <labels>
-                <label description="On File Contact / Student Information" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{12bf2590-8384-45b4-ae7b-eb7091b2e7ea}" labelid="{cf2eb904-451e-493c-a1df-edf236e2faa1}" showlabel="false">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell locklevel="0" id="{ccabe20a-a270-4f4b-9ebf-900f3d830d14}" colspan="1" rowspan="1" labelid="{0bb8830e-88e9-45e6-8468-25453cdee2aa}">
-                    <labels>
-                      <label description="New QV control 1719495766406" languagecode="1033" />
-                    </labels>
-                    <control id="QuickviewControl1719495766406" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="ait_studentprofileid">
-                      <parameters>
-                        <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
-                        <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="ait_studentprofile"&gt;25cb0023-8a34-ef11-8409-000d3a15f700&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
-                      </parameters>
-                    </control>
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="1.EducationInstitution" id="{9e72ac00-dc2a-8dcd-1053-3bbc42ca45a2}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="1. Education Institution" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="1.EducationInstitution" id="c58fd116-51c3-4a25-ac6e-713c1765b01a" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{e3d2637a-2408-4b81-a14f-ce0511a7df54}">
-              <labels>
-                <label description="Education Institution" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{40743b84-1564-4419-bf49-c11aa001a428}" locklevel="0" colspan="2" rowspan="1" labelid="{4e4cd79e-4f88-42c7-b6cb-618ddc81fa4f}">
-                    <labels>
-                      <label description="Education Institution:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_educationinstitution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="gr_educationinstitution" disabled="false" />
-                  </cell>
-                  <cell id="{8bcbc7d9-9252-4629-95cc-0e0909e85edf}" locklevel="0" colspan="1" rowspan="1" labelid="{59b4ca3b-2ea6-49b7-a651-cc700d77cffa}">
-                    <labels>
-                      <label description="Education Institution Other:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_educationinstitutionother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_educationinstitutionother" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{03753f33-304e-42ff-987d-2ab852c8fd42}" locklevel="0" colspan="3" rowspan="1" labelid="{711f5b31-778b-4ed4-af00-b47f285975d1}">
-                    <labels>
-                      <label description="School Identification Number (ID)(If Applicable):" languagecode="1033" />
-                    </labels>
-                    <control id="gr_schoolidnumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_schoolidnumber" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{e8732139-a43a-4720-abf3-b35aa8f3046f}" locklevel="0" colspan="3" rowspan="4" labelid="{47a3b1a5-7edc-4182-af17-0f799f08be38}">
-                    <labels>
-                      <label description="Education Institution Address (Street, City, State, Zip):" languagecode="1033" />
-                    </labels>
-                    <control id="gr_schooladdress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="gr_schooladdress" disabled="false" uniqueid="{84d33012-b72e-4a4e-7400-de2b3c64e96c}" />
-                  </cell>
-                </row>
-                <row />
-                <row />
-                <row />
-                <row>
-                  <cell id="{3da29636-7eeb-4327-b286-ee654230f1ca}" locklevel="0" colspan="2" rowspan="1" labelid="{f6a420e4-e5e9-49ab-b9e5-8a09efd844e1}">
-                    <labels>
-                      <label description="Type of Education Institution:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_typeofeducationinstitution" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="gr_typeofeducationinstitution" disabled="false" uniqueid="{64bb62f3-c826-4b6c-9be4-a3b7285e20fd}" />
-                  </cell>
-                  <cell id="{be21ddff-696c-43fa-8b42-b273d9a2b3d1}" locklevel="0" colspan="1" rowspan="1" labelid="{81270f65-dcf2-4585-a536-d342bb994216}">
-                    <labels>
-                      <label description="Type of Education Institution Other" languagecode="1033" />
-                    </labels>
-                    <control id="gr_typeofeducationinstitutionother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_typeofeducationinstitutionother" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="2.EstimatedCostofTuitionandFees" id="{ba861c70-8c0d-e726-2571-ce465eb0892a}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="2.EstimatedCostofTuitionandFees" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="2.EstimatedCostofTuitionandFees" id="c2d1193b-85da-4af7-8afc-89329ff32308" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{58f63c0c-bc6f-483a-8fdc-ee5fd0f84e5f}">
-              <labels>
-                <label description="Estimated Cost of Tuition and Fees:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell locklevel="0" id="{5ac1ac32-ed9a-4f50-aebf-75c546d2859a}" showlabel="false" labelid="{98ea5a47-5a34-4bbd-8d5d-e8141d91f9cc}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{a67e0c22-27b4-4149-9bf9-162a0b52ae63}" showlabel="false" labelid="{e3416d05-f259-4776-af10-2d484134dd5c}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{0de810e6-3bcf-4400-9cc7-175fddf90805}" locklevel="0" colspan="1" rowspan="1" labelid="{d503b8ac-1311-41d6-8b8d-fabe625800c2}">
-                    <labels>
-                      <label description="Tuition:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_estimatedcostoftuition" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_estimatedcostoftuition" disabled="false" />
-                  </cell>
-                  <cell id="{03f66e60-f255-4fb1-a131-c1a8e5b84b45}" locklevel="0" colspan="1" rowspan="1" labelid="{10b8ed69-5eff-4ddd-a2b4-082b2efe8985}">
-                    <labels>
-                      <label description="Fees:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_estimatedcostoffees" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_estimatedcostoffees" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-            <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{dda6340c-ec43-dae1-d2cb-d13385e53a18}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
-              <labels>
-                <label description="Section" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{63e4c402-44d8-4265-dbb6-a5c1b530ac03}" showlabel="false">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="3.InstitutionalDepartment" id="{a1347d27-b889-6962-1451-5da5ea810951}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="3.InstitutionalDepartment" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="3.InstitutionalDepartment" id="8d48c0a2-338c-446e-861d-300b18ab6098" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{4e7e528d-6e9a-462f-aa75-76f3bf6a6548}">
-              <labels>
-                <label description="Name of the Institutional Department responsible for processing tuition payments:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell locklevel="0" id="{c8cbe80a-2568-47c1-9b98-d4a854a7aa21}" showlabel="false" labelid="{51b82363-cb0d-4507-b936-cd8dac02200f}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{7cbf74fc-95fc-474c-a46f-8200b94acbed}" showlabel="false" labelid="{c8ee0bfb-dd33-4117-85c1-682db8682823}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{7b9c875a-d8d0-4127-a0fc-1f4f984df59a}" showlabel="false" labelid="{9ce385aa-bd77-4b04-8f31-aa06b46b003e}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{1e8bd33a-791c-4c27-9ed6-63758f053916}" locklevel="0" colspan="3" rowspan="1" labelid="{c074324d-6d24-4969-a268-65c2d7a826c4}">
-                    <labels>
-                      <label description="Department Name (i.e., Bursar's Office, Admissions, Financial Aid Department, etc.):" languagecode="1033" />
-                    </labels>
-                    <control id="gr_nameofdeptfortuitionpayments" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_nameofdeptfortuitionpayments" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{a696315a-5628-48b7-bb10-f9538c7d6e3a}" locklevel="0" colspan="1" rowspan="1" labelid="{8f5ca6c2-3c4c-402d-b86b-551664185018}">
-                    <labels>
-                      <label description="Department Contact Name:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_contactresponsibleforprocessingpayments" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="gr_contactresponsibleforprocessingpayments" disabled="false" />
-                  </cell>
-                  <cell id="{a286e736-d182-4b2a-b4c8-73e1d7440da8}" locklevel="0" colspan="1" rowspan="1" labelid="{edc751cd-41a4-47a6-9dad-a3629b9f31bc}">
-                    <labels>
-                      <label description="Email:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_contactemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="gr_contactemail" disabled="false" />
-                  </cell>
-                  <cell id="{28b5ff69-a406-4d16-ac26-7e2d0cd6d949}" locklevel="0" colspan="1" rowspan="1" labelid="{ae4c13ed-43e1-4d8d-94eb-bb306d3b8c8f}">
-                    <labels>
-                      <label description="Phone Number:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_contactphonenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_contactphonenumber" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{d4ecdb7b-f22c-4612-909f-a45fd135b17c}" locklevel="0" colspan="1" rowspan="1" labelid="{9f9d54ae-f31e-4590-b71a-4fee66b54091}">
-                    <labels>
-                      <label description="Academic Advisor Name:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_academicadvisor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="gr_academicadvisor" disabled="false" />
-                  </cell>
-                  <cell id="{5811ca45-f458-4625-a46f-22005eb7449c}" locklevel="0" colspan="1" rowspan="1" labelid="{784a3544-4920-407d-8313-937d24dadc02}">
-                    <labels>
-                      <label description="Email:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_academicadvisoremail" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_academicadvisoremail" disabled="false" />
-                  </cell>
-                  <cell id="{9f4127fc-8d26-4e98-92f9-c850cb458d04}" locklevel="0" colspan="1" rowspan="1" labelid="{c8676daa-2ca8-4f9f-a656-10086045fccd}">
-                    <labels>
-                      <label description="Phone Number:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_academicadvisorphonenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_academicadvisorphonenumber" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-            <section name="4.EducationProgram" id="1aa57073-2c7c-4e29-8a82-18d8a113d73b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{48321afa-2b79-4a41-9fe2-f20677b95a82}">
-              <labels>
-                <label description="Education Program" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{b84970db-ed38-4dc6-b263-865bec44e19b}" locklevel="0" colspan="1" rowspan="1" labelid="{c9f421cd-93b2-4a3c-9527-31ceb35e93b2}">
-                    <labels>
-                      <label description="Major or Course of Study" languagecode="1033" />
-                    </labels>
-                    <control id="gr_majororcourseofstudy" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_majororcourseofstudy" disabled="false" />
-                  </cell>
-                  <cell id="{f0a6c1d7-23ca-4a1b-8d41-bec47343c2bf}" locklevel="0" colspan="1" rowspan="1" labelid="{6cd1b409-bc85-4e59-95ec-f372f6f25ad3}">
-                    <labels>
-                      <label description="Semesters: Total Terms" languagecode="1033" />
-                    </labels>
-                    <control id="gr_semesterstotalterms" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="gr_semesterstotalterms" disabled="false" />
-                  </cell>
-                  <cell id="{e449650e-dda2-4c08-9e29-8edf9814ad88}" locklevel="0" colspan="1" rowspan="1" labelid="{88c5e894-daff-4a6b-a3c2-dbe461ebad7f}">
-                    <labels>
-                      <label description="Year Round School: Total years" languagecode="1033" />
-                    </labels>
-                    <control id="gr_yearroundschooltotalyears" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="gr_yearroundschooltotalyears" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{0f34f5fc-46a6-4814-8c17-e11a39090309}" locklevel="0" colspan="1" rowspan="1" labelid="{b61cc560-eef1-4161-8dba-f35411470131}">
-                    <labels>
-                      <label description="Quarters: Total Terms" languagecode="1033" />
-                    </labels>
-                    <control id="gr_quarterstotalterms" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="gr_quarterstotalterms" disabled="false" />
-                  </cell>
-                  <cell id="{0d7e3c61-d04c-4a9b-a679-5343c49f309a}" locklevel="0" colspan="1" rowspan="1" labelid="{c7ecedce-c3c3-45cd-b67b-99f217f63453}">
-                    <labels>
-                      <label description="Self Paced: Approximate duration" languagecode="1033" />
-                    </labels>
-                    <control id="gr_selfpacedapproximateduration" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_selfpacedapproximateduration" disabled="false" />
-                  </cell>
-                  <cell id="{8474306e-8025-48d8-9464-fd4c4654316f}" locklevel="0" colspan="1" rowspan="1" labelid="{956d5a98-52c2-48e4-88fa-b47b861a63aa}">
-                    <labels>
-                      <label description="Planned Enrollment:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_plannedenrollment" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_plannedenrollment" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{f91ad903-aa03-4e28-90d3-f1174838e3e9}" locklevel="0" colspan="1" rowspan="1" labelid="{39a003c0-4d1f-4083-bf92-ec4cc78ccfef}">
-                    <labels>
-                      <label description="Current Class standing:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_currentclassstanding" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_currentclassstanding" disabled="false" />
-                  </cell>
-                  <cell locklevel="0" id="{2a5bd860-5a6d-48d7-88b9-0c605babc847}" showlabel="false" labelid="{c04eefdb-ad84-493c-9d6b-4646e2b8602f}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{731772b9-0733-48e7-9d3a-11f169e38c01}" showlabel="false" labelid="{738bd2c8-89d2-4521-838a-b1c42c6c3090}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{43eb6b07-7cdb-476e-a541-6e0b607dfde7}" locklevel="0" colspan="3" rowspan="1" labelid="{cf22b06b-5ab4-4afd-a55f-c4d008ba7e6b}">
-                    <labels>
-                      <label description="Narrative of Educational/Career Goals" languagecode="1033" />
-                    </labels>
-                    <control id="gr_narrativeofeducationalcareergoals" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_narrativeofeducationalcareergoals" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="5.HousingandMeals" id="{dc4058b0-55e3-a87c-6931-4135e5e8b095}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="5.HousingandMeals" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="5.HousingandMeals" id="d63c9368-63d3-472f-87c6-cf341463ddac" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{61e3bc25-4f10-4c18-9187-01f248b76b41}">
-              <labels>
-                <label description="Housing and Meals" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{c903b419-d727-4e2b-a785-3f8b6bbadf53}" locklevel="0" colspan="1" rowspan="1" labelid="{d8f591ae-da15-4f52-b574-af5fdc25a467}">
-                    <labels>
-                      <label description="Housing and Meals situation" languagecode="1033" />
-                    </labels>
-                    <control id="gr_housingandmealssituation" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_housingandmealssituation" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="5.1On-CampusHousingDetails" id="{5793d537-e69e-25a6-1d02-47d36199a918}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="5.1On-CampusHousingDetails" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="5.1On-CampusHousingDetails" id="151ca146-3074-48bf-908b-184f55966be8" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{5e696c71-c40c-45a2-8b6e-c62b9eff5c90}">
-              <labels>
-                <label description="On-Campus Housing Details:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{dc5e4c57-690d-4ad9-bffd-d738d049f15f}" locklevel="0" colspan="1" rowspan="1" labelid="{6824b757-5eb4-4ce2-9c89-b16d13316817}">
-                    <labels>
-                      <label description="Cost of Housing" languagecode="1033" />
-                    </labels>
-                    <control id="gr_costofhousing" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_costofhousing" disabled="false" />
-                  </cell>
-                  <cell id="{645edf46-71cb-4ad2-bbb9-3afa7043aec2}" locklevel="0" colspan="1" rowspan="1" labelid="{51fd71a5-216c-42e3-a8a5-8709de531bd1}">
-                    <labels>
-                      <label description="Per Semester or Quarter" languagecode="1033" />
-                    </labels>
-                    <control id="gr_persemesterorquarter" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_persemesterorquarter" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="5.2Off-CampusHousingDetails" id="{47824b48-d9ac-2e94-651e-daeabb10001e}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="5.2Off-CampusHousingDetails" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="5.2Off-CampusHousingDetails" id="49900ce3-c0a7-4c0e-9608-d556f30861f6" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{094de416-5b0c-446a-81db-a7e0f34d6e39}">
-              <labels>
-                <label description="Off-Campus Housing Details:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{0938eec0-73ff-40e8-a30e-8937f84642f6}" locklevel="0" colspan="2" rowspan="3" labelid="{e93e0897-1be2-4719-bc5d-22d3a2592814}">
-                    <labels>
-                      <label description="Physical Address of Housing Unit (Street, City, State, Zip):" languagecode="1033" />
-                    </labels>
-                    <control id="gr_physicaladdressofhousingunit" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="gr_physicaladdressofhousingunit" disabled="false" />
-                  </cell>
-                  <cell id="{6b7515d6-cdd4-4cf0-aeb0-11161e79fd31}" locklevel="0" colspan="1" rowspan="1" labelid="{d9740bc4-6145-4b9d-bd56-1ff7f03661f7}">
-                    <labels>
-                      <label description="Total Monthly Rent or Mortgage Payment:" languagecode="1033" />
-                    </labels>
-                    <control id="gr_totalmonthlyrentormortgagepayment" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_totalmonthlyrentormortgagepayment" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell locklevel="0" id="{5d9e7cf0-4851-4dfb-95e9-8e18ecaf902f}" showlabel="false" labelid="{70dff83d-f4ab-4911-b54b-16400ed4813c}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{28ebf9d7-9e4a-4c44-8798-ff5b4d1ea9cd}" showlabel="false" labelid="{8cd675ca-363b-45f3-93a8-59ec0e7a0457}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell locklevel="0" id="{999a3392-7702-4a71-8062-09261cb33056}" showlabel="false" labelid="{e3772aac-8754-4f89-bd61-eb19e49bff1d}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell locklevel="0" id="{840c11cb-d8b3-4588-ace1-5e1c1f731673}" showlabel="false" labelid="{353b854f-185d-46ec-9ec6-d7eaffe8d5c5}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{ac315dc9-aede-4024-a81c-70920c88d8f6}" locklevel="0" colspan="1" rowspan="1" labelid="{20468b63-03d3-4890-a47a-2d02487de621}" showlabel="true">
-                    <labels>
-                      <label description="Landlord / Mortgage Lender" languagecode="1033" />
-                    </labels>
-                    <control id="gr_landlordormortgagelender" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_landlordormortgagelender" disabled="false" uniqueid="{3ed86116-e615-7069-a7dd-0e15d6ce276d}" />
-                  </cell>
-                  <cell id="{27227e7b-1d24-4b79-9d2d-88931f1552b8}" locklevel="0" colspan="1" rowspan="1" labelid="{1c3799b2-93c0-4f0c-9c5a-f036a0d47d90}">
-                    <labels>
-                      <label description="Name of Landlord or Mortgage Lender" languagecode="1033" />
-                    </labels>
-                    <control id="gr_nameoflandlordormortgagelender" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_nameoflandlordormortgagelender" disabled="false" />
-                  </cell>
-                  <cell locklevel="0" id="{5fa0871a-0d03-4183-9e6a-51263257882b}" showlabel="false" labelid="{30c0a851-cd6e-4acc-9ccc-3903716d5145}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{e647fa19-185c-42f7-9302-c156363c917b}" locklevel="0" colspan="1" rowspan="1" labelid="{768249d0-54ab-4535-81aa-f1559c470382}">
-                    <labels>
-                      <label description="Phone Number of Landlord or Mortgage Lender" languagecode="1033" />
-                    </labels>
-                    <control id="gr_phonenumberoflandlordormortgagelender" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="gr_phonenumberoflandlordormortgagelender" disabled="false" />
-                  </cell>
-                  <cell id="{8440fcb7-13c6-45ed-8258-67b8b0fbd810}" locklevel="0" colspan="1" rowspan="1" labelid="{b667465f-f8aa-4caa-8263-c85b51cd3f3e}">
-                    <labels>
-                      <label description="Email Address of Landlord or Mortgage Lender" languagecode="1033" />
-                    </labels>
-                    <control id="gr_emailaddressoflandlordormortgagelender" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="gr_emailaddressoflandlordormortgagelender" disabled="false" />
-                  </cell>
-                  <cell id="{122e694c-4b96-80ad-8a71-e9743ac43973}" showlabel="false" labelid="{20524b15-e5d5-4bcf-ac1f-dedc8b96c2a0}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="5.3On-CampusMealPlans" id="{8a5c2266-4545-e3d9-b342-9627722d11a6}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="5.3On-CampusMealPlans" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="5.3On-CampusMealPlans" id="0224986e-4b22-4abc-9793-fbd7d76b04a5" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{e0a323dd-9480-44c1-928f-b3a2f55ca0f5}">
-              <labels>
-                <label description="On-Campus Meal Plans:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{b030ed9a-3eba-4232-a409-ad447e52dcd1}" locklevel="0" colspan="1" rowspan="1" labelid="{8d514d30-e712-46f6-a0d9-8e9ca9132681}">
-                    <labels>
-                      <label description="On-Campus Meal Plan Cost" languagecode="1033" />
-                    </labels>
-                    <control id="gr_oncampusmealplancost" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_oncampusmealplancost" disabled="false" />
-                  </cell>
-                  <cell id="{1eb488ad-5cb0-4478-b32e-c7c543eb1742}" locklevel="0" colspan="1" rowspan="1" labelid="{28a81dba-c5a9-4cd1-93aa-d4044c8babed}">
-                    <labels>
-                      <label description="On-Campus Meal Plan Term" languagecode="1033" />
-                    </labels>
-                    <control id="gr_oncampusmealplanterm" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gr_oncampusmealplanterm" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="5.4NoMealPlan" id="{e8eda9a5-853c-4a09-b114-b93703b3ddce}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="5.4NoMealPlan" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="5.4NoMealPlan" id="63801e07-7240-4308-87ed-7cb3480b05d6" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{d9a2677e-bbaa-48de-bd18-2d94ba6a7eb9}">
-              <labels>
-                <label description="No Meal Plan:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{c197d073-985c-439f-9ef1-988a401d7d38}" locklevel="0" colspan="1" rowspan="1" labelid="{e6513e8b-f566-4aab-8003-8ca2f8c3160b}">
-                    <labels>
-                      <label description="Standard $300 per Month" languagecode="1033" />
-                    </labels>
-                    <control id="gr_standard300permonth" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_standard300permonth" disabled="false" />
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="6.OngoingProgramResponsibilities" id="{a28d1b63-6443-44c9-052e-d0aac63ad7ab}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
-      <labels>
-        <label description="6.OngoingProgramResponsibilities" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="6.OngoingProgramResponsibilities" id="aafcfe56-ce14-45b5-bbca-cda8725c6273" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{8b036a83-ff4e-4fa7-88c2-e0c3c47eb421}">
-              <labels>
-                <label description="Ongoing Program Responsibilities" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{e0638c95-bff2-435c-b73b-96d9adf62508}" locklevel="0" colspan="1" rowspan="1" labelid="{1a84bae8-5c9c-48bd-a9ac-5b0a2b7f4843}">
-                    <labels>
-                      <label description="Final Class Schedule Submission" languagecode="1033" />
-                    </labels>
-                    <control id="gr_finalclassschedulesubmission" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_finalclassschedulesubmission" disabled="false" />
-                  </cell>
-                  <cell id="{40dbd547-4384-4425-abcf-6a61922906e6}" locklevel="0" colspan="1" rowspan="1" labelid="{6894787e-091a-46c3-9d1a-5fb44d1aa4d5}">
-                    <labels>
-                      <label description="Submit Transcripts" languagecode="1033" />
-                    </labels>
-                    <control id="gr_submittranscripts" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_submittranscripts" disabled="false" />
-                  </cell>
-                  <cell id="{5a26011c-7e37-4adc-aaec-d59fd7abc201}" locklevel="0" colspan="1" rowspan="1" labelid="{6307680c-577e-41f3-aa48-7a0bc2f2f539}">
-                    <labels>
-                      <label description="Staff Meetings" languagecode="1033" />
-                    </labels>
-                    <control id="gr_staffmeetings" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_staffmeetings" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{4cf11fc9-24b5-490a-a4ff-4128bc1ae71b}" locklevel="0" colspan="1" rowspan="1" labelid="{3b015cb6-f1d5-48fb-abee-4fa863003fd1}">
-                    <labels>
-                      <label description="Enrollment Status Changes" languagecode="1033" />
-                    </labels>
-                    <control id="gr_enrollmentstatuschanges" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_enrollmentstatuschanges" disabled="false" />
-                  </cell>
-                  <cell id="{b6d295c9-4562-49b7-a22e-525a969c13a3}" locklevel="0" colspan="1" rowspan="1" labelid="{352acdbe-4080-4a43-9cfa-86f8dae8d9ce}">
-                    <labels>
-                      <label description="Change Educational Goals" languagecode="1033" />
-                    </labels>
-                    <control id="gr_changeeducationalgoals" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_changeeducationalgoals" disabled="false" />
-                  </cell>
-                  <cell id="{246c857f-902a-4364-bad9-fbfcba1d9deb}" locklevel="0" colspan="1" rowspan="1" labelid="{7f2d277e-b486-4b94-a866-5d308bacf7ed}">
-                    <labels>
-                      <label description="Follow Education Plan" languagecode="1033" />
-                    </labels>
-                    <control id="gr_followeducationplan" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_followeducationplan" disabled="false" />
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{068eb10a-e672-432a-bb61-65b9e4b3d455}" locklevel="0" colspan="1" rowspan="1" labelid="{9ddc2270-8b8c-46aa-a675-3a12da5ffd9c}">
-                    <labels>
-                      <label description="Remain in Good Standing" languagecode="1033" />
-                    </labels>
-                    <control id="gr_remainingoodstanding" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_remainingoodstanding" disabled="false" />
-                  </cell>
-                  <cell id="{49de4534-d3b5-4258-99fd-9476717044b8}" locklevel="0" colspan="1" rowspan="1" labelid="{fdb4e450-2cd2-4ae6-bed5-66d8a1e3d200}">
-                    <labels>
-                      <label description="Successfully Complete Courses" languagecode="1033" />
-                    </labels>
-                    <control id="gr_successfullycompletecourses" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_successfullycompletecourses" disabled="false" />
-                  </cell>
-                  <cell id="{71648197-6472-c80a-81b2-683c9a41ee9b}" showlabel="false" labelid="{9664fbd3-3d98-4013-83c7-c909f49be5e8}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-    <tab name="7.ApplicationforEnrollmentandStandardizedTests" id="08b6ebdc-ccb3-42ea-a8b2-48889457c4cc" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{330a8d4b-adba-4f73-b561-e1e3bcbe88f7}" contenttype="cardSections">
-      <labels>
-        <label description="7.ApplicationforEnrollmentandStandardizedTests" languagecode="1033" />
-      </labels>
-      <columns>
-        <column width="100%">
-          <sections>
-            <section name="7.ApplicationforEnrollmentandStandardizedTests" id="baa1feae-daee-4872-a328-8cfbfd6e117b" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115" labelid="{aa49b626-30af-438c-8b78-2bf276bc5b01}">
-              <labels>
-                <label description="Application for Enrollment and Standardized Tests:" languagecode="1033" />
-              </labels>
-              <rows>
-                <row>
-                  <cell id="{c594c252-b981-4c3f-93f6-466502412fed}" locklevel="0" colspan="1" rowspan="1" labelid="{cdd2cb76-9946-442d-8e97-4bfc5cbed080}">
-                    <labels>
-                      <label description="Application fees – please list the amount" languagecode="1033" />
-                    </labels>
-                    <control id="gr_applicationfeespleaselisttheamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="gr_applicationfeespleaselisttheamount" disabled="false" />
-                  </cell>
-                  <cell id="{de69c7ef-6a20-49c4-bf7f-4545860ab247}" locklevel="0" colspan="1" rowspan="1" labelid="{73159e85-2010-4149-85d7-6fda30d4a7c5}">
-                    <labels>
-                      <label description="App/Enrollment Verification Docs Submitted" languagecode="1033" />
-                    </labels>
-                    <control id="gr_appenrollmentverificationdocssubmitted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_appenrollmentverificationdocssubmitted" disabled="false" />
-                  </cell>
-                  <cell id="{e26d3e54-7675-6cbe-9e8d-e95d4e42cd56}" showlabel="false" labelid="{6254c9b7-bb95-461b-a687-970978a6d5e7}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{18b2d1fc-655d-4f10-93fe-1230405e3338}" locklevel="0" colspan="1" rowspan="1" labelid="{22582857-201f-4f6d-a46b-b91487910853}">
-                    <labels>
-                      <label description="Application to register for a standardized test" languagecode="1033" />
-                    </labels>
-                    <control id="gr_applicationtoregisterforastandardizedtest" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_applicationtoregisterforastandardizedtest" disabled="false" />
-                  </cell>
-                  <cell id="{eae026e4-824d-cb07-e647-b71861541b00}" showlabel="false" labelid="{b3e39158-cb56-4111-9606-31bc19d9ab70}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell id="{ec89ed3c-ad7c-c7c2-7c17-430816a2473c}" showlabel="false" labelid="{b0317d13-490e-4c4d-8d81-e9816a185e7a}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{d383ed77-a801-4f9b-890f-35d9a39f5ff9}" locklevel="0" colspan="1" rowspan="1" labelid="{84f163fd-3399-4eca-990a-a982664d270f}">
-                    <labels>
-                      <label description="Application for admission in an Educational Instit" languagecode="1033" />
-                    </labels>
-                    <control id="gr_applicationforadmissioninaneducationalinstit" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_applicationforadmissioninaneducationalinstit" disabled="false" />
-                  </cell>
-                  <cell id="{93eb5259-53d1-8e38-3114-1d58b8cb295d}" showlabel="false" labelid="{65a1056d-b179-4840-b304-1981ae3c0706}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell id="{b061d605-2696-d0b0-373a-c70b1bb6c9da}" showlabel="false" labelid="{796a198c-840d-45b0-84dc-1f23029f9192}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-                <row>
-                  <cell id="{7fcb5a32-bf53-435e-a997-fe121973735c}" locklevel="0" colspan="1" rowspan="1" labelid="{8363d7a7-d9af-44d3-ab3d-718012e3a82b}">
-                    <labels>
-                      <label description="Advanced Placement (AP) testing fees" languagecode="1033" />
-                    </labels>
-                    <control id="gr_advancedplacementaptestingfees" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="gr_advancedplacementaptestingfees" disabled="false" />
-                  </cell>
-                  <cell id="{2bbb87c1-dbc7-7491-a7de-6a4a633434bc}" showlabel="false" labelid="{b4c755e9-2e99-4356-95e9-689f0bc33122}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                  <cell id="{1919c106-7183-21ce-e911-2dac74b6a3da}" showlabel="false" labelid="{25acbdf9-a505-48fc-82ec-c1db94e0ef2d}">
-                    <labels>
-                      <label description="" languagecode="1033" />
-                    </labels>
-                  </cell>
-                </row>
-              </rows>
-            </section>
-          </sections>
-        </column>
-      </columns>
-    </tab>
-  </tabs>
-  <header id="{d99e4a51-0758-4495-9baf-e039d1d91069}" columns="111">
-    <rows>
-      <row>
-        <cell id="{d712e335-62cc-aa62-4790-12a362692d47}" showlabel="true" locklevel="0" labelid="{b99b33b4-80ab-44c2-a986-e96a73cd5cc8}">
-          <labels>
-            <label description="Service Request" languagecode="1033" />
-          </labels>
-          <control id="header_ait_servicerequest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ait_servicerequest" disabled="false" />
-        </cell>
-        <cell id="{952d415b-523b-922d-b794-139d1a715060}" showlabel="true" locklevel="0" labelid="{85aea382-e8c2-4d66-8c56-b8089c9375ee}">
-          <labels>
-            <label description="Program" languagecode="1033" />
-          </labels>
-          <control id="header_ait_program" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ait_program" disabled="false" />
-        </cell>
-        <cell id="{206b94ab-e7e1-03b5-835b-dec13ac0d961}" showlabel="true" locklevel="0" labelid="{f3ae7ecd-55f9-48c3-bd2f-c087806ab4f9}">
-          <labels>
-            <label description="Education Application Type" languagecode="1033" />
-          </labels>
-          <control id="header_ait_educationapplicationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ait_educationapplicationtype" disabled="false" uniqueid="{d1679ba9-6b18-3182-8b38-d75d552473b6}" />
-        </cell>
-      </row>
-    </rows>
-  </header>
-  <Navigation>
-    <NavBar />
-    <NavBarAreas>
-      <NavBarArea Id="Info">
-        <Titles>
-          <Title LCID="1033" Text="Common" />
-        </Titles>
-      </NavBarArea>
-      <NavBarArea Id="Sales">
-        <Titles>
-          <Title LCID="1033" Text="Sales" />
-        </Titles>
-      </NavBarArea>
-      <NavBarArea Id="Service">
-        <Titles>
-          <Title LCID="1033" Text="Service" />
-        </Titles>
-      </NavBarArea>
-      <NavBarArea Id="Marketing">
-        <Titles>
-          <Title LCID="1033" Text="Marketing" />
-        </Titles>
-      </NavBarArea>
-      <NavBarArea Id="ProcessCenter">
-        <Titles>
-          <Title LCID="1033" Text="Process Sessions" />
-        </Titles>
-      </NavBarArea>
-    </NavBarAreas>
-  </Navigation>
-  <controlDescriptions>
-    <controlDescription forControl="{64bb62f3-c826-4b6c-9be4-a3b7285e20fd}">
-      <customControl id="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}">
-        <parameters>
-          <datafieldname>gr_typeofeducationinstitution</datafieldname>
-        </parameters>
-      </customControl>
-      <customControl name="MscrmControls.OptionSet.OptionSetControl" formFactor="0">
-        <parameters>
-          <value type="OptionSet">gr_typeofeducationinstitution</value>
-        </parameters>
-      </customControl>
-      <customControl name="MscrmControls.OptionSet.OptionSetControl" formFactor="2">
-        <parameters>
-          <value type="OptionSet">gr_typeofeducationinstitution</value>
-        </parameters>
-      </customControl>
-      <customControl name="MscrmControls.OptionSet.OptionSetControl" formFactor="1">
-        <parameters>
-          <value type="OptionSet">gr_typeofeducationinstitution</value>
-        </parameters>
-      </customControl>
-    </controlDescription>
-  </controlDescriptions>
-  <footer id="{17121439-158c-4e68-931d-93f4083b7914}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
-    <rows>
-      <row>
-        <cell id="{95b4f886-c2bb-434b-b5b1-08f2cf059b2a}" labelid="{956d6083-3fcb-4a77-bc7e-68b81c850770}" showlabel="false">
-          <labels>
-            <label description="" languagecode="1033" />
-          </labels>
-        </cell>
-        <cell id="{e83bbde8-81a3-4392-bbc8-1c93f35454ad}" labelid="{23c1a0ac-b16e-4b5d-8b1c-40669e341a8e}" showlabel="false">
-          <labels>
-            <label description="" languagecode="1033" />
-          </labels>
-        </cell>
-        <cell id="{ca1c22f7-5576-4b35-bafc-8a02a0389afe}" labelid="{1eeb93d1-5a47-4318-9c74-f17930fe3965}" showlabel="false">
-          <labels>
-            <label description="" languagecode="1033" />
-          </labels>
-        </cell>
-      </row>
-    </rows>
-  </footer>
-  <formLibraries>
-    <Library name="ait_ShowHideSections" libraryUniqueId="{65c5a5c2-061a-c298-dd33-43d1bd078d60}" />
-  </formLibraries>
-  <events>
-    <event name="onchange" application="false" active="false" attribute="ait_applicationreverification">
-      <Handlers>
-        <Handler functionName="showHideTabs" libraryName="ait_ShowHideSections" handlerUniqueId="{ec8184d8-9225-18ac-7a11-ba44e0d7b917}" enabled="true" parameters="" passExecutionContext="true" />
-      </Handlers>
-    </event>
-    <event name="onchange" application="false" active="false" attribute="ait_educationapplicationtype">
-      <Handlers>
-        <Handler functionName="showHideTabs" libraryName="ait_ShowHideSections" handlerUniqueId="{e0761458-507a-8ae8-7de8-5b78a08ed0bb}" enabled="true" parameters="" passExecutionContext="true" />
-      </Handlers>
-    </event>
-    <event name="onload" application="false" active="false">
-      <Handlers>
-        <Handler functionName="showHideTabs" libraryName="ait_ShowHideSections" handlerUniqueId="{0522392c-339c-ae2a-7b5e-795c41971d97}" enabled="false" parameters="" passExecutionContext="true" />
-      </Handlers>
-    </event>
-  </events>
-  <DisplayConditions Order="8" FallbackForm="true">
-    <Role Id="{655dffa6-d185-ee11-8179-6045bd0027e0}" />
-    <Role Id="{b661ffa6-d185-ee11-8179-6045bd0027e0}" />
-  </DisplayConditions>
-</form>
+{% block main %}
+{% include 'Page Copy' %}
+{% fetchxml highereducationprograms %}
+<fetch count="10">
+<entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programimage" />
+    <attribute name="ait_programstartdate" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0"/>
+      <condition attribute="gr_publishtoportal" operator="eq" value="1" />
+   <!-- Only include active programs published to the portal with Higher Ed application types -->
+      <condition attribute="gr_educationapplicationtype" operator="in">
+             <value>748120000</value>
+             <value>748120001</value>
+      </condition>
+    </filter>
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% fetchxml youtheducationprograms %}
+<fetch count="10">
+<entity name="ait_program">
+    <attribute name="ait_applicationdeadline" />
+    <attribute name="ait_category" />
+    <attribute name="ait_description" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_programimage" />
+    <attribute name="ait_programstartdate" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0"/>
+      <condition attribute="gr_publishtoportal" operator="eq" value="1" />
+      <!-- Only include active programs published to the portal with Youth application types -->
+      <condition attribute="gr_educationapplicationtype" operator="in">
+             <value>315950001</value> <!-- Youth Tutoring -->
+             <value>315950002</value><!-- Youth Activities -->
+             <value>315950000</value><!-- Childcare & Early Education -->             
+      </condition>
+    </filter>
+    <order attribute="ait_applicationdeadline" descending="true" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign programdetails_marker = sitemarkers["ProgramDetails"] %}
+{% assign educationapplicationcreate_marker = sitemarkers["EducationApplicationCreate"] %}
+<div class="container py-4">
+  <h2 class="text-center g-4">Youth Education Programs</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+    {% for program in youtheducationprograms.results.entities %}
+    <div class="col">
+      <div class="card portal-card text-center h-100 shadow-sm" style="width: 18rem;">
+        <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="d-block">
+          <img src="{{ program.ait_programimage.url }}" alt="{{ program.ait_name }}" class="portal-card-img card-img-top img-fluid">
+        </a>
+        <div class="card-body">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="portal-card-title text-decoration-none">
+            <h3 class="fw-bold">{{ program.ait_name }}</h3>
+          </a>
+          <p class="card-text">{{ program.ait_description }}</p>
+          <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MM/d/yy" }} - {{ program.ait_programenddate | date: "MM/d/yy" }}</small></p>
+          <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MM/d/yy" }}</small></p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="btn btn-primary">Learn More</a>
+          <a href="{{ educationapplicationcreate_marker.url }}?id={{ program.ait_programid }}&name={{ program.ait_name }}&entityname=ait_program" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="container py-4">
+  <h2 class="text-center g-4">Higher Education Programs</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+    {% for program in highereducationprograms.results.entities %}
+    <div class="col">
+      <div class="card portal-card text-center h-100 shadow-sm" style="width: 18rem;">
+        <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="d-block">
+          <img src="{{ program.ait_programimage.url }}" alt="{{ program.ait_name }}" class="portal-card-img card-img-top img-fluid">
+        </a>
+        <div class="card-body">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="portal-card-title text-decoration-none">
+            <h3 class="fw-bold">{{ program.ait_name }}</h3>
+          </a>
+          <p class="card-text">{{ program.ait_description }}</p>
+          <p class="card-text"><small class="text-muted">{{ program.ait_programstartdate | date: "MM/d/yy" }} - {{ program.ait_programenddate | date: "MM/d/yy" }}</small></p>
+          <p class="card-text"><small class="text-muted">Application Deadline: {{ program.ait_applicationdeadline | date: "MM/d/yy" }}</small></p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ programdetails_marker.url }}?id={{ program.ait_programid }}" class="btn btn-primary">Learn More</a>
+          <a href="{{ educationapplicationcreate_marker.url }}?id={{ program.ait_programid }}&name={{ program.ait_name }}&entityname=ait_program" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{% endblock %}

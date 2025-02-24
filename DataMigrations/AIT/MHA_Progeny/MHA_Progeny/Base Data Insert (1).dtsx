@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Base Data Insert"
   DTS:PackageType="5"
-  DTS:VersionBuild="102"
-  DTS:VersionGUID="{D4DBA352-40C7-4FCB-8BF8-C2CC9F7715FD}">
+  DTS:VersionBuild="104"
+  DTS:VersionGUID="{BAF3540F-6C83-4B94-89DD-5FCA81FA1A4D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,11 @@
       DTS:ObjectName="DestinationEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpversion5test.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5educationportalbase.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD5X+xRQxxmwmOYsZHk+GIx+mMvVyqaRluwFZ7iX4er9QAAAAAOgAAAAAIAACAAAADto3rbtwIO6gfBRMjS6JKQ43NQOEoH0oU7WeDW1DnQN2AAAABR4z5QTzXLo+SC9Viwx51GB5VHy/81EQVJdzgdKfyaLMdu8TPKuiF1T0h3JU+Ow2FOqX7B/kCbra1kdQBKr4LzB44umYNwl08ZEcKLn9PiyJzwWO1HOpFpCKTMP7GtRfxAAAAA5TOCaisD7Jp/+SkN3eZggT3tujefQGH2qzDMzXvOz6jvtLg1LVJWKcEGPaL0jezy3DqqWS68xDuWzNoYA2bq4Q</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB0W2e9JnEuHLPIm4drIg/lkc41Tna07JfkHNr1Uv/TiwAAAAAOgAAAAAIAACAAAAC2mxlKacM+HwcKatsy+ZTA6WT869UVCdckM4xzQoYbUmAAAADQ1N4205Oe/8hg7kCSy/KFfaNVfOJZXTEW6W6qVQzN1PEz/n3VDrEpIf4noixwVOvKZ71oXvwziHvaVFeJYK95aU1O4ARIufpQb2noPZ9ysDbPMl/BJujLSllwcPrKytZAAAAArZoRNTKHO5ToZHvYy1wLBDeC8av+t6ApuLbZzoyc+BepTV1FlN6FNs31ktHarcAPYRxwram4SVGQ6HclE50t9g</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -38,11 +38,11 @@
       DTS:ObjectName="SourceEnv">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpprod.crm.dynamics.com/;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=7c56de9f-871b-4ab7-a54b-e9b23acdc8a2;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
+          ConnectionString="AuthenticationType=OAuth;ServiceEndpoint=WebAPI;UserName=;Domain=;ServerUrl=https://tpv5portaldev.crm.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;OAuthType=ClientCredentials;ClientAppId=4e73141a-d2c1-4781-aa11-a5b827d62187;TokenPath=;CertificateThumbprint=;Tenant=;AuthorizationServerUrl=;ServiceResource=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False;TimezoneConversionEngine=Auto;HttpCertificateThumbprint=;HttpCustomHeaders={}"
           ConnectByProxy="False">
           <ClientSecret
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADwKzvRJZ0RrenCIfoiEmUYR9nO4KfKW5XOfkPsZsQ/AgAAAAAOgAAAAAIAACAAAACEHSVjktk9Zbh8SVL7wTZkaI1f0A9k+ctUvl+NRR9quGAAAAAWdZ5vMqodVhwo3CMLDpOIAcWTzvOYAV9DzmJUIPHRl9pQY+lJhdsWwoAYT/xdDxknVov1U3J/SSxVK5OAizBVNIN9SO+6GRv39jFu0nizCnxBWFxJB1mM32F1btK/k8pAAAAAJqRfzpCgCdMOivmSayoJwdy/pUmD8utdcAe+LjtvYY4Zh4Hd9H2iNyTU6ER+rW42nDlBAXQ3YcQBkfHYypeEqg</ClientSecret>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuFz5ZgRN8Eqe2d2p8K1AxgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC7TBxlMe3uSK3H61eziXW8sq7RRat3IdAQrh6C0A+3rwAAAAAOgAAAAAIAACAAAAC1adO2KcObgMVpydfKIfM36HOzRGimX3/z+liMkxUXz2AAAACsXfbo4pCSHfceL+AyO+g6/9NAiN8dl/mkEBR8z6ySZLcm2hs2KlIZq6OMOGKt+YZPE2CpjyMju3fSiMzgbxI/GJ6y8zHKsbyaLzyHwqSSpVQhdGLbDFKXf7Km5mwcjadAAAAAPG+jwj1y2QVr78NxQsyHPFu2PmTIE00bXjc74K/j8k9b9lOLVmX4YkphnkuQtG2hUDK/9pckIMfm+OGtpBp+uA</ClientSecret>
         </CrmConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3231,6 +3231,7 @@
       DTS:refId="Package\City"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{EADF20D9-C1E7-4E3C-A0EF-686A97BCC402}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4742,6 +4743,7 @@
       DTS:refId="Package\Country"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{E796496D-0607-4553-8486-DB480EB06A4D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5450,6 +5452,7 @@
       DTS:refId="Package\County"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{FB1306B2-F442-4C92-8959-2DEB17BF6F89}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -15252,6 +15255,7 @@
       DTS:refId="Package\States"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{94710699-82B6-4342-966A-755ECAA741F2}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -18224,6 +18228,7 @@
       DTS:refId="Package\ZipCode"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{27618CA2-0261-4BAD-8705-E6A1C8F8BC24}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -19180,11 +19185,11 @@
           Id="Package\Clans"
           TopLeft="914.749987799674,265.561396253846" />
         <NodeLayout
-          Size="137,42"
+          Size="118,42"
           Id="Package\Country"
           TopLeft="96,32" />
         <NodeLayout
-          Size="126,44"
+          Size="114,42"
           Id="Package\County"
           TopLeft="100.333333333333,177.666666666667" />
         <NodeLayout
@@ -19236,7 +19241,7 @@
           Id="Package\Skills"
           TopLeft="383.333333333333,45" />
         <NodeLayout
-          Size="129,42"
+          Size="110,42"
           Id="Package\States"
           TopLeft="99,105.666666666667" />
         <NodeLayout
@@ -19248,7 +19253,7 @@
           Id="Package\Tribes"
           TopLeft="105.333333333333,541.666666666667" />
         <NodeLayout
-          Size="138,44"
+          Size="121,42"
           Id="Package\ZipCode"
           TopLeft="99.2916666573535,383.350877695247" />
         <EdgeLayout
@@ -19297,18 +19302,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="169.312499995343,427.350877695247">
+          TopLeft="159.791666657354,425.350877695247">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,114.31578897142"
+              EndConnector="10.5416666759795,116.31578897142"
               Start="0,0"
-              End="0,106.81578897142">
+              End="10.5416666759795,108.81578897142">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,106.81578897142" />
+                    End="0,54.15789448571" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.15789448571"
+                    Point2="0,58.15789448571"
+                    Point3="4,58.15789448571" />
+                  <mssgle:LineSegment
+                    End="6.54166667597949,58.15789448571" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.54166667597949,58.15789448571"
+                    Point2="10.5416666759795,58.15789448571"
+                    Point3="10.5416666759795,62.15789448571" />
+                  <mssgle:LineSegment
+                    End="10.5416666759795,108.81578897142" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19671,18 +19688,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="164,74">
+          TopLeft="154.5,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.6666666666667"
+              EndConnector="0,31.666666666667"
               Start="0,0"
-              End="0,24.1666666666667">
+              End="0,24.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.1666666666667" />
+                    End="0,24.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19693,18 +19710,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="163.416666666667,147.666666666667">
+          TopLeft="155.666666666667,147.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.0000000000003"
+              EndConnector="0,30"
               Start="0,0"
-              End="0,22.5000000000003">
+              End="0,22.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5000000000003" />
+                    End="0,22.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19715,18 +19732,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="162.666666666667,221.666666666667">
+          TopLeft="159.666666666667,219.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44.333333333333"
+              EndConnector="0,46.333333333333"
               Start="0,0"
-              End="0,36.833333333333">
+              End="0,38.833333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.833333333333" />
+                    End="0,38.833333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19737,7 +19754,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="165.145833328677,308">
+          TopLeft="160.895833328677,308">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
