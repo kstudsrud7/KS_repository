@@ -1,0 +1,38 @@
+{
+    "name": "Custom Red Theme",
+    "dataColors": [
+        "#b50000ff", 
+        "#8a0000", 
+        "#ff4d4d", 
+        "#660000", 
+        "#e60000", 
+        "#cc0000"
+    ],
+    "background": "#ffffff",
+    "foreground": "#333333",
+    "tableAccent": "#b50000ff",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "visualTitle": [{
+                    "fontSize": 14,
+                    "color": "#b50000ff"
+                }],
+                "visualBorder": [{
+                    "color": "#b50000ff"
+                }],
+                "title": [{
+                    "fontSize": 14,
+                    "color": "#b50000ff"
+                }],
+                "header": [{
+                    "fontSize": 12,
+                    "color": "#b50000ff"
+                }],
+                "labels": [{
+                    "color": "#333333"
+                }]
+            }
+        }
+    }
+}

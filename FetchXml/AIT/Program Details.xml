@@ -1,0 +1,56 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true" >
+  <entity name="ait_program" enableprefiltering="true" >
+    <attribute name="ait_programenddate" />
+    <attribute name="ait_remainingfunds" />
+    <attribute name="ait_totalplanparticipants" />
+    <attribute name="ait_totalservicerequests" />
+    <attribute name="ait_name" />
+    <attribute name="ait_programautoid" />
+    <attribute name="ait_programbudget" />
+    <attribute name="ait_totalreferrals" />
+    <attribute name="ait_programstatus" />
+    <attribute name="ait_totalassistancerequests" />
+    <attribute name="ait_programstartdate" />
+    <attribute name="ait_category" />
+    <attribute name="ait_totalpayments_base" />
+    <attribute name="ait_totalpendingreferrals" />
+    <attribute name="ait_totalpayments" />
+    <attribute name="ait_programbudget_base" />
+    <attribute name="ait_totalcounselingrequests" />
+    <attribute name="ait_programid" />
+    <attribute name="ait_totalgroupactivities" />
+    <link-entity name="ait_servicerequest" from="ait_program" to="ait_programid" link-type="outer" alias="SR" >
+      <attribute name="ait_servicerequesttype" />
+      <attribute name="ait_servicerequeststatus" />
+      <attribute name="ait_servicerequestname" />
+      <attribute name="ait_clientprofile" />
+      <attribute name="ait_servicerequestid" />
+      <attribute name="ait_name" />
+      <link-entity name="ait_payment" from="ait_servicerequest" to="ait_servicerequestid" link-type="outer" alias="P" >
+        <attribute name="ait_paymentamount" />
+        <attribute name="ait_name" />
+        <attribute name="ait_paymentstatus" />
+        <attribute name="ait_paymentid" />
+        <attribute name="ait_payeetype" />
+        <attribute name="ait_paymentdate" />
+        <attribute name="ait_payeecompany" />
+        <attribute name="ait_individual" />
+      </link-entity>
+    </link-entity>
+    <link-entity name="ait_caseplan" from="ait_program" to="ait_programid" link-type="outer" alias="FP" >
+      <attribute name="ait_caseautoid" />
+      <attribute name="ait_name" />
+      <attribute name="ait_totalcasetimespent" />
+      <attribute name="ait_program" />
+      <attribute name="ait_familygroup" />
+      <attribute name="ait_caseworker" />
+      <attribute name="ownerid" />
+      <attribute name="ait_nextreviewdate" />
+      <attribute name="ait_planstartdate" />
+      <attribute name="ait_casestatus" />
+      <attribute name="ait_actualcompletion" />
+      <attribute name="ait_planlength" />
+      <attribute name="ait_servicerequest" />
+    </link-entity>
+  </entity>
+</fetch>
